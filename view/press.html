@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>出版社详情</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/jquery.page.css"/>
+    <!--<link rel="stylesheet" href="../css/application.css"/>-->
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_w6hh4sp38hvvx6r.css">
+    <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.raty.js"></script>
+</head>
+<body class="book-home-bg">
+<!-- 顶部导航 -->
+<div class="top-nav-wrap">
+    <div class="top-nav-content clearfix">
+        <div class="left">
+            <i class="icon iconfont icon-dingwei"></i>
+            <span>北京</span>
+        </div>
+        <div class="right clearfix">
+            <div class="login-info">
+                <a href="login.html" class="login-btn">您好，请登录</a>
+                <a href="register.html" class="reg-btn">免费注册</a>
+            </div>
+            <a href="user.html" class="dividing-line nav-item">个人中心</a>
+            <a href="javascript:void(0)" class="dividing-line nav-item">APP下载</a>
+            <a href="javascript:void(0)" class="dividing-line nav-item">在线客服</a>
+        </div>
+    </div>
+</div>
+<!-- 搜索 -->
+<div class="index-search-block search-block clearfix">
+    <div class="wrap">
+        <div class="logo-area clearfix">
+            <img src="../images/logo.png" class="logo"/>
+        </div>
+        <div class="search-area">
+            <div class="search-box">
+                <div class="input">
+                    <input type="text">
+                </div>
+                <div class="button iconfont icon-sousuo_sousuo">
+
+                </div>
+            </div>
+            <ul class="hot-search-item clearfix">
+                <li><a href="javascript:void(0)">新华字典</a></li>
+                <li class="hot"><a href="javascript:void(0)">盗墓笔记</a></li>
+                <li><a href="javascript:void(0)">游戏攻略</a></li>
+                <li class="hot"><a href="javascript:void(0)">考研英语</a></li>
+                <li><a href="javascript:void(0)">游戏攻略</a></li>
+                <li><a href="javascript:void(0)">水浒传</a></li>
+                <li class="hot"><a href="javascript:void(0)">哈利波特全集</a></li>
+            </ul>
+        </div>
+        <div class="my-order">
+            <a href="orderList.html">我的订单</a>
+        </div>
+        <div class="shopping-cart">
+            <a href="cart.html">购物车</a>
+        </div>
+    </div>
+</div>
+<!-- 主导航 -->
+<div class="main-nav-wrap">
+    <div class="main-nav clearfix">
+        <div class="dropdown toggle-nav">
+            <div class="dropdown-title clearfix"><i class="iconfont icon-fenlei"></i><span>全部电子书分类</span></div>
+            <div class="dropdown-nav">
+                <div class="block">
+                    <div class="block-title"><a href="">特色分类</a></div>
+                    <ul class="block-item clearfix">
+                        <li><a href="">排行榜</a></li>
+                        <li><a href="">排行榜</a></li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <div class="block-title"><a href="">童书馆</a></div>
+                    <ul class="block-item clearfix">
+                        <li><a href="">0-2</a></li>
+                        <li><a href="">3-6</a></li>
+                        <li><a href="">7-10</a></li>
+                        <li><a href="">11-14</a></li>
+                        <li><a href="">绘本</a></li>
+                        <li><a href="">自然百科</a></li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <div class="block-title"><a href="">文学馆</a></div>
+                    <ul class="block-item clearfix">
+                        <li><a href="">小说</a></li>
+                        <li><a href="">文学</a></li>
+                        <li><a href="">青春</a></li>
+                        <li><a href="">传记</a></li>
+                        <li><a href="">动漫</a></li>
+                        <li><a href="">历史</a></li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <div class="block-title"><a href="">计算机</a></div>
+                    <ul class="block-item clearfix">
+                        <li><a href="">C语言</a></li>
+                        <li><a href="">办公软件</a></li>
+                        <li><a href="">智能</a></li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <div class="block-title"><a href="">计算机</a></div>
+                    <ul class="block-item clearfix">
+                        <li><a href="">C语言</a></li>
+                        <li><a href="">办公软件</a></li>
+                        <li><a href="">智能</a></li>
+                        <li><a href="">C语言</a></li>
+                        <li><a href="">办公软件</a></li>
+                        <li><a href="">智能</a></li>
+                        <li><a href="">C语言</a></li>
+                        <li><a href="">办公软件</a></li>
+                        <li><a href="">智能</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="nav clearfix">
+            <li><a href="">首页</a></li>
+            <li><a href="goods-pre-sale.html">预售</a></li>
+            <li><a href="ebook.html">电子书</a></li>
+            <li><a href="#">非出版</a></li>
+            <li><a href="publishing-list.html">出版社</a></li>
+            <li><a href="mylibrary.html">图书馆</a></li>
+            <li><a href="book-community.html">图书社群</a></li>
+            <li><a href="store-channel.html">门店频道</a></li>
+            <li><a href="webcast.html">视频直播</a></li>
+            <li><a href="">特价</a></li>
+        </ul>
+    </div>
+</div>
+<div class="press">
+    <div class="container">
+        <img src="../images/press-top.jpg" class="press-top"/>
+        <div class="press-box">
+            <div class="press-header">
+                <div class="press-header-left">
+                    <img src="../images/press-info-img.jpg" alt="" class="left-top"/>
+                    <div class="press-header-left-info">
+                        <h6>北京理工大学出版社</h6>
+                        <div>
+                            <span style="margin-right: 160px;">开店时间：2013-3-13 </span>
+                            <span>所在地：北京 </span>
+                        </div>
+                        <div>
+                            <span style="margin-right: 217px;">服务：<img src="../images/serice.png"/></span>
+                            <div id="" style="overflow: hidden;    margin-left: 270px;margin-top: -17px;">
+                                <span style="display: block;float: left;">商家评价：</span>
+                                <div id="star" style="float: left;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="press-header-right">
+                    <a href="javascript:">关注</a>
+                </div>
+            </div>
+            <div class="press-center">
+                <div class="press-center-top">
+                    <ul>
+                        <li class="active">图书排行</li>
+                        <li>新书预告</li>
+                        <li>传销商品</li>
+                    </ul>
+                </div>
+                <div class="press-center-inner">
+                    <ul style="display: block;">
+                        <li>
+                            <a href="javascript:">
+                                <img src="../images/press-center-img.jpg" alt="" class="inner-img"/>
+                                <p>我的职业是小说家</p>
+                                <div class="cuxiao">
+                                    <span>促销价：<i>￥72.68</i></span>
+                                    <img src="../images/cuxiao.png" alt=""/>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:">
+                                <img src="../images/press-center-img.jpg" alt="" class="inner-img"/>
+                                <p>我的职业是小说家</p>
+                                <div class="cuxiao">
+                                    <span>促销价：<i>￥72.68</i></span>
+                                    <img src="../images/cuxiao.png" alt=""/>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:">
+                                <img src="../images/press-center-img.jpg" alt="" class="inner-img"/>
+                                <p>我的职业是小说家</p>
+                                <div class="cuxiao">
+                                    <span>促销价：<i>￥72.68</i></span>
+                                    <img src="../images/cuxiao.png" alt=""/>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:">
+                                <img src="../images/press-center-img.jpg" alt="" class="inner-img"/>
+                                <p>我的职业是小说家</p>
+                                <div class="cuxiao">
+                                    <span>促销价：<i>￥72.68</i></span>
+                                    <img src="../images/cuxiao.png" alt=""/>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:">
+                                <img src="../images/press-center-img.jpg" alt="" class="inner-img"/>
+                                <p>我的职业是小说家</p>
+                                <div class="cuxiao">
+                                    <span>促销价：<i>￥72.68</i></span>
+                                    <img src="../images/cuxiao.png" alt=""/>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:">
+                                <img src="../images/press-center-img.jpg" alt="" class="inner-img"/>
+                                <p>我的职业是小说家</p>
+                                <div class="cuxiao">
+                                    <span>促销价：<i>￥72.68</i></span>
+                                    <img src="../images/cuxiao.png" alt=""/>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:">
+                                <img src="../images/press-center-img.jpg" alt="" class="inner-img"/>
+                                <p>我的职业是小说家</p>
+                                <div class="cuxiao">
+                                    <span>促销价：<i>￥72.68</i></span>
+                                    <img src="../images/cuxiao.png" alt=""/>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:">
+                                <img src="../images/press-center-img.jpg" alt="" class="inner-img"/>
+                                <p>我的职业是小说家</p>
+                                <div class="cuxiao">
+                                    <span>促销价：<i>￥72.68</i></span>
+                                    <img src="../images/cuxiao.png" alt=""/>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="javascript:">
+                                <img src="../images/press-center-img.jpg" alt="" class="inner-img"/>
+                                <p>我的职业是小说家</p>
+                                <div class="cuxiao">
+                                    <span>促销价：<i>￥72.68</i></span>
+                                    <img src="../images/cuxiao.png" alt=""/>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:">
+                                <img src="../images/press-center-img.jpg" alt="" class="inner-img"/>
+                                <p>我的职业是小说家</p>
+                                <div class="cuxiao">
+                                    <span>促销价：<i>￥72.68</i></span>
+                                    <img src="../images/cuxiao.png" alt=""/>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:">
+                                <img src="../images/press-center-img.jpg" alt="" class="inner-img"/>
+                                <p>我的职业是小说家</p>
+                                <div class="cuxiao">
+                                    <span>促销价：<i>￥72.68</i></span>
+                                    <img src="../images/cuxiao.png" alt=""/>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:">
+                                <img src="../images/press-center-img.jpg" alt="" class="inner-img"/>
+                                <p>我的职业是小说家</p>
+                                <div class="cuxiao">
+                                    <span>促销价：<i>￥72.68</i></span>
+                                    <img src="../images/cuxiao.png" alt=""/>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:">
+                                <img src="../images/press-center-img.jpg" alt="" class="inner-img"/>
+                                <p>我的职业是小说家</p>
+                                <div class="cuxiao">
+                                    <span>促销价：<i>￥72.68</i></span>
+                                    <img src="../images/cuxiao.png" alt=""/>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:">
+                                <img src="../images/press-center-img.jpg" alt="" class="inner-img"/>
+                                <p>我的职业是小说家</p>
+                                <div class="cuxiao">
+                                    <span>促销价：<i>￥72.68</i></span>
+                                    <img src="../images/cuxiao.png" alt=""/>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:">
+                                <img src="../images/press-center-img.jpg" alt="" class="inner-img"/>
+                                <p>我的职业是小说家</p>
+                                <div class="cuxiao">
+                                    <span>促销价：<i>￥72.68</i></span>
+                                    <img src="../images/cuxiao.png" alt=""/>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="page"></div>
+        </div>
+    </div>
+</div>
+<!--通栏广告-->
+<div class="full-ad">
+    <a href=""><img src="../images/fullad.jpg"/></a>
+</div>
+<!--标志-->
+<div class="icon-item clearfix">
+    <div class="wrap">
+        <div class="icon-box">
+            <img src="../images/g.png"/>
+            <div class="text">
+                <p>正品保障</p>
+                <p>品牌厂商</p>
+                <p>品牌厂商</p>
+            </div>
+        </div>
+        <div class="icon-box">
+            <img src="../images/g.png"/>
+            <div class="text">
+                <p>正品保障</p>
+                <p>品牌厂商</p>
+                <p>品牌厂商</p>
+            </div>
+        </div>
+        <div class="icon-box">
+            <img src="../images/g.png"/>
+            <div class="text">
+                <p>正品保障</p>
+                <p>品牌厂商</p>
+                <p>品牌厂商</p>
+            </div>
+        </div>
+        <div class="icon-box">
+            <img src="../images/g.png"/>
+            <div class="text">
+                <p>正品保障</p>
+                <p>品牌厂商</p>
+                <p>品牌厂商</p>
+            </div>
+        </div>
+        <div class="icon-box">
+            <img src="../images/g.png"/>
+            <div class="text">
+                <p>正品保障</p>
+                <p>品牌厂商</p>
+                <p>品牌厂商</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--帮助-->
+<div class="help-item clearfix">
+    <div class="wrap clearfix">
+        <div class="help-box">
+            <h3>新手入门</h3>
+            <a href="" class="help-url">购物保障</a>
+            <a href="" class="help-url">服务协议</a>
+            <a href="" class="help-url">发票说明</a>
+        </div>
+        <div class="help-box">
+            <h3>常见问题</h3>
+            <a href="" class="help-url">优惠券使用</a>
+        </div>
+        <div class="help-box">
+            <h3>配色说明</h3>
+            <a href="" class="help-url">配送时间</a>
+            <a href="" class="help-url">配送费用</a>
+            <a href="" class="help-url">配送范围</a>
+        </div>
+        <div class="help-box">
+            <h3>支付方式</h3>
+            <a href="" class="help-url">在线支付</a>
+        </div>
+        <div class="help-box">
+            <h3>售后服务</h3>
+            <a href="" class="help-url">品质保障</a>
+            <a href="" class="help-url">退换货政策</a>
+            <a href="" class="help-url">退换货流程</a>
+        </div>
+    </div>
+
+</div>
+<!--二维码-->
+<div class="qrcode-item clearfix">
+    <div class="wrap clearfix">
+        <div class="qrcode">
+            <img src="../images/c.png">
+            <span>xinhuahulian.com</span>
+        </div>
+        <div class="qrcode">
+            <img src="../images/c.png">
+            <span>xinhuahulian.com</span>
+        </div>
+        <div class="qrcode">
+            <img src="../images/c.png">
+            <span>xinhuahulian.com</span>
+        </div>
+    </div>
+</div>
+<!--底部导航-->
+<div class="bottom-nav">
+    <ul class="nav-item clearfix">
+        <li><a href="">公司简介</a></li>
+        <li><a href="">团队管理</a></li>
+        <li><a href="">媒体报道</a></li>
+        <li><a href="">联系我吗</a></li>
+        <li><a href="">招贤纳士</a></li>
+    </ul>
+    <div class="website-info">
+        新华发行网 2015XXXXX.com   AII Rights Reserved   京ICP备 XXXXXXXXXX号-1  京公网备XXXXXXXXXX
+    </div>
+    <div class="safe-info">
+        可信平台·工商认证·信用企业
+    </div>
+</div>
+<script type="text/javascript" src="../js/jquery.page.js"></script>
+<script type="text/javascript">
+    /*插件api地址:http://www.jq22.com/jquery-info10344*/
+    $(function () {
+        $('#star').raty({score: 3});
+        $("#page").Page({
+            totalPages: 9,//分页总数
+            liNums: 7,//分页的数字按钮数(建议取奇数)
+            firstPage: '首页',//first button name
+            lastPage: '末页',//last button name
+            activeClass: 'activP', //active 类样式定义
+            callBack: function (page) {
+                //console.log(page)
+            }
+        });
+        $(".press-center-top li").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            var _this = $(this).index();
+            $(".press-center-inner ul").hide().eq(_this).show();
+        });
+
+        $('.toggle-nav').mouseover(function () {
+            $(this).find('.dropdown-nav').show();
+        });
+
+        $('.toggle-nav').mouseleave(function () {
+            $(this).find('.dropdown-nav').hide();
+        })
+
+    })
+
+</script>
+</body>
+</html>

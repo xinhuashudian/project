@@ -1,0 +1,891 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>商品列表</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_w6hh4sp38hvvx6r.css">
+    <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+</head>
+
+<body class="book-home-bg">
+<!-- 顶部导航 -->
+<div class="top-nav-wrap">
+    <div class="top-nav-content clearfix">
+        <div class="left">
+            <i class="icon iconfont icon-dingwei"></i>
+            <span>北京</span>
+        </div>
+        <div class="right clearfix">
+            <div class="login-info">
+                <a href="login.html" class="login-btn">您好，请登录</a>
+                <a href="register.html" class="reg-btn">免费注册</a>
+            </div>
+            <a href="user.html" class="dividing-line nav-item">个人中心</a>
+            <a href="javascript:void(0)" class="dividing-line nav-item">APP下载</a>
+            <a href="javascript:void(0)" class="dividing-line nav-item">在线客服</a>
+        </div>
+    </div>
+</div>
+<!-- 搜索 -->
+<div class="index-search-block search-block clearfix">
+    <div class="wrap">
+        <div class="logo-area clearfix">
+            <img src="../images/logo.png" class="logo"/>
+        </div>
+        <div class="search-area">
+            <div class="search-box">
+                <div class="input">
+                    <input type="text">
+                </div>
+                <div class="button iconfont icon-sousuo_sousuo">
+
+                </div>
+            </div>
+            <ul class="hot-search-item clearfix">
+                <li><a href="javascript:void(0)">新华字典</a></li>
+                <li class="hot"><a href="javascript:void(0)">盗墓笔记</a></li>
+                <li><a href="javascript:void(0)">游戏攻略</a></li>
+                <li class="hot"><a href="javascript:void(0)">考研英语</a></li>
+                <li><a href="javascript:void(0)">游戏攻略</a></li>
+                <li><a href="javascript:void(0)">水浒传</a></li>
+                <li class="hot"><a href="javascript:void(0)">哈利波特全集</a></li>
+            </ul>
+        </div>
+        <div class="my-order">
+            <a href="orderList.html">我的订单</a>
+        </div>
+        <div class="shopping-cart">
+            <a href="cart.html">购物车</a>
+        </div>
+    </div>
+</div>
+<!-- 主导航 -->
+<div class="main-nav-wrap">
+    <div class="main-nav clearfix">
+        <div class="dropdown toggle-nav">
+            <div class="dropdown-title clearfix"><i class="iconfont icon-fenlei"></i><span>全部电子书分类</span></div>
+            <div class="dropdown-nav">
+                <div class="block">
+                    <div class="block-title"><a href="">特色分类</a></div>
+                    <ul class="block-item clearfix">
+                        <li><a href="">排行榜</a></li>
+                        <li><a href="">排行榜</a></li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <div class="block-title"><a href="">童书馆</a></div>
+                    <ul class="block-item clearfix">
+                        <li><a href="">0-2</a></li>
+                        <li><a href="">3-6</a></li>
+                        <li><a href="">7-10</a></li>
+                        <li><a href="">11-14</a></li>
+                        <li><a href="">绘本</a></li>
+                        <li><a href="">自然百科</a></li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <div class="block-title"><a href="">文学馆</a></div>
+                    <ul class="block-item clearfix">
+                        <li><a href="">小说</a></li>
+                        <li><a href="">文学</a></li>
+                        <li><a href="">青春</a></li>
+                        <li><a href="">传记</a></li>
+                        <li><a href="">动漫</a></li>
+                        <li><a href="">历史</a></li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <div class="block-title"><a href="">计算机</a></div>
+                    <ul class="block-item clearfix">
+                        <li><a href="">C语言</a></li>
+                        <li><a href="">办公软件</a></li>
+                        <li><a href="">智能</a></li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <div class="block-title"><a href="">计算机</a></div>
+                    <ul class="block-item clearfix">
+                        <li><a href="">C语言</a></li>
+                        <li><a href="">办公软件</a></li>
+                        <li><a href="">智能</a></li>
+                        <li><a href="">C语言</a></li>
+                        <li><a href="">办公软件</a></li>
+                        <li><a href="">智能</a></li>
+                        <li><a href="">C语言</a></li>
+                        <li><a href="">办公软件</a></li>
+                        <li><a href="">智能</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="nav clearfix">
+            <li><a href="">首页</a></li>
+            <li><a href="">预售</a></li>
+            <li><a href="">电子书</a></li>
+            <li><a href="">非出版</a></li>
+            <li><a href="">出版社</a></li>
+            <li><a href="">图书馆</a></li>
+            <li><a href="">图书社群</a></li>
+            <li><a href="">门店频道</a></li>
+            <li><a href="">视频直播</a></li>
+            <li><a href="">特价</a></li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    <div class="breadcrumb">
+        <a href="#">电子书</a>
+        <span>&gt;</span>
+        <a href="#">小说</a><img src="../images/icon-01.png"/><span>&gt;</span>
+        <span class="current">北京理工大学出版社</span><img src="../images/icon-01.png"/>
+        <span class="right-num">共<lable>99</lable>个商品</span>
+    </div>
+    <div class="selectCondition">
+        <dl class="shaixuan">
+            <dt>相关分类:</dt>
+            <dd>
+                <div id="layout" class="layout">
+                    <a href="javascript:void(0)">心理学</a>
+                    <a href="javascript:void(0)">宗教</a>
+                    <a href="javascript:void(0)">哲学</a>
+                    <a href="javascript:void(0)">文化</a>
+                    <a href="javascript:void(0)">政治</a>
+                    <a href="javascript:void(0)">科学</a>
+                    <a href="javascript:void(0)">法律</a>
+                    <a href="javascript:void(0)">国学</a>
+                    <a href="javascript:void(0)">社会学</a>
+                    <a href="javascript:void(0)">教育</a>
+                    <a href="javascript:void(0)">语言文学</a>
+                    <div class="selectmore">
+                    <span>
+                      <lable>更多</lable>
+                      <img src="../images/icon-01.png"/>
+                    </span>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+        <dl class="clearfix">
+            <dt>出版社:</dt>
+            <dd>
+                <div id="layout" class="layout">
+                    <a href="javascript:void(0)">湖南文艺出版社</a>
+                    <a href="javascript:void(0)">浙江理工大学出版社</a>
+                    <a href="javascript:void(0)">北京理工大学出版社</a>
+                    <a href="javascript:void(0)">清华大学出版社</a>
+                    <a href="javascript:void(0)">电子工业大学出版社</a>
+                    <div class="selectmore">
+                    <span>
+                      <lable>添加&nbsp;+</lable>
+                    </span>
+                    <span>
+                      <lable>更多</lable>
+                      <img src="../images/icon-01.png"/>
+                    </span>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+        <dl class="clearfix">
+            <dt>价格:</dt>
+            <dd>
+                <div id="layout" class="layout">
+                    <a href="javascript:void(0)">0-19</a>
+                    <a href="javascript:void(0)">20-39</a>
+                    <a href="javascript:void(0)">40-59</a>
+                    <a href="javascript:void(0)">60-79</a>
+                    <a href="javascript:void(0)">80-99</a>
+                    <a href="javascript:void(0)">100以上</a>
+                    <div class="pricechange">
+                        <input type="text" value="" maxlength="6" title="价格过滤最低价格" onpaste="return false">
+                        <lable>-</lable>
+                        <input type="text" value="" maxlength="6" title="价格过滤最高价格" onpaste="return false">
+                        <button type="submit">确 定</button>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+        <dl class="clearfix">
+            <dt>高级选项:</dt>
+            <dd>
+                <div class="items">
+                    <span class="trigger" onmouseover="overlay('overlayone', 'show');"
+                          onmouseout="overlay('overlayone', 'hide');">包装<span class="icon-btn-1"></span></span>
+                    <span class="trigger" onmouseover="overlay('overlaytwo', 'show');"
+                          onmouseout="overlay('overlaytwo', 'hide');">是否套装<span class="icon-btn-1"></span></span>
+                    <span class="trigger" onmouseover="overlay('overlaythree', 'show');"
+                          onmouseout="overlay('overlaythree', 'hide');">客户评分<span class="icon-btn-1"></span></span>
+                    <span class="trigger" onmouseover="overlay('overlayfour', 'show');"
+                          onmouseout="overlay('overlayfour', 'hide');">折扣<span class="icon-btn-1"></span></span>
+                </div>
+            </dd>
+            <div class="overlay" style="display:none;" id="overlayone" onmouseover="overlay('overlayone', 'show');"
+                 onmouseout="overlay('overlayone', 'hide');">
+                <div class="overlay-inner">
+                    <a class="item" href="#" title="盒装">盒装</a>
+                    <a class="item" href="#" title="牛皮">牛皮</a>
+                    <a class="item" href="#" title="线装">线装</a>
+                </div>
+            </div>
+            <div class="overlay" style="display:none;" id="overlaytwo" onmouseover="overlay('overlaytwo', 'show');"
+                 onmouseout="overlay('overlaytwo', 'hide');">
+                <div class="overlay-inner">
+                    <a class="item" href="#" title="是">是</a>
+                    <a class="item" href="#" title="否">否</a>
+                </div>
+            </div>
+            <div class="overlay" style="display:none;" id="overlaythree" onmouseover="overlay('overlaythree', 'show');"
+                 onmouseout="overlay('overlaythree', 'hide');">
+                <div class="overlay-inner">
+                    <a class="item" href="#" title="非常满意">非常满意</a>
+                    <a class="item" href="#" title="较为满意">较为满意</a>
+                    <a class="item" href="#" title="一般">一般</a>
+                    <a class="item" href="#" title="差">差</a>
+                </div>
+            </div>
+            <div class="overlay" style="display:none;" id="overlayfour" onmouseover="overlay('overlayfour', 'show');"
+                 onmouseout="overlay('overlayfour', 'hide');">
+                <div class="overlay-inner">
+                    <a class="item" href="#" title="1-4折">1-4折</a>
+                    <a class="item" href="#" title="4-8折">4-8折</a>
+                    <a class="item" href="#" title="8-9.9折">8-9.9折</a>
+                    <a class="item" href="#" title="无折扣">无折扣</a>
+                </div>
+            </div>
+        </dl>
+    </div>
+    <div class="goods-content">
+        <div class="left-nav">
+            <p>推荐书籍</p>
+            <div class="left-nav-info left-nav-color2">
+                <ul>
+                    <li onclick="window.location.href='#'">
+                        <div class="goods-img">
+                            <img src="../images/goods01.png"/>
+                        </div>
+                        <div class="goods-name">余罪，我的刑侦笔记</div>
+                        <div class="goods-price">￥100.49</div>
+                    </li>
+                    <li onclick="window.location.href='#'">
+                        <div class="goods-img">
+                            <img src="../images/goods01.png"/>
+                        </div>
+                        <div class="goods-name">余罪，我的刑侦笔记</div>
+                        <div class="goods-price">￥100.49</div>
+                    </li>
+                    <li onclick="window.location.href='#'">
+                        <div class="goods-img">
+                            <img src="../images/goods01.png"/>
+                        </div>
+                        <div class="goods-name">余罪，我的刑侦笔记</div>
+                        <div class="goods-price">￥100.49</div>
+                    </li>
+                </ul>
+            </div>
+            <p>销售排行</p>
+            <div class="left-nav-sale left-nav-color2">
+                <ul>
+                    <li onclick="window.location.href='#'">
+                        <span>1</span>
+                        <div class="goods-img-sale">
+                            <img src="../images/hotsale.png"/>
+                        </div>
+                        <div class="goods-name-sale">
+                            <p class="bold">一本书读懂销售心理学</p>
+                            <p>销量：1159|评论：599</p>
+                            <p class="red">￥32.00</p>
+                        </div>
+                    </li>
+                    <li onclick="window.location.href='#'">
+                        <span>2</span>
+                        <div class="goods-img-sale">
+                            <img src="../images/hotsale.png"/>
+                        </div>
+                        <div class="goods-name-sale">
+                            <p class="bold">一本书读懂销售心理学</p>
+                            <p>销量：1159|评论：599</p>
+                            <p class="red">￥32.00</p>
+                        </div>
+                    </li>
+                    <li onclick="window.location.href='#'">
+                        <span>3</span>
+                        <div class="goods-img-sale">
+                            <img src="../images/hotsale.png"/>
+                        </div>
+                        <div class="goods-name-sale">
+                            <p class="bold">一本书读懂销售心理学</p>
+                            <p>销量：1159|评论：599</p>
+                            <p class="red">￥32.00</p>
+                        </div>
+                    </li>
+                    <li onclick="window.location.href='#'">
+                        <span>4</span>
+                        <div class="goods-img-sale">
+                            <img src="../images/hotsale.png"/>
+                        </div>
+                        <div class="goods-name-sale">
+                            <p class="bold">一本书读懂销售心理学</p>
+                            <p>销量：1159|评论：599</p>
+                            <p class="red">￥32.00</p>
+                        </div>
+                    </li>
+                    <li onclick="window.location.href='#'">
+                        <span>5</span>
+                        <div class="goods-img-sale">
+                            <img src="../images/hotsale.png"/>
+                        </div>
+                        <div class="goods-name-sale">
+                            <p class="bold">一本书读懂销售心理学</p>
+                            <p>销量：1159|评论：599</p>
+                            <p class="red">￥32.00</p>
+                        </div>
+                    </li>
+                    <li onclick="window.location.href='#'">
+                        <span>6</span>
+                        <div class="goods-img-sale">
+                            <img src="../images/hotsale.png"/>
+                        </div>
+                        <div class="goods-name-sale">
+                            <p class="bold">一本书读懂销售心理学</p>
+                            <p>销量：1159|评论：599</p>
+                            <p class="red">￥32.00</p>
+                        </div>
+                    </li>
+                    <li onclick="window.location.href='#'">
+                        <span>7</span>
+                        <div class="goods-img-sale">
+                            <img src="../images/hotsale.png"/>
+                        </div>
+                        <div class="goods-name-sale">
+                            <p class="bold">一本书读懂销售心理学</p>
+                            <p>销量：1159|评论：599</p>
+                            <p class="red">￥32.00</p>
+                        </div>
+                    </li>
+                    <li onclick="window.location.href='#'">
+                        <span>8</span>
+                        <div class="goods-img-sale">
+                            <img src="../images/hotsale.png"/>
+                        </div>
+                        <div class="goods-name-sale">
+                            <p class="bold">一本书读懂销售心理学</p>
+                            <p>销量：1159|评论：599</p>
+                            <p class="red">￥32.00</p>
+                        </div>
+                    </li>
+                    <li onclick="window.location.href='#'">
+                        <span>9</span>
+                        <div class="goods-img-sale">
+                            <img src="../images/hotsale.png"/>
+                        </div>
+                        <div class="goods-name-sale">
+                            <p class="bold">一本书读懂销售心理学</p>
+                            <p>销量：1159|评论：599</p>
+                            <p class="red">￥32.00</p>
+                        </div>
+                    </li>
+                    <li class="lasted" onclick="window.location.href='#'">
+                        <span>10</span>
+                        <div class="goods-img-sale">
+                            <img src="../images/hotsale.png"/>
+                        </div>
+                        <div class="goods-name-sale">
+                            <p class="bold">一本书读懂销售心理学</p>
+                            <p>销量：1159|评论：599</p>
+                            <p class="red">￥32.00</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="goods-nav">
+            <div class="sort-pager">
+                <div id="sortClick">
+                    <a class="sort-type active" href="#">
+                        <span>默认排序</span>
+                    </a>
+                    <a class="sort-type" href="#">
+                        <span>销售</span>
+                    </a>
+                    <a class="sort-type" href="#">
+                        <span>活动</span>
+                    </a>
+                    <a class="sort-type" href="#">
+                        <span>人气</span>
+                    </a>
+                </div>
+                <div class="goods-search"><input type="text" value="" maxlength="6" title="检索" onpaste="return false">
+                    <button type="submit">确定</button>
+                </div>
+                <div class="sort-right">
+                    <div class="css-change">
+                <span class="selected">
+                  <img src="../images/datu.png"/>
+                  <lable>大图</lable>
+                </span>
+                <span>
+                  <img src="../images/listHL.png"/>
+                  <lable>列表</lable>
+                </span>
+                    </div>
+                    <div class="goods-pagenum">
+                        <a href="#"><</a>
+                        <lable>1/9</lable>
+                        <a href="#">></a>
+                    </div>
+                </div>
+            </div>
+            <div class="goods-list">
+                <ul>
+                    <li>
+                        <img src="../images/goods02.png">
+                        <div class="goods-list-info">
+                            <strong>【孙俪推荐】皇帝内经</strong>
+                            <span>已有2人评价&nbsp;|&nbsp;已有3002人购买</span>
+                            <p>￥32.00</p>
+                            <div class="goods-buy">
+                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
+                                                                                name="quantity" value="1" maxlength="4"
+                                                                                onpaste="return false;"><span>-</span>
+                                </div>
+                                <div class="goods-buy-icon"><img src="../images/fav.png"><img src="../images/cart.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/goods02.png">
+                        <div class="goods-list-info">
+                            <strong>【孙俪推荐】皇帝内经</strong>
+                            <span>已有2人评价&nbsp;|&nbsp;已有3002人购买</span>
+                            <p>￥32.00</p>
+                            <div class="goods-buy">
+                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
+                                                                                name="quantity" value="1" maxlength="4"
+                                                                                onpaste="return false;"><span>-</span>
+                                </div>
+                                <div class="goods-buy-icon"><img src="../images/fav.png"><img src="../images/cart.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/goods02.png">
+                        <div class="goods-list-info">
+                            <strong>【孙俪推荐】皇帝内经</strong>
+                            <span>已有2人评价&nbsp;|&nbsp;已有3002人购买</span>
+                            <p>￥32.00</p>
+                            <div class="goods-buy">
+                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
+                                                                                name="quantity" value="1" maxlength="4"
+                                                                                onpaste="return false;"><span>-</span>
+                                </div>
+                                <div class="goods-buy-icon"><img src="../images/fav.png"><img src="../images/cart.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/goods02.png">
+                        <div class="goods-list-info">
+                            <strong>【孙俪推荐】皇帝内经</strong>
+                            <span>已有2人评价&nbsp;|&nbsp;已有3002人购买</span>
+                            <p>￥32.00</p>
+                            <div class="goods-buy">
+                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
+                                                                                name="quantity" value="1" maxlength="4"
+                                                                                onpaste="return false;"><span>-</span>
+                                </div>
+                                <div class="goods-buy-icon"><img src="../images/fav.png"><img src="../images/cart.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/goods02.png">
+                        <div class="goods-list-info">
+                            <strong>【孙俪推荐】皇帝内经</strong>
+                            <span>已有2人评价&nbsp;|&nbsp;已有3002人购买</span>
+                            <p>￥32.00</p>
+                            <div class="goods-buy">
+                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
+                                                                                name="quantity" value="1" maxlength="4"
+                                                                                onpaste="return false;"><span>-</span>
+                                </div>
+                                <div class="goods-buy-icon"><img src="../images/fav.png"><img src="../images/cart.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/goods02.png">
+                        <div class="goods-list-info">
+                            <strong>【孙俪推荐】皇帝内经</strong>
+                            <span>已有2人评价&nbsp;|&nbsp;已有3002人购买</span>
+                            <p>￥32.00</p>
+                            <div class="goods-buy">
+                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
+                                                                                name="quantity" value="1" maxlength="4"
+                                                                                onpaste="return false;"><span>-</span>
+                                </div>
+                                <div class="goods-buy-icon"><img src="../images/fav.png"><img src="../images/cart.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/goods02.png">
+                        <div class="goods-list-info">
+                            <strong>【孙俪推荐】皇帝内经</strong>
+                            <span>已有2人评价&nbsp;|&nbsp;已有3002人购买</span>
+                            <p>￥32.00</p>
+                            <div class="goods-buy">
+                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
+                                                                                name="quantity" value="1" maxlength="4"
+                                                                                onpaste="return false;"><span>-</span>
+                                </div>
+                                <div class="goods-buy-icon"><img src="../images/fav.png"><img src="../images/cart.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/goods02.png">
+                        <div class="goods-list-info">
+                            <strong>【孙俪推荐】皇帝内经</strong>
+                            <span>已有2人评价&nbsp;|&nbsp;已有3002人购买</span>
+                            <p>￥32.00</p>
+                            <div class="goods-buy">
+                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
+                                                                                name="quantity" value="1" maxlength="4"
+                                                                                onpaste="return false;"><span>-</span>
+                                </div>
+                                <div class="goods-buy-icon"><img src="../images/fav.png"><img src="../images/cart.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/goods02.png">
+                        <div class="goods-list-info">
+                            <strong>【孙俪推荐】皇帝内经</strong>
+                            <span>已有2人评价&nbsp;|&nbsp;已有3002人购买</span>
+                            <p>￥32.00</p>
+                            <div class="goods-buy">
+                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
+                                                                                name="quantity" value="1" maxlength="4"
+                                                                                onpaste="return false;"><span>-</span>
+                                </div>
+                                <div class="goods-buy-icon"><img src="../images/fav.png"><img src="../images/cart.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/goods02.png">
+                        <div class="goods-list-info">
+                            <strong>【孙俪推荐】皇帝内经</strong>
+                            <span>已有2人评价&nbsp;|&nbsp;已有3002人购买</span>
+                            <p>￥32.00</p>
+                            <div class="goods-buy">
+                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
+                                                                                name="quantity" value="1" maxlength="4"
+                                                                                onpaste="return false;"><span>-</span>
+                                </div>
+                                <div class="goods-buy-icon"><img src="../images/fav.png"><img src="../images/cart.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/goods02.png">
+                        <div class="goods-list-info">
+                            <strong>【孙俪推荐】皇帝内经</strong>
+                            <span>已有2人评价&nbsp;|&nbsp;已有3002人购买</span>
+                            <p>￥32.00</p>
+                            <div class="goods-buy">
+                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
+                                                                                name="quantity" value="1" maxlength="4"
+                                                                                onpaste="return false;"><span>-</span>
+                                </div>
+                                <div class="goods-buy-icon"><img src="../images/fav.png"><img src="../images/cart.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/goods02.png">
+                        <div class="goods-list-info">
+                            <strong>【孙俪推荐】皇帝内经</strong>
+                            <span>已有2人评价&nbsp;|&nbsp;已有3002人购买</span>
+                            <p>￥32.00</p>
+                            <div class="goods-buy">
+                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
+                                                                                name="quantity" value="1" maxlength="4"
+                                                                                onpaste="return false;"><span>-</span>
+                                </div>
+                                <div class="goods-buy-icon"><img src="../images/fav.png"><img src="../images/cart.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/goods02.png">
+                        <div class="goods-list-info">
+                            <strong>【孙俪推荐】皇帝内经</strong>
+                            <span>已有2人评价&nbsp;|&nbsp;已有3002人购买</span>
+                            <p>￥32.00</p>
+                            <div class="goods-buy">
+                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
+                                                                                name="quantity" value="1" maxlength="4"
+                                                                                onpaste="return false;"><span>-</span>
+                                </div>
+                                <div class="goods-buy-icon"><img src="../images/fav.png"><img src="../images/cart.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/goods02.png">
+                        <div class="goods-list-info">
+                            <strong>【孙俪推荐】皇帝内经</strong>
+                            <span>已有2人评价&nbsp;|&nbsp;已有3002人购买</span>
+                            <p>￥32.00</p>
+                            <div class="goods-buy">
+                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
+                                                                                name="quantity" value="1" maxlength="4"
+                                                                                onpaste="return false;"><span>-</span>
+                                </div>
+                                <div class="goods-buy-icon"><img src="../images/fav.png"><img src="../images/cart.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/goods02.png">
+                        <div class="goods-list-info">
+                            <strong>【孙俪推荐】皇帝内经</strong>
+                            <span>已有2人评价&nbsp;|&nbsp;已有3002人购买</span>
+                            <p>￥32.00</p>
+                            <div class="goods-buy">
+                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
+                                                                                name="quantity" value="1" maxlength="4"
+                                                                                onpaste="return false;"><span>-</span>
+                                </div>
+                                <div class="goods-buy-icon"><img src="../images/fav.png"><img src="../images/cart.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/goods02.png">
+                        <div class="goods-list-info">
+                            <strong>【孙俪推荐】皇帝内经</strong>
+                            <span>已有2人评价&nbsp;|&nbsp;已有3002人购买</span>
+                            <p>￥32.00</p>
+                            <div class="goods-buy">
+                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
+                                                                                name="quantity" value="1" maxlength="4"
+                                                                                onpaste="return false;"><span>-</span>
+                                </div>
+                                <div class="goods-buy-icon"><img src="../images/fav.png"><img src="../images/cart.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/goods02.png">
+                        <div class="goods-list-info">
+                            <strong>【孙俪推荐】皇帝内经</strong>
+                            <span>已有2人评价&nbsp;|&nbsp;已有3002人购买</span>
+                            <p>￥32.00</p>
+                            <div class="goods-buy">
+                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
+                                                                                name="quantity" value="1" maxlength="4"
+                                                                                onpaste="return false;"><span>-</span>
+                                </div>
+                                <div class="goods-buy-icon"><img src="../images/fav.png"><img src="../images/cart.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/goods02.png">
+                        <div class="goods-list-info">
+                            <strong>【孙俪推荐】皇帝内经</strong>
+                            <span>已有2人评价&nbsp;|&nbsp;已有3002人购买</span>
+                            <p>￥32.00</p>
+                            <div class="goods-buy">
+                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
+                                                                                name="quantity" value="1" maxlength="4"
+                                                                                onpaste="return false;"><span>-</span>
+                                </div>
+                                <div class="goods-buy-icon"><img src="../images/fav.png"><img src="../images/cart.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="pageselect">
+                <div class="pagination">
+                    <span class="previousPage pagebtn"><</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>...</span>
+                    <span>30</span>
+                    <span class="nextPage pagebtn">></span>
+                    <lable>共30页</lable>
+                    <div class="paggnum-inp">
+                        到<input type="text" value="100" maxlength="4" onpaste="return false;"/>页
+                        <button>确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+<!--通栏广告-->
+<div class="full-ad">
+    <a href=""><img src="../images/fullad.jpg"/></a>
+</div>
+<!--标志-->
+<div class="icon-item clearfix">
+    <div class="wrap">
+        <div class="icon-box">
+            <img src="../images/g.png"/>
+            <div class="text">
+                <p>正品保障</p>
+                <p>品牌厂商</p>
+                <p>品牌厂商</p>
+            </div>
+        </div>
+        <div class="icon-box">
+            <img src="../images/g.png"/>
+            <div class="text">
+                <p>正品保障</p>
+                <p>品牌厂商</p>
+                <p>品牌厂商</p>
+            </div>
+        </div>
+        <div class="icon-box">
+            <img src="../images/g.png"/>
+            <div class="text">
+                <p>正品保障</p>
+                <p>品牌厂商</p>
+                <p>品牌厂商</p>
+            </div>
+        </div>
+        <div class="icon-box">
+            <img src="../images/g.png"/>
+            <div class="text">
+                <p>正品保障</p>
+                <p>品牌厂商</p>
+                <p>品牌厂商</p>
+            </div>
+        </div>
+        <div class="icon-box">
+            <img src="../images/g.png"/>
+            <div class="text">
+                <p>正品保障</p>
+                <p>品牌厂商</p>
+                <p>品牌厂商</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--帮助-->
+<div class="help-item clearfix">
+    <div class="wrap clearfix">
+        <div class="help-box">
+            <h3>新手入门</h3>
+            <a href="" class="help-url">购物保障</a>
+            <a href="" class="help-url">服务协议</a>
+            <a href="" class="help-url">发票说明</a>
+        </div>
+        <div class="help-box">
+            <h3>常见问题</h3>
+            <a href="" class="help-url">优惠券使用</a>
+        </div>
+        <div class="help-box">
+            <h3>配色说明</h3>
+            <a href="" class="help-url">配送时间</a>
+            <a href="" class="help-url">配送费用</a>
+            <a href="" class="help-url">配送范围</a>
+        </div>
+        <div class="help-box">
+            <h3>支付方式</h3>
+            <a href="" class="help-url">在线支付</a>
+        </div>
+        <div class="help-box">
+            <h3>售后服务</h3>
+            <a href="" class="help-url">品质保障</a>
+            <a href="" class="help-url">退换货政策</a>
+            <a href="" class="help-url">退换货流程</a>
+        </div>
+    </div>
+
+</div>
+<!--二维码-->
+<div class="qrcode-item clearfix">
+    <div class="wrap clearfix">
+        <div class="qrcode">
+            <img src="../images/c.png">
+            <span>xinhuahulian.com</span>
+        </div>
+        <div class="qrcode">
+            <img src="../images/c.png">
+            <span>xinhuahulian.com</span>
+        </div>
+        <div class="qrcode">
+            <img src="../images/c.png">
+            <span>xinhuahulian.com</span>
+        </div>
+    </div>
+</div>
+<!--底部导航-->
+<div class="bottom-nav">
+    <ul class="nav-item clearfix">
+        <li><a href="">公司简介</a></li>
+        <li><a href="">团队管理</a></li>
+        <li><a href="">媒体报道</a></li>
+        <li><a href="">联系我吗</a></li>
+        <li><a href="">招贤纳士</a></li>
+    </ul>
+    <div class="website-info">
+        新华发行网 2015XXXXX.com   AII Rights Reserved   京ICP备 XXXXXXXXXX号-1  京公网备XXXXXXXXXX
+    </div>
+    <div class="safe-info">
+        可信平台·工商认证·信用企业
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#sortClick a").click(function () {
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+        $('.toggle-nav').mouseover(function () {
+            $(this).find('.dropdown-nav').show();
+        });
+
+        $('.toggle-nav').mouseleave(function () {
+            $(this).find('.dropdown-nav').hide();
+        })
+    });
+    function overlay(obj, sType) {
+        var oDiv = document.getElementById(obj);
+        if (sType == 'show') {
+            oDiv.style.display = 'block';
+        }
+        if (sType == 'hide') {
+            oDiv.style.display = 'none';
+        }
+
+    }
+</script>
+</html>

@@ -1,0 +1,1065 @@
+a {
+  text-decoration: none;
+  outline: none;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.container * {
+  box-sizing: content-box;
+}
+.recomm {
+  margin-top: 35px;
+}
+.recomm .recomm-header {
+  height: 50px;
+  line-height: 50px;
+  background: #c3c0bb;
+  color: #fff;
+  font-size: 20px;
+  padding-left: 36px;
+  box-shadow: 0px 0px 10px #b5afaf;
+}
+.recomm .recomm-center {
+  background: #fff;
+  padding: 0px 36px 60px 36px;
+  box-shadow: 1px 1px 10px #b5afaf;
+}
+.recomm .recomm-center form {
+  padding: 30px 0;
+  border-bottom: 1px solid #c9c9cb;
+  overflow: hidden;
+}
+.recomm .recomm-center form .form-group {
+  float: left;
+  margin-right: 43px;
+}
+.recomm .recomm-center form .form-group label {
+  color: #333;
+}
+.recomm .recomm-center form .form-group select {
+  width: 70px;
+}
+.recomm .recomm-center form .form-group input {
+  vertical-align: middle;
+}
+.recomm .recomm-center form button {
+  background: #ff9b2f;
+  border: none;
+  color: #fff;
+  margin-left: 20px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.recomm .recomm-center .recomm-list li {
+  padding: 30px 0;
+  border-bottom: dashed 1px #ccc;
+}
+.recomm .recomm-center .recomm-list li .recomm-list-box {
+  overflow: hidden;
+}
+.recomm .recomm-center .recomm-list li .recomm-list-box .box-left {
+  float: left;
+}
+.recomm .recomm-center .recomm-list li .recomm-list-box .box-left img {
+  border: 1px solid #e4e4e4;
+  display: block;
+  float: left;
+  margin-right: 15px;
+}
+.recomm .recomm-center .recomm-list li .recomm-list-box .box-left .box-left-info {
+  float: left;
+  margin-top: 8px;
+}
+.recomm .recomm-center .recomm-list li .recomm-list-box .box-left .box-left-info h6 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.recomm .recomm-center .recomm-list li .recomm-list-box .box-left .box-left-info p {
+  color: #ff3e3e;
+  margin-bottom: 10px;
+}
+.recomm .recomm-center .recomm-list li .recomm-list-box .box-left .box-left-info .pinjia {
+  display: block;
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.recomm .recomm-center .recomm-list li .recomm-list-box .box-left .box-left-info span {
+  display: block;
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.recomm .recomm-center .recomm-list li .recomm-list-box .box-right {
+  float: right;
+  position: relative;
+}
+.recomm .recomm-center .recomm-list li .recomm-list-box .box-right .right-number {
+  position: absolute;
+  top: 56px;
+  right: 150px;
+  width: 95px;
+  overflow: hidden;
+}
+.recomm .recomm-center .recomm-list li .recomm-list-box .box-right .right-number .add {
+  display: block;
+  float: left;
+  margin-right: 6px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+.recomm .recomm-center .recomm-list li .recomm-list-box .box-right .right-number .reduce {
+  display: block;
+  float: left;
+  margin-right: 6px;
+  margin-top: 3px;
+  cursor: pointer;
+  float: right;
+  margin-right: 3px;
+}
+.recomm .recomm-center .recomm-list li .recomm-list-box .box-right .right-number input {
+  width: 46px;
+  height: 14px;
+  text-align: center;
+  color: #999;
+  line-height: 14px;
+}
+.recomm .recomm-center .recomm-list li .recomm-list-box .box-right .right-like {
+  margin-top: 55px;
+}
+.recomm .recomm-center .recomm-list li .recomm-list-box .box-right .right-like .like {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.shop-recomm {
+  margin-top: 20px;
+}
+.shop-recomm .shop-recomm-header .recomm-header {
+  background: #665999;
+}
+.shop-recomm .shop-center {
+  background: #fff;
+  padding: 20px 0;
+  box-shadow: 1px 1px 10px #b5afaf;
+}
+.shop-recomm .shop-center .slider .bx-wrapper {
+  max-width: 885px;
+}
+.shop-recomm .shop-center .slider .slide img {
+  border: 1px solid #cfcfcf;
+  margin-bottom: 8px;
+}
+.shop-recomm .shop-center .slider .slide p {
+  color: #281818;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.shop-recomm .shop-center .slider .slide span {
+  display: block;
+  overflow: hidden;
+}
+.shop-recomm .shop-center .slider .slide span label {
+  float: left;
+  color: #999;
+  text-decoration: line-through;
+}
+.shop-recomm .shop-center .slider .slide i {
+  font-style: normal;
+  float: left;
+  color: #ff4242;
+  font-size: 18px;
+  margin-left: 20px;
+}
+.press {
+  margin-top: 35px;
+}
+.press .press-top {
+  display: block;
+}
+.press .press-box {
+  margin: 20px auto 0;
+  background: #fff;
+  padding: 0 36px;
+  box-shadow: 1px 1px 6px #bdb2b2;
+}
+.press .press-box .press-header {
+  overflow: hidden;
+  padding: 30px 0;
+  border-bottom: 1px solid #ededed;
+}
+.press .press-box .press-header .press-header-left {
+  float: left;
+  overflow: hidden;
+}
+.press .press-box .press-header .press-header-left .left-top {
+  display: block;
+  float: left;
+  margin-right: 20px;
+  border: 1px solid #cfcfcf;
+}
+.press .press-box .press-header .press-header-left .press-header-left-info {
+  float: left;
+  margin-top: 16px;
+}
+.press .press-box .press-header .press-header-left .press-header-left-info h6 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #333;
+  margin-bottom: 12px;
+}
+.press .press-box .press-header .press-header-left .press-header-left-info div {
+  margin-bottom: 12px;
+  overflow: hidden;
+  position: relative;
+}
+.press .press-box .press-header .press-header-left .press-header-left-info div span {
+  color: #666;
+  font-size: 14px;
+}
+.press .press-box .press-header .press-header-left .press-header-left-info div span img {
+  margin-left: 12px;
+  vertical-align: bottom;
+}
+.press .press-box .press-header .press-header-right {
+  float: right;
+}
+.press .press-box .press-header .press-header-right a {
+  display: block;
+  padding: 6px 38px;
+  color: #ff9b2f;
+  border: 1px solid #ff9b2f;
+  border-radius: 10px;
+  margin-top: 45px;
+}
+.press .press-box .press-header .press-header-right a:hover {
+  color: #fff;
+  background: #ff9b2f;
+}
+.press .press-box .press-center .press-center-top {
+  margin-top: 25px;
+}
+.press .press-box .press-center .press-center-top ul {
+  overflow: hidden;
+}
+.press .press-box .press-center .press-center-top ul li {
+  float: left;
+  margin-right: 40px;
+  font-size: 16px;
+  color: #333;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+.press .press-box .press-center .press-center-top ul .active {
+  color: #ff9b2f;
+  border-bottom: 2px solid #ff9b2f;
+}
+.press .press-box .press-center .press-center-inner {
+  margin-top: 25px;
+  width: 1010px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.press .press-box .press-center .press-center-inner ul {
+  width: 1020px;
+  overflow: hidden;
+  display: none;
+}
+.press .press-box .press-center .press-center-inner ul li {
+  float: left;
+  margin-right: 68px;
+  margin-bottom: 38px;
+}
+.press .press-box .press-center .press-center-inner ul li a {
+  display: block;
+}
+.press .press-box .press-center .press-center-inner ul li a .inner-img {
+  border: 1px solid #cfcfcf;
+  margin-bottom: 15px;
+}
+.press .press-box .press-center .press-center-inner ul li p {
+  color: #333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 15px;
+}
+.press .press-box .press-center .press-center-inner ul li .cuxiao {
+  overflow: hidden;
+}
+.press .press-box .press-center .press-center-inner ul li .cuxiao span {
+  color: #666;
+  font-size: 14px;
+}
+.press .press-box .press-center .press-center-inner ul li .cuxiao span i {
+  color: #ff7200;
+  font-style: normal;
+  font-size: 18px;
+}
+.press .press-box .press-center .press-center-inner ul li .cuxiao img {
+  float: right;
+}
+.report .report-box {
+  float: right;
+  width: 794px;
+  background: #fff;
+  padding-bottom: 160px;
+}
+.report .report-box .report-header {
+  padding: 20px 0;
+  margin: 0 36px;
+  font-size: 24px;
+  color: #333;
+  border-bottom: 1px solid #ebebeb;
+}
+.report .report-box .report-list {
+  padding: 38px 0;
+}
+.report .report-box .report-list ul {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 560px;
+}
+.report .report-box .report-list ul li {
+  float: left;
+  padding: 15px 0;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+.report .report-box .report-list ul li i {
+  display: block;
+  width: 140px;
+  height: 3px;
+  background: #f2f2f2;
+}
+.report .report-box .report-list ul li span {
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  border-radius: 26px;
+  background: #c8c8c8;
+  color: #fff;
+  left: 50%;
+  top: 3px;
+  z-index: 99;
+  margin-left: -13px;
+}
+.report .report-box .report-list ul li p {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #666;
+}
+.report .report-box .report-list ul .active i {
+  background: #f3474e;
+}
+.report .report-box .report-list ul .active span {
+  background: #f3474e;
+}
+.report form {
+  padding-left: 118px;
+}
+.report form .form-group {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.report form .form-group label {
+  float: left;
+  width: 145px;
+  color: #333;
+}
+.report form .form-group .report-lx {
+  float: left;
+  width: 498px;
+}
+.report form .form-group .report-lx .report-checkbox {
+  float: left;
+  width: 160px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.report form .form-group .report-lx .report-checkbox img {
+  vertical-align: bottom;
+  margin-right: 6px;
+}
+.report form .form-group .report-lx .report-checkbox span {
+  color: #333;
+}
+.report form .form-group .report-inner {
+  float: left;
+  width: 498px;
+  width: 515px;
+  height: 217px;
+  background: #f7f7f7;
+  padding: 12px 10px;
+  border: 1px solid #c3c3c3;
+}
+.report form .form-group .report-inner .report-checkbox {
+  float: left;
+  width: 160px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.report form .form-group .report-inner .report-checkbox img {
+  vertical-align: bottom;
+  margin-right: 6px;
+}
+.report form .form-group .report-inner .report-checkbox span {
+  color: #333;
+}
+.report form .form-group .report-inner ul {
+  overflow: hidden;
+}
+.report form .form-group .report-inner ul li {
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+.report form .form-group .report-inner ul li img {
+  border: 1px solid #e2e2e2;
+}
+.report form .form-group .report-inner ul li p {
+  color: #333;
+  font-size: 14px;
+  text-overflow: inherit;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.report form button {
+  border: none;
+  padding: 4px 28px;
+  color: #FFFFFF;
+  background: #2f91ff;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 60px;
+}
+.report form button:hover {
+  background: #3182de;
+}
+.report .report-success {
+  text-align: center;
+}
+.report .report-success img {
+  vertical-align: bottom;
+}
+.report .report-success span {
+  color: #333333;
+  font-weight: bold;
+}
+.invoice .invoice-box {
+  float: right;
+  width: 794px;
+  background: #fff;
+  padding-bottom: 160px;
+  box-shadow: 0px 0px 10px #b5afaf;
+}
+.invoice .invoice-box .invoice-header {
+  height: 50px;
+  line-height: 50px;
+  background: #c3c0bb;
+  color: #fff;
+  font-size: 20px;
+  padding-left: 36px;
+}
+.invoice .invoice-box .invoice-center .center-top {
+  margin-top: 40px;
+}
+.invoice .invoice-box .invoice-center .center-top ul {
+  overflow: hidden;
+  padding-bottom: 15px;
+  border-bottom: 4px solid #e8e8e8;
+}
+.invoice .invoice-box .invoice-center .center-top ul li {
+  float: left;
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+}
+.invoice .invoice-box .invoice-center .center-inner .center-inner-item {
+  padding: 25px 0 15px 0;
+  overflow: hidden;
+  border-bottom: 1px solid #f2f2f2;
+}
+.invoice .invoice-box .invoice-center .center-inner .center-inner-item .inner-item-top {
+  height: 90px;
+}
+.invoice .invoice-box .invoice-center .center-inner .center-inner-item .inner-item-top .invoice-info {
+  width: 45%;
+  float: left;
+  overflow: hidden;
+}
+.invoice .invoice-box .invoice-center .center-inner .center-inner-item .inner-item-top .invoice-info img {
+  display: block;
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin-left: 20px;
+  margin-right: 12px;
+}
+.invoice .invoice-box .invoice-center .center-inner .center-inner-item .inner-item-top .invoice-info div {
+  float: left;
+  margin-top: 12px;
+  margin-right: 60px;
+}
+.invoice .invoice-box .invoice-center .center-inner .center-inner-item .inner-item-top .invoice-info div p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.invoice .invoice-box .invoice-center .center-inner .center-inner-item .inner-item-top .invoice-info div span {
+  color: #666;
+  font-size: 14px;
+}
+.invoice .invoice-box .invoice-center .center-inner .center-inner-item .inner-item-top .invoice-info i {
+  display: block;
+  margin-top: 30px;
+  font-style: normal;
+  color: #666666;
+  font-size: 12px;
+}
+.invoice .invoice-box .invoice-center .center-inner .center-inner-item .inner-item-top .invoice-type {
+  float: left;
+  width: 22%;
+  margin-top: 25px;
+  text-align: center;
+}
+.invoice .invoice-box .invoice-center .center-inner .center-inner-item .inner-item-top .invoice-type span {
+  color: #666666;
+  font-size: 14px;
+}
+.invoice .invoice-box .invoice-center .center-inner .center-inner-item .inner-item-top .invoice-type img {
+  vertical-align: middle;
+}
+.invoice .invoice-box .invoice-center .center-inner .center-inner-item .inner-item-top .invoice-state {
+  float: left;
+  width: 16%;
+  margin-top: 25px;
+  text-align: center;
+}
+.invoice .invoice-box .invoice-center .center-inner .center-inner-item .inner-item-top .invoice-state span {
+  color: #666666;
+  font-size: 14px;
+}
+.invoice .invoice-box .invoice-center .center-inner .center-inner-item .inner-item-top .invoice-operation {
+  float: left;
+  width: 16%;
+  margin-top: 25px;
+  text-align: center;
+}
+.invoice .invoice-box .invoice-center .center-inner .center-inner-item .inner-item-top .invoice-operation span {
+  color: #666666;
+  font-size: 14px;
+}
+.invoice .invoice-box .invoice-center .center-inner .center-inner-item .inner-item-top .invoice-operation a {
+  color: #666666;
+  font-size: 14px;
+}
+.invoice .invoice-box .invoice-center .center-inner .center-inner-item .order {
+  width: 794px;
+  text-align: right;
+  padding-top: 15px;
+  border-top: 1px solid #f2f2f2;
+}
+.invoice .invoice-box .invoice-center .center-inner .center-inner-item .order span {
+  margin-right: 40px;
+  color: #666666;
+  font-size: 14px;
+}
+.friend .friend-box {
+  float: right;
+  width: 794px;
+  background: #fff;
+  padding-bottom: 160px;
+  box-shadow: 0px 0px 10px #b5afaf;
+}
+.friend .friend-box .friend-header {
+  height: 50px;
+  line-height: 50px;
+  background: #c3c0bb;
+  color: #fff;
+  font-size: 20px;
+  padding-left: 36px;
+}
+.friend .friend-box .friend-center .friend-list {
+  overflow: hidden;
+  text-align: right;
+  margin: 20px 20px 40px 20px;
+}
+.friend .friend-box .friend-center .friend-list a {
+  padding: 6px 12px;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 12px;
+  display: inline-block;
+}
+.friend .friend-box .friend-center .friend-list a:hover {
+  background: #000;
+}
+.friend .friend-box .friend-center .friend-item {
+  padding: 0 20px;
+}
+.friend .friend-box .friend-center .friend-item ul {
+  overflow: hidden;
+}
+.friend .friend-box .friend-center .friend-item ul li {
+  float: left;
+  overflow: hidden;
+  display: block;
+  width: 375px;
+  margin-bottom: 35px;
+}
+.friend .friend-box .friend-center .friend-item ul li .friend-user {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #e4e4e4;
+  float: left;
+  margin-right: 15px;
+}
+.friend .friend-box .friend-center .friend-item ul li .friend-info {
+  float: left;
+}
+.friend .friend-box .friend-center .friend-item ul li .friend-info .liuyan {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.friend .friend-box .friend-center .friend-item ul li .friend-info .liuyan h6 {
+  color: #333;
+  float: left;
+  font-size: 16px;
+  font-weight: normal;
+  margin-right: 20px;
+}
+.friend .friend-box .friend-center .friend-item ul li .friend-info .liuyan img {
+  float: left;
+  display: block;
+  width: 90px;
+}
+.friend .friend-box .friend-center .friend-item ul li a {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #3e79ff;
+}
+.friend .friend-box .friend-center .friend-item ul li .del-friend {
+  overflow: hidden;
+  margin-top: 8px;
+  cursor: pointer;
+}
+.friend .friend-box .friend-center .friend-item ul li .del-friend img {
+  display: block;
+  float: left;
+  margin-right: 6px;
+}
+.friend .friend-box .friend-center .friend-item ul li .del-friend span {
+  display: block;
+  float: left;
+  color: #666;
+  font-size: 14px;
+}
+.friend .friend-box .friend-center .friend-item ul li h6 {
+  color: #333;
+  font-size: 16px;
+  font-weight: normal;
+  margin-right: 20px;
+  margin-bottom: 4px;
+}
+.friend .friend-box .friend-center .friend-item ul li span {
+  color: #666;
+  font-size: 14px;
+}
+.friend .friend-box .friend-center .friend-item ul li .friend-sh {
+  overflow: hidden;
+}
+.friend .friend-box .friend-center .friend-item ul li .friend-sh a {
+  display: block;
+  float: left;
+  padding: 4px 10px;
+  color: #ffaa3c;
+  border: 1px solid #ffaa3c;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 25px;
+}
+.friend .friend-box .friend-center .friend-item ul li .friend-sh a:hover {
+  background: #ffaa3c;
+  color: #fff;
+}
+.suggestion .suggestion-box {
+  float: right;
+  width: 794px;
+  background: #fff;
+  padding-bottom: 60px;
+  box-shadow: 0px 0px 10px #b5afaf;
+}
+.suggestion .suggestion-box .suggestion-header {
+  height: 50px;
+  line-height: 50px;
+  background: #f5f5f5;
+  color: #333;
+  font-size: 20px;
+  padding-left: 36px;
+}
+.suggestion .suggestion-box .suggestion-header a {
+  display: block;
+  float: right;
+  font-size: 12px;
+  color: #fff;
+  width: 100px;
+  height: 26px;
+  line-height: 26px;
+  background: #ff9b2f;
+  text-align: center;
+  margin: 12px 20px 0 0;
+}
+.suggestion .suggestion-box .suggestion-header a:hover {
+  background: #e08b2e;
+}
+.suggestion .suggestion-box .suggestion-center {
+  padding: 35px;
+}
+.suggestion .suggestion-box .suggestion-center table {
+  border: 1px solid #cbcbcb;
+  border-collapse: collapse;
+}
+.suggestion .suggestion-box .suggestion-center table thead th {
+  border: 1px solid #cbcbcb;
+  padding: 18px 0;
+  text-align: center;
+  font-weight: normal;
+  color: #666;
+  font-size: 14px;
+}
+.suggestion .suggestion-box .suggestion-center table tbody td {
+  text-align: center;
+  border: 1px solid #cbcbcb;
+  font-weight: normal;
+  color: #666;
+  padding: 10px 2px;
+  font-size: 14px;
+}
+.bind .bind-box {
+  float: right;
+  width: 794px;
+  background: #fff;
+}
+.bind .bind-box .bind-mokuai {
+  padding-bottom: 60px;
+  margin: 20px 20px 25px 20px;
+  border: 1px solid #d9d9d9;
+}
+.bind .bind-box .bind-mokuai .bind-header {
+  height: 50px;
+  line-height: 50px;
+  background: #f5f5f5;
+  color: #333;
+  font-size: 20px;
+  padding-left: 36px;
+}
+.bind .bind-box .bind-mokuai .bind-center .bind-list {
+  margin-top: 2px;
+  overflow: hidden;
+}
+.bind .bind-box .bind-mokuai .bind-center .bind-list a {
+  display: block;
+  float: left;
+  padding: 4px 30px;
+  color: #FFFFFF;
+  background: #c3c0bb;
+  margin-right: 4px;
+}
+.bind .bind-box .bind-mokuai .bind-center .bind-list .active {
+  background: #000;
+}
+.bind .bind-box .bind-mokuai .bind-center .bind-item {
+  display: none;
+  padding-left: 30px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.bind .bind-box .bind-mokuai .bind-center .bind-item span {
+  display: block;
+  color: #333;
+  font-size: 14px;
+}
+.bind .bind-box .bind-mokuai .bind-center .bind-item a {
+  display: block;
+  color: #FFFFFF;
+  float: left;
+  background: #fa993b;
+  padding: 4px 12px;
+  border-radius: 5px;
+  margin-top: 90px;
+  font-size: 14px;
+}
+.bind .bind-box .bind-mokuai .bind-center .bind-item a:hover {
+  background: #dc8633;
+}
+.bind .bind-box .bind-mokuai form {
+  padding: 30px;
+}
+.bind .bind-box .bind-mokuai form .form-group {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.bind .bind-box .bind-mokuai form .form-group label {
+  display: block;
+  float: left;
+  margin-top: 2px;
+  margin-right: 6px;
+  color: #333;
+  font-size: 14px;
+}
+.bind .bind-box .bind-mokuai form .form-group .bind-books {
+  float: left;
+}
+.bind .bind-box .bind-mokuai form .form-group .bind-books ul {
+  overflow: hidden;
+  width: 380px;
+}
+.bind .bind-box .bind-mokuai form .form-group .bind-books ul li {
+  float: left;
+  cursor: pointer;
+  width: 80px;
+  text-align: center;
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #838383;
+  background: #e7e7e7;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.bind .bind-box .bind-mokuai form .form-group .bind-books ul .active {
+  background: #615959;
+  color: #fff;
+}
+.bind .bind-box .bind-mokuai form .form-group textarea {
+  width: 440px;
+  resize: none;
+  height: 150px;
+  margin-top: 12px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  border-color: #e2e2e2;
+}
+.bind .bind-box .bind-mokuai form button {
+  border: none;
+  padding: 4px 28px;
+  background: #fa993b;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.bind .bind-box .bind-mokuai form button:hover {
+  background: #dc8633;
+}
+.bask .bask-box {
+  float: right;
+  width: 794px;
+}
+.bask .bask-box .bask-mokuai {
+  background: #fff;
+  padding: 0 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-top: 4px solid #f3474e;
+}
+.bask .bask-box .bask-mokuai .bask-header {
+  height: 64px;
+  line-height: 70px;
+  color: #222;
+  font-size: 18px;
+  border-bottom: 1px solid #d7d7d7;
+}
+.bask .bask-box .bask-mokuai .bask-book {
+  overflow: hidden;
+  position: relative;
+  padding: 25px 0;
+  margin-bottom: 20px;
+  border-bottom: dashed 1px #9a9a9a;
+}
+.bask .bask-box .bask-mokuai .bask-book .bask-book-img {
+  display: block;
+  float: left;
+  width: 180px;
+  height: 180px;
+  margin-right: 22px;
+  border: 1px solid #e1e1e1;
+}
+.bask .bask-box .bask-mokuai .bask-book .bask-book-info {
+  margin-top: 58px;
+}
+.bask .bask-box .bask-mokuai .bask-book .bask-book-info p {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+.bask .bask-box .bask-mokuai .bask-book .bask-book-info span {
+  color: #666;
+  font-size: 16px;
+}
+.bask .bask-box .bask-mokuai .bask-book .bask-book-info span i {
+  font-style: normal;
+  font-size: 18px;
+  color: #ff7200;
+}
+.bask .bask-box .bask-mokuai .bask-book .sq {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  border: 1px solid #f3474e;
+  padding: 4px 8px;
+  color: #f54149;
+  font-size: 14px;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.bask .bask-box .bask-mokuai .bask-book .sq .sqs {
+  display: block;
+  float: right;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+.bask .bask-box .bask-mokuai .bask-book .sq .zk {
+  display: none;
+  float: right;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group {
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group label {
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group label img {
+  vertical-align: super;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner {
+  float: left;
+  width: 675px;
+  background: #f3f3f3;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box {
+  margin: 20px 25px 35px 25px;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .basl-biaoqian {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .basl-biaoqian span {
+  display: block;
+  float: left;
+  font-size: 14px;
+  padding: 4px 12px;
+  color: #333333;
+  background: #FFFFFF;
+  border-radius: 6px;
+  margin-right: 12px;
+  cursor: pointer;
+  border: 1px solid #c3c3c3;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .basl-biaoqian .active {
+  border-color: #f54149;
+  color: #f54149;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .basl-biaoqian img {
+  display: block;
+  float: left;
+  margin-top: 4px;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .bask-enter {
+  position: relative;
+  border: 1px solid #b5b5b5;
+  margin-bottom: 15px;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .bask-enter textarea {
+  width: 100%;
+  resize: none;
+  height: 130px;
+  border: none;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .bask-enter p {
+  height: 30px;
+  line-height: 30px;
+  color: #a28c7e;
+  font-size: 14px;
+  background: #f2efea;
+  text-align: right;
+  padding-right: 20px;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .bask-addimg p {
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .bask-addimg .bask-addimg {
+  overflow: hidden;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .bask-addimg .bask-addimg img {
+  display: block;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+}
+.bask .bask-box .bask-item {
+  padding-top: 25px;
+  width: 755px;
+  padding-bottom: 70px;
+  overflow: hidden;
+}
+.bask .bask-box .bask-item ul {
+  width: 790px;
+  overflow: hidden;
+}
+.bask .bask-box .bask-item ul li {
+  float: left;
+  margin-right: 35px;
+  margin-bottom: 38px;
+}
+.bask .bask-box .bask-item ul li a {
+  display: block;
+}
+.bask .bask-box .bask-item ul li a .inner-img {
+  display: block;
+  width: 160px;
+  height: 160px;
+  border: 1px solid #cfcfcf;
+  margin-bottom: 15px;
+}
+.bask .bask-box .bask-item ul li p {
+  color: #333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 15px;
+}
+.bask .bask-box .bask-item ul li .cuxiao {
+  overflow: hidden;
+}
+.bask .bask-box .bask-item ul li .cuxiao span {
+  color: #666;
+  font-size: 14px;
+}
+.bask .bask-box .bask-item ul li .cuxiao span i {
+  color: #ff7200;
+  font-style: normal;
+  font-size: 18px;
+}
+.bask .bask-box .bask-item ul li .cuxiao img {
+  float: right;
+}
