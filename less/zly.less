@@ -572,7 +572,6 @@ input[type="button"], input[type="submit"], input[type="reset"] {
             }
         }
         .recommend-content{
-            display: none;
             background: #FFF;
             padding: 12px 0px;
             .goods-box{
@@ -621,10 +620,6 @@ input[type="button"], input[type="submit"], input[type="reset"] {
                 }
             }
         }
-        .recommend-content-active{
-            display: block;
-        }
-
     }
 }
 
@@ -1459,7 +1454,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
             .goods-intro {
                 height: 24px;
                 line-height: 24px;
-                margin-top: 14px;
+                margin-top: 10px;
             }
             .price {
                 height: 24px;
@@ -1603,6 +1598,10 @@ input[type="button"], input[type="submit"], input[type="reset"] {
                     color: #FC2934;
                     font-size: @font_bigSize;
                     margin-right: 12px;
+                    &:hover{
+                        background: #FC2934;
+                        color: #FFF;
+                    }
                 }
                 .buy {
                     background: #FC2934;
@@ -1781,6 +1780,9 @@ input[type="button"], input[type="submit"], input[type="reset"] {
                     text-align: center;
                     line-height: 42px;
                     background: #E93A38;
+                    &:hover{
+                        background: #ab2b2a;
+                    }
                 }
             }
         }
@@ -1956,10 +1958,16 @@ input[type="button"], input[type="submit"], input[type="reset"] {
                     background: #C3C0BB;
                     margin-right: 5px;
                     color: #FFF;
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
                 .active{
                     background: #333;
                 }
+            }
+            .info-box{
+                display: none;
             }
             .info-page{
                 padding: 15px 18px;
@@ -2341,7 +2349,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
             width: 335px;
             margin-left: 28px;
             .name{
-                font-size: @font_size;
+                font-size: 16px;
                 padding: 16px 0px;
                 border-bottom: dashed 1px #D8D8D8;
             }
