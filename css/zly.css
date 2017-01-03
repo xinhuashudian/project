@@ -507,7 +507,6 @@ input[type="reset"] {
   color: #FFF;
 }
 .recommend-wrap .recommend .recommend-content {
-  display: none;
   background: #FFF;
   padding: 12px 0px;
 }
@@ -554,9 +553,6 @@ input[type="reset"] {
   font-size: 12px;
   margin-left: 12px;
   margin-top: 2px;
-}
-.recommend-wrap .recommend .recommend-content-active {
-  display: block;
 }
 .columns-block {
   width: 1000px;
@@ -1374,7 +1370,7 @@ input[type="reset"] {
 .goods-info .right .parameter .goods-intro {
   height: 24px;
   line-height: 24px;
-  margin-top: 14px;
+  margin-top: 10px;
 }
 .goods-info .right .parameter .price {
   height: 24px;
@@ -1513,6 +1509,10 @@ input[type="reset"] {
   color: #FC2934;
   font-size: 16px;
   margin-right: 12px;
+}
+.goods-info .right .parameter .button-item a:hover {
+  background: #FC2934;
+  color: #FFF;
 }
 .goods-info .right .parameter .button-item .buy {
   background: #FC2934;
@@ -1686,6 +1686,9 @@ input[type="reset"] {
   line-height: 42px;
   background: #E93A38;
 }
+.favorable-box .favorable .detail .result .buy-button:hover {
+  background: #ab2b2a;
+}
 .favorable-box .hot-sale {
   width: 100%;
   overflow: hidden;
@@ -1856,8 +1859,14 @@ input[type="reset"] {
   margin-right: 5px;
   color: #FFF;
 }
+.detail-box .right .goods-detail-Introduction .info-nav li:hover {
+  cursor: pointer;
+}
 .detail-box .right .goods-detail-Introduction .info-nav .active {
   background: #333;
+}
+.detail-box .right .goods-detail-Introduction .info-box {
+  display: none;
 }
 .detail-box .right .goods-detail-Introduction .info-page {
   padding: 15px 18px;
@@ -2223,7 +2232,7 @@ input[type="reset"] {
   margin-left: 28px;
 }
 .book-signing .signing-info .detail .name {
-  font-size: 14px;
+  font-size: 16px;
   padding: 16px 0px;
   border-bottom: dashed 1px #D8D8D8;
 }

@@ -4,9 +4,6 @@
   overflow: hidden;
   background: #fff;
   padding-bottom: 120px;
-  -webkit-box-shadow: #666 0px 0px 5px;
-  -moz-box-shadow: #666 0px 0px 5px;
-  box-shadow: #666 0px 0px 5px;
 }
 .wrap-tyy .tab-title {
   margin-bottom: 20px;
@@ -127,9 +124,6 @@
   padding-bottom: 45px;
   overflow: hidden;
   background: #fff;
-  -webkit-box-shadow: #666 0px 0px 5px;
-  -moz-box-shadow: #666 0px 0px 5px;
-  box-shadow: #666 0px 0px 5px;
 }
 .wrap-tyy .content-detail h4 {
   background: #c3c0bb;
@@ -235,9 +229,6 @@
   padding-bottom: 45px;
   overflow: hidden;
   background: #fff;
-  -webkit-box-shadow: #666 0px 0px 5px;
-  -moz-box-shadow: #666 0px 0px 5px;
-  box-shadow: #666 0px 0px 5px;
 }
 .wrap-tyy .content-refund h4 {
   background: #c3c0bb;
