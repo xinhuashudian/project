@@ -6750,6 +6750,7 @@ input[type="reset"] {
   color: #FFF;
 }
 .recommend-wrap .recommend .recommend-content {
+  display: none;
   background: #FFF;
   padding: 12px 0px;
 }
@@ -6796,6 +6797,9 @@ input[type="reset"] {
   font-size: 12px;
   margin-left: 12px;
   margin-top: 2px;
+}
+.recommend-wrap .recommend .recommend-content-active {
+  display: block;
 }
 .columns-block {
   width: 1000px;

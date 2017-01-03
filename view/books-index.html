@@ -167,16 +167,100 @@
         <div class="recommend">
             <div class="title clearfix">
                 <span class="text">新书推荐</span>
-                <div class="tab-item clearfix">
+                <div class="tab-item recommend-tab clearfix">
                     <div class="tab active">热卖</div>
                     <div class="tab">经典</div>
                     <div class="tab">励志</div>
                 </div>
             </div>
-            <div class="recommend-content clearfix">
+            <div class="recommend-content recommend-content-active clearfix">
+                <div class="goods-box">
+                    <a href="" class="cover"><img src="../images/cover.jpg"></a>
+                    <a href="" class="goods-name">A【孙俪推荐】黄帝内经</a>
+                    <div class="price">
+                        <span class="cur-price">￥<i>32</i>.00</span>
+                        <span class="old-price">￥32.00</span>
+                    </div>
+                </div>
                 <div class="goods-box">
                     <a href="" class="cover"><img src="../images/cover.jpg"></a>
                     <a href="" class="goods-name">【孙俪推荐】黄帝内经</a>
+                    <div class="price">
+                        <span class="cur-price">￥<i>32</i>.00</span>
+                        <span class="old-price">￥32.00</span>
+                    </div>
+                </div>
+                <div class="goods-box">
+                    <a href="" class="cover"><img src="../images/cover.jpg"></a>
+                    <a href="" class="goods-name">【孙俪推荐】黄帝内经</a>
+                    <div class="price">
+                        <span class="cur-price">￥<i>32</i>.00</span>
+                        <span class="old-price">￥32.00</span>
+                    </div>
+                </div>
+                <div class="goods-box">
+                    <a href="" class="cover"><img src="../images/cover.jpg"></a>
+                    <a href="" class="goods-name">【孙俪推荐】黄帝内经</a>
+                    <div class="price">
+                        <span class="cur-price">￥<i>32</i>.00</span>
+                        <span class="old-price">￥32.00</span>
+                    </div>
+                </div>
+                <div class="goods-box">
+                    <a href="" class="cover"><img src="../images/cover.jpg"></a>
+                    <a href="" class="goods-name">【孙俪推荐】黄帝内经</a>
+                    <div class="price">
+                        <span class="cur-price">￥<i>32</i>.00</span>
+                        <span class="old-price">￥32.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="recommend-content clearfix">
+                <div class="goods-box">
+                    <a href="" class="cover"><img src="../images/cover.jpg"></a>
+                    <a href="" class="goods-name">B【孙俪推荐】黄帝内经</a>
+                    <div class="price">
+                        <span class="cur-price">￥<i>32</i>.00</span>
+                        <span class="old-price">￥32.00</span>
+                    </div>
+                </div>
+                <div class="goods-box">
+                    <a href="" class="cover"><img src="../images/cover.jpg"></a>
+                    <a href="" class="goods-name">【孙俪推荐】黄帝内经</a>
+                    <div class="price">
+                        <span class="cur-price">￥<i>32</i>.00</span>
+                        <span class="old-price">￥32.00</span>
+                    </div>
+                </div>
+                <div class="goods-box">
+                    <a href="" class="cover"><img src="../images/cover.jpg"></a>
+                    <a href="" class="goods-name">【孙俪推荐】黄帝内经</a>
+                    <div class="price">
+                        <span class="cur-price">￥<i>32</i>.00</span>
+                        <span class="old-price">￥32.00</span>
+                    </div>
+                </div>
+                <div class="goods-box">
+                    <a href="" class="cover"><img src="../images/cover.jpg"></a>
+                    <a href="" class="goods-name">【孙俪推荐】黄帝内经</a>
+                    <div class="price">
+                        <span class="cur-price">￥<i>32</i>.00</span>
+                        <span class="old-price">￥32.00</span>
+                    </div>
+                </div>
+                <div class="goods-box">
+                    <a href="" class="cover"><img src="../images/cover.jpg"></a>
+                    <a href="" class="goods-name">【孙俪推荐】黄帝内经</a>
+                    <div class="price">
+                        <span class="cur-price">￥<i>32</i>.00</span>
+                        <span class="old-price">￥32.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="recommend-content clearfix">
+                <div class="goods-box">
+                    <a href="" class="cover"><img src="../images/cover.jpg"></a>
+                    <a href="" class="goods-name">C【孙俪推荐】黄帝内经</a>
                     <div class="price">
                         <span class="cur-price">￥<i>32</i>.00</span>
                         <span class="old-price">￥32.00</span>
@@ -217,6 +301,14 @@
             </div>
         </div>
     </div>
+    <script>
+        $('.recommend-tab .tab').click(function () {
+            $('.recommend-tab .tab').removeClass('active');
+            $('.recommend-content').removeClass('recommend-content-active');
+            $(this).addClass('active');
+            $($('.recommend-content')[$(this).index()]).addClass('recommend-content-active');
+        })
+    </script>
     <!--重磅好书-->
     <div class="columns-block clearfix">
         <div class="col-left">
