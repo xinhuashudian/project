@@ -12963,3 +12963,65 @@ li {
   background: url("../images/icongif.png") no-repeat;
   background-size: 30px;
 }
+.btn {
+  width: 108px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+.btn-default {
+  background: #FFF;
+  color: #333;
+  border: solid 1px #DDD;
+}
+.btn-primary {
+  color: #FFF;
+  background: #2F91FF;
+  border: solid 1px #2F91FF;
+}
+.btn-success {
+  color: #FFF;
+  background: #62BA66;
+  border: solid 1px #62BA66;
+}
+.btn-info {
+  color: #FFF;
+  background: #5BC0DE;
+  border: solid 1px #5BC0DE;
+}
+.btn-warning {
+  color: #FFF;
+  background: #FF9A2F;
+  border: solid 1px #FF9A2F;
+}
+.btn-danger {
+  color: #FFF;
+  background: #F2474D;
+  border: solid 1px #F2474D;
+}
+.btn-block {
+  width: 100%;
+  display: block;
+}
+.btn-lg {
+  width: 195px;
+  height: 54px;
+  line-height: 52px;
+  font-size: 16px;
+}
+.btn-sm {
+  font-size: 14px;
+  width: 102px;
+  height: 26px;
+  line-height: 24px;
+}
+.btn-xs {
+  font-size: 12px;
+  width: 72px;
+  height: 20px;
+  line-height: 18px;
+}
