@@ -8362,20 +8362,16 @@ input[type="reset"] {
 }
 .suggestions-box .suggestions-content .button-item button {
   display: block;
-  color: #fff;
-  border-radius: 5px;
-  height: 24px;
   border: 0;
-  width: 72px;
   float: left;
 }
 .suggestions-box .suggestions-content .button-item .submit {
   background: #ff9b2f;
-  margin-left: 20px;
+  margin-left: 60px;
 }
 .suggestions-box .suggestions-content .button-item .back {
   background: #404040;
-  margin-left: 190px;
+  margin-left: 250px;
 }
 .book-signing {
   width: 1000px;
@@ -9195,15 +9191,12 @@ input[type="reset"] {
   width: 170px;
   height: 25px;
   margin-right: 1px;
-  background: #c3c0bb;
   float: left;
-  text-align: center;
   font: 14px/25px "微软雅黑";
-  color: #fff;
   cursor: pointer;
 }
-.wrap-tyy .tab-title li.hover {
-  background: #333;
+.wrap-tyy .tab-title li.hover a {
+  color: #ff7200;
 }
 .wrap-tyy .photo-con .left {
   float: left;
@@ -11824,7 +11817,7 @@ li {
   float: left;
   cursor: pointer;
 }
-.user-center-right .user-nav li.cur {
+.user-center-right .user-nav li.cur a {
   color: #ff7200;
 }
 .user-center-right span {
@@ -12912,6 +12905,7 @@ li {
   font-size: 14px;
   cursor: pointer;
   border: none;
+  outline: none;
 }
 .btn-default {
   background: #FFF;
@@ -12943,6 +12937,11 @@ li {
   background: #F2474D;
   border: solid 1px #F2474D;
 }
+.btn-e-danger {
+  color: #F2474D;
+  background: #FFF;
+  border: solid 1px #F2474D;
+}
 .btn-gray {
   color: #FFF;
   background: #959595;
@@ -12953,10 +12952,6 @@ li {
   background: #333;
   border: solid 1px #333;
 }
-.btn-block {
-  width: 100%;
-  display: block;
-}
 .btn-lg {
   width: 195px;
   height: 54px;
@@ -12964,14 +12959,18 @@ li {
   font-size: 16px;
 }
 .btn-sm {
-  font-size: 14px;
+  font-size: 12px;
   width: 102px;
-  height: 26px;
-  line-height: 24px;
+  height: 24px;
+  line-height: 22px;
 }
 .btn-xs {
   font-size: 12px;
   width: 72px;
   height: 20px;
   line-height: 18px;
+}
+.btn-block {
+  width: 100%;
+  display: block;
 }

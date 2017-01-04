@@ -2193,20 +2193,16 @@ input[type="reset"] {
 }
 .suggestions-box .suggestions-content .button-item button {
   display: block;
-  color: #fff;
-  border-radius: 5px;
-  height: 24px;
   border: 0;
-  width: 72px;
   float: left;
 }
 .suggestions-box .suggestions-content .button-item .submit {
   background: #ff9b2f;
-  margin-left: 20px;
+  margin-left: 60px;
 }
 .suggestions-box .suggestions-content .button-item .back {
   background: #404040;
-  margin-left: 190px;
+  margin-left: 250px;
 }
 .book-signing {
   width: 1000px;
