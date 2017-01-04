@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>优惠券/红包</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_w6hh4sp38hvvx6r.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_9xrcye5m5bhgp66r.css">
     <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
 </head>
 <body class="book-home-bg">
@@ -188,22 +188,52 @@
         </div>
         <div class="page4-content-right shadow">
             <div class="page4-content-right-title">
-                <div class="page4-title-font" >优惠券/红包
+                <div class="page4-title-font">优惠券/红包
                 </div>
             </div>
 
-            <div class="page4-content-right-content" >
+            <div class="page4-content-right-content">
                 <div>
-                    <div class="page4-content-font-div1" ><div style="height:4px;"></div>未使用(10)</div>
-                    <div class="page4-content-font-div2" ><div style="height:4px;"></div>已使用(5)</div>
-                    <div class="page4-content-font-div2" ><div style="height:4px;"></div>已过期(0)</div>
+                    <div class="page4-content-font-div1">
+                        <div style="height:4px;"></div>
+                        未使用(10)
+                    </div>
+                    <div class="page4-content-font-div2">
+                        <div style="height:4px;"></div>
+                        已使用(5)
+                    </div>
+                    <div class="page4-content-font-div2">
+                        <div style="height:4px;"></div>
+                        已过期(0)
+                    </div>
                     <p style="clear:both">
                 </div>
                 <div style="margin-top:30px;margin-left:25px;width:730px;height:140px;">
                     <table class="page4-content-table" border="0" cellspacing="0" cellpadding="0">
-                        <tr><td width="100px" height="45px">优惠券名称</td><td width="70px">面值</td><td width="70px">类型</td><td width="230px">序列号</td><td width="131px">有效期</td><td width="138px">使用范围</td></tr>
-                        <tr><td></td><td></td><td></td><td>20160112213456781234</td><td>2015.01.21</td><td>新华某社</td></tr>
-                        <tr><td></td><td></td><td></td><td></td><td>2015.01.21</td><td>新华某社</td></tr>
+                        <tr>
+                            <td width="100px" height="45px">优惠券名称</td>
+                            <td width="70px">面值</td>
+                            <td width="70px">类型</td>
+                            <td width="230px">序列号</td>
+                            <td width="131px">有效期</td>
+                            <td width="138px">使用范围</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>20160112213456781234</td>
+                            <td>2015.01.21</td>
+                            <td>新华某社</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>2015.01.21</td>
+                            <td>新华某社</td>
+                        </tr>
                     </table>
                 </div>
             </div>
@@ -319,21 +349,21 @@
         <li><a href="">招贤纳士</a></li>
     </ul>
     <div class="website-info">
-        新华发行网 2015XXXXX.com   AII Rights Reserved   京ICP备 XXXXXXXXXX号-1  京公网备XXXXXXXXXX
+        新华发行网 2015XXXXX.com AII Rights Reserved 京ICP备 XXXXXXXXXX号-1 京公网备XXXXXXXXXX
     </div>
     <div class="safe-info">
         可信平台·工商认证·信用企业
     </div>
 </div>
 <script>
-    $(document).ready(function(){
-        $(".order-nav li").click(function(){
+    $(document).ready(function () {
+        $(".order-nav li").click(function () {
             $(this).addClass('cur').siblings().removeClass('cur');
         })
-        $('.z-point .pay').click(function(){
+        $('.z-point .pay').click(function () {
             $('.z-point').hide()
         })
-        $('.z-point .cancel').click(function(){
+        $('.z-point .cancel').click(function () {
             $('.z-point').hide()
         })
         $('.toggle-nav').mouseover(function () {
@@ -345,5 +375,14 @@
         })
     })
 </script>
+<!--右侧悬浮导航-->
+<ul class="fix-nav">
+    <li><a href="" class="iconfont icon-gouwuche2"></a></li>
+    <li><a href="" class="iconfont icon-xin"></a></li>
+    <li><a href="" class="iconfont icon-jiaoyin"></a></li>
+    <li><a href="" class="iconfont icon-jiaxiquan"></a></li>
+    <li><a href="" class="iconfont icon-bianji"></a></li>
+    <li onclick="$(document).scrollTop(0)"><a href="javascript:void(0)" class="iconfont icon-huidaodingbu"></a></li>
+</ul>
 </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>我的赞</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_w6hh4sp38hvvx6r.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_9xrcye5m5bhgp66r.css">
     <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
 </head>
 <body class="book-home-bg">
@@ -190,19 +190,55 @@
             <div class="page6-content-right-title">
                 <div>我的赞</div>
             </div>
-            <div class="page6-content-right-content" >
+            <div class="page6-content-right-content">
                 <div class="page6-div-font1">
-                    <div class="page6-div-font1-div1" ><div>我点的赞</div></div>
-                    <div class="page6-div-font1-div3" style=""><div>我收到的赞</div></div>
-                    <div  class="page6-div-font1-div2" ><div>新增意见修改</div></div>
+                    <div class="page6-div-font1-div1">
+                        <div>我点的赞</div>
+                    </div>
+                    <div class="page6-div-font1-div3" style="">
+                        <div>我收到的赞</div>
+                    </div>
+                    <div class="page6-div-font1-div2">
+                        <div>新增意见修改</div>
+                    </div>
                     <p style="clear:both">
                 </div>
                 <table border="0" cellspacing="5" cellpadding="0" class="page6-content-table" style="margin-top:20px;">
-                    <tr><td class="page6-table-td1" width="180px" >帖子标题</td><td class="page6-table-td1" width="100px" text-align="center">点赞类型</td><td class="page6-table-td1" width="180px">点赞/赞我用户</td><td  class="page6-table-td1" width="130px">评价时间</td><td class="page6-table-td1" width="95px">操作</td></tr>
-                    <tr><td colspan="5"><hr style="color:rgb(213,213,213);height:1px;" ></td></tr>
-                    <tr><td>三体讨论大会>三体社群</td><td >我的赞</td><td>甜小灰灰</td><td>2015.01.21  23:11</td><td><div class="myprise-button">取消点赞</div></td></tr>
-                    <tr><td colspan="5"><hr style="color:rgb(213,213,213);height:1px;" ></td></tr>
-                    <tr><td>三体讨论大会>三体社群</td><td>我的赞</td><td>甜小灰灰</td><td>2015.01.21  23:11</td><td><div class="myprise-button" >取消点赞</div></td></tr>
+                    <tr>
+                        <td class="page6-table-td1" width="180px">帖子标题</td>
+                        <td class="page6-table-td1" width="100px" text-align="center">点赞类型</td>
+                        <td class="page6-table-td1" width="180px">点赞/赞我用户</td>
+                        <td class="page6-table-td1" width="130px">评价时间</td>
+                        <td class="page6-table-td1" width="95px">操作</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <hr style="color:rgb(213,213,213);height:1px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>三体讨论大会>三体社群</td>
+                        <td>我的赞</td>
+                        <td>甜小灰灰</td>
+                        <td>2015.01.21 23:11</td>
+                        <td>
+                            <div class="myprise-button">取消点赞</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <hr style="color:rgb(213,213,213);height:1px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>三体讨论大会>三体社群</td>
+                        <td>我的赞</td>
+                        <td>甜小灰灰</td>
+                        <td>2015.01.21 23:11</td>
+                        <td>
+                            <div class="myprise-button">取消点赞</div>
+                        </td>
+                    </tr>
 
                 </table>
             </div>
@@ -318,21 +354,21 @@
         <li><a href="">招贤纳士</a></li>
     </ul>
     <div class="website-info">
-        新华发行网 2015XXXXX.com   AII Rights Reserved   京ICP备 XXXXXXXXXX号-1  京公网备XXXXXXXXXX
+        新华发行网 2015XXXXX.com AII Rights Reserved 京ICP备 XXXXXXXXXX号-1 京公网备XXXXXXXXXX
     </div>
     <div class="safe-info">
         可信平台·工商认证·信用企业
     </div>
 </div>
 <script>
-    $(document).ready(function(){
-        $(".order-nav li").click(function(){
+    $(document).ready(function () {
+        $(".order-nav li").click(function () {
             $(this).addClass('cur').siblings().removeClass('cur');
         })
-        $('.z-point .pay').click(function(){
+        $('.z-point .pay').click(function () {
             $('.z-point').hide()
         })
-        $('.z-point .cancel').click(function(){
+        $('.z-point .cancel').click(function () {
             $('.z-point').hide()
         })
         $('.toggle-nav').mouseover(function () {
@@ -344,5 +380,14 @@
         })
     })
 </script>
+<!--右侧悬浮导航-->
+<ul class="fix-nav">
+    <li><a href="" class="iconfont icon-gouwuche2"></a></li>
+    <li><a href="" class="iconfont icon-xin"></a></li>
+    <li><a href="" class="iconfont icon-jiaoyin"></a></li>
+    <li><a href="" class="iconfont icon-jiaxiquan"></a></li>
+    <li><a href="" class="iconfont icon-bianji"></a></li>
+    <li onclick="$(document).scrollTop(0)"><a href="javascript:void(0)" class="iconfont icon-huidaodingbu"></a></li>
+</ul>
 </body>
 </html>
