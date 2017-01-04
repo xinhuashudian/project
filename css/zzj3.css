@@ -163,7 +163,6 @@
   margin-left: 44px;
   height: 28px;
   padding-top: 16px;
-  margin-bottom: 25px;
 }
 .public-notice-right .notice-nav div {
   width: 66px;
@@ -178,11 +177,7 @@
   color: #ff7200;
 }
 .public-notice-right .notice-nav div.cur span {
-  border-bottom: 2px solid #ff7200;
-  padding-bottom: 5px;
-}
-.public-notice-right ul {
-  padding-bottom: 40px;
+  border-bottom: 1px solid #ff7200;
 }
 .public-notice-right li {
   height: 190px;
