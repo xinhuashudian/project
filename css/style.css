@@ -9219,16 +9219,15 @@ input[type="reset"] {
   overflow: hidden;
 }
 .wrap-tyy .tab-title li {
-    width: 170px;
-    height: 25px;
-    margin-right: 1px;
-    float: left;
-    font: 14px/25px "微软雅黑";
-    cursor: pointer;
+  width: 170px;
+  height: 25px;
+  margin-right: 1px;
+  float: left;
+  font: 14px/25px "微软雅黑";
+  cursor: pointer;
 }
-
-.wrap-tyy .tab-title li.hover a{
-    color: #ff7200;
+.wrap-tyy .tab-title li.hover a {
+  color: #ff7200;
 }
 .wrap-tyy .photo-con .left {
   float: left;
@@ -11875,7 +11874,7 @@ li {
   float: left;
   cursor: pointer;
 }
-.user-center-right .user-nav li.cur {
+.user-center-right .user-nav li.cur a {
   color: #ff7200;
 }
 .user-center-right span {

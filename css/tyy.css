@@ -14,15 +14,12 @@
   width: 170px;
   height: 25px;
   margin-right: 1px;
-  background: #c3c0bb;
   float: left;
-  text-align: center;
   font: 14px/25px "微软雅黑";
-  color: #fff;
   cursor: pointer;
 }
-.wrap-tyy .tab-title li.hover {
-  background: #333;
+.wrap-tyy .tab-title li.hover a {
+  color: #ff7200;
 }
 .wrap-tyy .photo-con .left {
   float: left;
