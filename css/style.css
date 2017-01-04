@@ -1867,11 +1867,7 @@ a {
 }
 .bind .bind-box .bind-mokuai .bind-center .bind-item a {
   display: block;
-  color: #FFFFFF;
   float: left;
-  background: #fa993b;
-  padding: 4px 12px;
-  border-radius: 5px;
   margin-top: 90px;
   font-size: 14px;
 }
@@ -1928,12 +1924,7 @@ a {
   border-color: #e2e2e2;
 }
 .bind .bind-box .bind-mokuai form button {
-  border: none;
-  padding: 4px 28px;
-  background: #fa993b;
-  color: #fff;
   cursor: pointer;
-  border-radius: 6px;
 }
 .bind .bind-box .bind-mokuai form button:hover {
   background: #dc8633;
