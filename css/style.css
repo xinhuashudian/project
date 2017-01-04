@@ -5653,16 +5653,7 @@ a {
   margin-right: 5px;
 }
 .refund .item input[type=button] {
-  height: 24px;
-  width: 98px;
-  border: 0;
-  color: #fff;
-  background-color: #ff9b2f;
-  border-radius: 3px;
   margin-right: 10px;
-}
-.refund .item input[type=button].cal {
-  background-color: #c9c9c9;
 }
 .refund .item .textarea {
   position: relative;
@@ -9271,13 +9262,9 @@ input[type="reset"] {
 }
 .wrap-tyy .photo-con .bottom a {
   display: block;
-  width: 70px;
-  height: 25px;
-  background: #ff9b2f;
   margin-top: 15px;
-  line-height: 25px;
-  border-radius: 5px;
-  font: 12px/25px "微软雅黑";
+  line-height: 30px;
+  font: 14px/30px "微软雅黑";
   color: #fff;
   text-align: center;
   cursor: pointer;
@@ -11884,12 +11871,7 @@ li {
   margin-left: 94px;
 }
 .user-center-right button.save {
-  width: 74px;
-  height: 24px;
-  border-radius: 5px;
   color: #fff;
-  background: #ff9b2f;
-  border: 0;
   margin-left: 94px;
   margin-top: 30px;
   margin-bottom: 70px;

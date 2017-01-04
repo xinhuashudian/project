@@ -756,16 +756,7 @@
   margin-right: 5px;
 }
 .refund .item input[type=button] {
-  height: 24px;
-  width: 98px;
-  border: 0;
-  color: #fff;
-  background-color: #ff9b2f;
-  border-radius: 3px;
   margin-right: 10px;
-}
-.refund .item input[type=button].cal {
-  background-color: #c9c9c9;
 }
 .refund .item .textarea {
   position: relative;
