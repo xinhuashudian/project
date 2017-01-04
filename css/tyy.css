@@ -268,14 +268,9 @@
 }
 .wrap-tyy .content-refund > a {
   display: block;
-  width: 70px;
-  height: 25px;
   float: right;
-  background: #ff9b2f;
   margin: 15px 30px 10px 0;
-  line-height: 25px;
-  border-radius: 5px;
-  font: 12px/25px "微软雅黑";
+  font: 14px/30px "微软雅黑";
   color: #fff;
   text-align: center;
   cursor: pointer;

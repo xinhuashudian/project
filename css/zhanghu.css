@@ -109,7 +109,7 @@ li {
   padding-left: 22px;
 }
 .order-list-right ul.order-nav li {
-  width: 98px;
+  width: 108px;
   cursor: pointer;
   font-size: 16px;
   color: #666666;
@@ -118,7 +118,7 @@ li {
   line-height: 30px;
   float: left;
   margin-right: 12px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .order-list-right ul.order-nav li.cur {
   background: #f3474e;
@@ -139,13 +139,9 @@ li {
   width: 180px;
 }
 .order-list-right .order-search .search-btn {
-  border-radius: 5px;
-  border: 0;
   margin-left: 12px;
   width: 62px;
   height: 26px;
-  background: #ff9b2f;
-  color: #fff;
   text-align: center;
 }
 .order-list-right .order-header {
@@ -366,14 +362,8 @@ li {
 .buy-card-right .card-sure {
   margin-left: 110px;
   margin-top: 10px;
-  width: 100px;
-  text-align: center;
-  color: #fff;
-  background: #ff9b2f;
-  line-height: 32px;
-  border: 0;
+  line-height: 30px;
   font-size: 14px;
-  border-radius: 5px;
 }
 .buy-card-right .card-content-wrap {
   margin-top: 18px;
