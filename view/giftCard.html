@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>我的礼品卡</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_9xrcye5m5bhgp66r.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_w6hh4sp38hvvx6r.css">
     <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
 </head>
 <body class="book-home-bg">
@@ -203,9 +203,7 @@
                 <input type="text">
             </div>
             <button class="card-sure">确认</button>
-            <a href="buyCard.html">
-                <button class="card-buy">购买礼品卡</button>
-            </a>
+            <a href="buyCard.html"><button class="card-buy">购买礼品卡</button></a>
             <div class="card-content-wrap">
                 <ul class="card-title card-order">
                     <li>卡号</li>
@@ -236,9 +234,7 @@
                             <li>￥150.00</li>
                             <li>2016-12-26</li>
                             <li>过期</li>
-                            <li>
-                                <div class="gift-cancel">删除</div>
-                            </li>
+                            <li><div class="gift-cancel">删除</div></li>
                         </ul>
                     </li>
                 </ul>
@@ -354,15 +350,15 @@
         <li><a href="">招贤纳士</a></li>
     </ul>
     <div class="website-info">
-        新华发行网 2015XXXXX.com AII Rights Reserved 京ICP备 XXXXXXXXXX号-1 京公网备XXXXXXXXXX
+        新华发行网 2015XXXXX.com   AII Rights Reserved   京ICP备 XXXXXXXXXX号-1  京公网备XXXXXXXXXX
     </div>
     <div class="safe-info">
         可信平台·工商认证·信用企业
     </div>
 </div>
 <script>
-    $(document).ready(function () {
-        $('.card-order .gift-cancel').click(function () {
+    $(document).ready(function(){
+        $('.card-order .gift-cancel').click(function(){
             $(this).parents('.card-content-li').hide()
         })
 
@@ -375,14 +371,5 @@
         })
     })
 </script>
-<!--右侧悬浮导航-->
-<ul class="fix-nav">
-    <li><a href="" class="iconfont icon-gouwuche2"></a></li>
-    <li><a href="" class="iconfont icon-xin"></a></li>
-    <li><a href="" class="iconfont icon-jiaoyin"></a></li>
-    <li><a href="" class="iconfont icon-jiaxiquan"></a></li>
-    <li><a href="" class="iconfont icon-bianji"></a></li>
-    <li onclick="$(document).scrollTop(0)"><a href="javascript:void(0)" class="iconfont icon-huidaodingbu"></a></li>
-</ul>
 </body>
 </html>

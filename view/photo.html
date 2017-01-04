@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>头像照片</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_9xrcye5m5bhgp66r.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_w6hh4sp38hvvx6r.css">
     <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
 </head>
 <body class="book-home-bg">
@@ -203,9 +203,7 @@
                                     <span>选择你要上传的头像</span>
                                 </a>
                                 <p>仅支持jpg、gif、png、jpeg、bmp格式，文件小于4m</p>
-                                <div class="img-box">
-                                    <div></div>
-                                </div>
+                                <div class="img-box"><div></div></div>
                                 <div class="bottom">
                                     <h4>推荐头像</h4>
                                     <div class="head-logo">
@@ -357,33 +355,24 @@
         <li><a href="">招贤纳士</a></li>
     </ul>
     <div class="website-info">
-        新华发行网 2015XXXXX.com AII Rights Reserved 京ICP备 XXXXXXXXXX号-1 京公网备XXXXXXXXXX
+        新华发行网 2015XXXXX.com   AII Rights Reserved   京ICP备 XXXXXXXXXX号-1  京公网备XXXXXXXXXX
     </div>
     <div class="safe-info">
         可信平台·工商认证·信用企业
     </div>
 </div>
-<!--右侧悬浮导航-->
-<ul class="fix-nav">
-    <li><a href="" class="iconfont icon-gouwuche2"></a></li>
-    <li><a href="" class="iconfont icon-xin"></a></li>
-    <li><a href="" class="iconfont icon-jiaoyin"></a></li>
-    <li><a href="" class="iconfont icon-jiaxiquan"></a></li>
-    <li><a href="" class="iconfont icon-bianji"></a></li>
-    <li onclick="$(document).scrollTop(0)"><a href="javascript:void(0)" class="iconfont icon-huidaodingbu"></a></li>
-</ul>
 </body>
 <script>
     (function () {
 
-        $(".wrap-tyy .content-photo li").on('click', function () {
+        $(".wrap-tyy .content-photo li").on('click',function(){
             var tabIndex = $(this).attr('data-title');
-            $('.content').css('display', 'none');
+            $('.content').css('display','none');
             $('.tab-title li').removeClass('hover');
             $(this).addClass('hover');
-            $('.tab-content > div').each(function () {
+            $('.tab-content > div').each(function(){
                 if ($(this).attr('data-content') == tabIndex) {
-                    $(this).css('display', 'block');
+                    $(this).css('display','block');
                     return;
                 }
             })

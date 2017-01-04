@@ -5,7 +5,7 @@
     <title>公告详情</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/zzj4.css">
-    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_9xrcye5m5bhgp66r.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_w6hh4sp38hvvx6r.css">
     <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
 </head>
 <body class="book-home-bg">
@@ -249,7 +249,7 @@
                                 </div>
                                 <div class="time-wrap">
                                     <div class="return">回复</div>
-                                    <div class="time">2016-11-12 15：16</div>
+                                    <div class="time">2016-11-12  15：16</div>
                                 </div>
                             </li>
                             <li>
@@ -259,7 +259,7 @@
                                 </div>
                                 <div class="time-wrap">
                                     <div class="return">回复</div>
-                                    <div class="time">2016-11-12 15：16</div>
+                                    <div class="time">2016-11-12  15：16</div>
                                 </div>
                             </li>
                         </ul>
@@ -307,7 +307,7 @@
                                 </div>
                                 <div class="time-wrap">
                                     <div class="return">回复</div>
-                                    <div class="time">2016-11-12 15：16</div>
+                                    <div class="time">2016-11-12  15：16</div>
                                 </div>
                             </li>
                             <li>
@@ -317,7 +317,7 @@
                                 </div>
                                 <div class="time-wrap">
                                     <div class="return">回复</div>
-                                    <div class="time">2016-11-12 15：16</div>
+                                    <div class="time">2016-11-12  15：16</div>
                                 </div>
                             </li>
                         </ul>
@@ -444,28 +444,28 @@
         <li><a href="">招贤纳士</a></li>
     </ul>
     <div class="website-info">
-        新华发行网 2015XXXXX.com AII Rights Reserved 京ICP备 XXXXXXXXXX号-1 京公网备XXXXXXXXXX
+        新华发行网 2015XXXXX.com   AII Rights Reserved   京ICP备 XXXXXXXXXX号-1  京公网备XXXXXXXXXX
     </div>
     <div class="safe-info">
         可信平台·工商认证·信用企业
     </div>
 </div>
 <script>
-    $(document).ready(function () {
-        $('.page').on('click', '.num', function () {
+    $(document).ready(function(){
+        $('.page').on('click','.num',function(){
             $(this).addClass('cur').siblings().removeClass('cur');
         })
-        $('.next').click(function () {
-            for (var i = 0; i < $('.page .num').length; i++) {
-                if ($('.page .num').eq(i).hasClass('cur') && i != 4) {
+        $('.next').click(function(){
+            for(var i =0;i <$('.page .num').length;i++){
+                if($('.page .num').eq(i).hasClass('cur') && i!=4){
                     $('.page .num').eq(i).removeClass('cur').next().addClass('cur');
                     return;
                 }
             }
         })
-        $('.prev').click(function () {
-            for (var i = 0; i < $('.page .num').length; i++) {
-                if ($('.page .num').eq(i).hasClass('cur') && i != 0) {
+        $('.prev').click(function(){
+            for(var i =0;i <$('.page .num').length;i++){
+                if($('.page .num').eq(i).hasClass('cur') && i!=0){
                     $('.page .num').eq(i).removeClass('cur').prev().addClass('cur');
                     return;
                 }
@@ -474,14 +474,5 @@
     })
 </script>
 
-<!--右侧悬浮导航-->
-<ul class="fix-nav">
-    <li><a href="" class="iconfont icon-gouwuche2"></a></li>
-    <li><a href="" class="iconfont icon-xin"></a></li>
-    <li><a href="" class="iconfont icon-jiaoyin"></a></li>
-    <li><a href="" class="iconfont icon-jiaxiquan"></a></li>
-    <li><a href="" class="iconfont icon-bianji"></a></li>
-    <li onclick="$(document).scrollTop(0)"><a href="javascript:void(0)" class="iconfont icon-huidaodingbu"></a></li>
-</ul>
 </body>
 </html>

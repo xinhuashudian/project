@@ -12,14 +12,13 @@
   float: left;
 }
 .page4-content-right {
-  width: 780px;
+  width: 794px;
   height: 400px;
   background-color: white;
-  float: left;
-  margin-left: 30px;
+  float: right;
 }
 .page4-content-right-title {
-  width: 780px;
+  width: 100%;
   height: 50px;
   background-color: #f2474d;
 }
@@ -29,7 +28,7 @@
   position: relative;
   left: 50px;
   top: 15px;
-  color: white;
+  color: #ffffff;
 }
 .page4-content-font-div1 {
   font-family: "微软雅黑";
@@ -88,11 +87,10 @@
   float: left;
 }
 .page5-content-right {
-  width: 780px;
+  width: 794px;
   height: 700px;
   background-color: white;
-  float: left;
-  margin-left: 33px;
+  float: right;
 }
 .page5-title-font {
   font-family: "微软雅黑";
@@ -102,7 +100,7 @@
   top: 13px;
 }
 .page5-content-right-title {
-  width: 780px;
+  width: 100%;
   height: 50px;
   background-color: #f4f4f4;
 }
@@ -209,14 +207,13 @@
   float: left;
 }
 .page6-content-right {
-  width: 780px;
+  width: 794px;
   height: 400px;
   background-color: white;
-  float: left;
-  margin-left: 30px;
+  float: right;
 }
 .page6-content-right-title {
-  width: 780px;
+  width: 100%;
   height: 50px;
   background-color: #f2474d;
   color: white;
@@ -299,10 +296,9 @@
   margin: 10px auto;
 }
 .cancel-content-right {
-  width: 780px;
+  width: 794px;
   background-color: white;
-  float: left;
-  margin-left: 30px;
+  float: right;
   padding-bottom: 50px;
 }
 .showcomment-content-right-title {
