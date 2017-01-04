@@ -2823,13 +2823,8 @@ a {
 .content .goods-content .goods-nav .goods-list li .goods-list-info .goods-buy .goods-buy-icon {
   float: right;
 }
-.content .goods-content .goods-nav .goods-list li .goods-list-info .goods-buy .goods-buy-icon img {
-  width: 23px;
-  height: 23px;
-  float: left;
-  margin: 0;
-  border: none;
-  margin-left: 12px;
+.content .goods-content .goods-nav .goods-list li .goods-list-info .goods-buy .goods-buy-icon i {
+  font-size: 20px;
 }
 .content .goods-content .goods-nav .pageselect {
   width: 100%;
