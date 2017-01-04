@@ -186,63 +186,77 @@
                 </ul>
             </div>
         </div>
-        <div class="page6-content-right shadow">
-            <div class="page6-content-right-title">
-                <div>我的赞</div>
-            </div>
-            <div class="page6-content-right-content">
-                <div class="page6-div-font1">
-                    <div class="page6-div-font1-div1">
-                        <div>我点的赞</div>
-                    </div>
-                    <div class="page6-div-font1-div3" style="">
-                        <div>我收到的赞</div>
-                    </div>
-                    <div class="page6-div-font1-div2">
-                        <div>新增意见修改</div>
-                    </div>
-                    <p style="clear:both">
+        <!--右侧信息-->
+        <div class="z-right-wrap-shadow">
+            <h3 class="console-title zan-title">我的赞</h3>
+            <div class="zan-body">
+                <div class="dianzan-title">
+                    <span class="limit">
+                        <a id="lg1" class="hover" onclick="setTab('lg',1,1,2,'hover')">我点的赞</a>
+                    </span>
+                    <span class="limit">
+                        <a id="lg2" onclick="setTab('lg',2,1,2,'hover')">我收到的赞</a>
+                    </span>
+                    <span class="sussbtn" style="display: block;"><a href="suggestions.html">新增意见修改</a></span>
                 </div>
-                <table border="0" cellspacing="5" cellpadding="0" class="page6-content-table" style="margin-top:20px;">
-                    <tr>
-                        <td class="page6-table-td1" width="180px">帖子标题</td>
-                        <td class="page6-table-td1" width="100px" text-align="center">点赞类型</td>
-                        <td class="page6-table-td1" width="180px">点赞/赞我用户</td>
-                        <td class="page6-table-td1" width="130px">评价时间</td>
-                        <td class="page6-table-td1" width="95px">操作</td>
-                    </tr>
-                    <tr>
-                        <td colspan="5">
-                            <hr style="color:rgb(213,213,213);height:1px;">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>三体讨论大会>三体社群</td>
-                        <td>我的赞</td>
-                        <td>甜小灰灰</td>
-                        <td>2015.01.21 23:11</td>
-                        <td>
-                            <div class="myprise-button">取消点赞</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="5">
-                            <hr style="color:rgb(213,213,213);height:1px;">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>三体讨论大会>三体社群</td>
-                        <td>我的赞</td>
-                        <td>甜小灰灰</td>
-                        <td>2015.01.21 23:11</td>
-                        <td>
-                            <div class="myprise-button">取消点赞</div>
-                        </td>
-                    </tr>
-
-                </table>
+                <div class="dianzan-body" id="lg-DV1" style="display: block;">
+                    <table width="744" border="0" cellspacing="0" cellpadding="0" >
+                        <tr>
+                            <th width="185" class="left">帖子标题</th>
+                            <th width="110">点赞类型</th>
+                            <th width="140">点赞/赞我用户</th>
+                            <th width="140">评价时间</th>
+                            <th width="100">操作</th>
+                        </tr>
+                        <tr>
+                            <td class="left"> 三体讨论大会> 三体社群</td>
+                            <td>赞我的</td>
+                            <td>点赞用户</td>
+                            <td>2016-11-01 23:11</td>
+                            <td><a>取消点赞</a></td>
+                        </tr>
+                        <tr>
+                            <td class="left"> 三体讨论大会> 三体社群</td>
+                            <td>赞我的</td>
+                            <td>点赞用户</td>
+                            <td>2016-11-01 23:11</td>
+                            <td><a>取消点赞</a></td>
+                        </tr>
+                        <tr>
+                            <td class="left"> 三体讨论大会> 三体社群</td>
+                            <td>赞我的</td>
+                            <td>点赞用户</td>
+                            <td>2016-11-01 23:11</td>
+                            <td><a>取消点赞</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="dianzan-body" id="lg-DV2" style="display: none;">
+                    <table width="744" border="0" cellspacing="0" cellpadding="0" >
+                        <tr>
+                            <th width="185" class="left">帖子标题</th>
+                            <th width="110">点赞类型</th>
+                            <th width="140">点赞/赞我用户</th>
+                            <th width="140">评价时间</th>
+                            <th width="100">操作</th>
+                        </tr>
+                        <tr>
+                            <td class="left"> 三体讨论大会> 三体社群</td>
+                            <td>赞我的</td>
+                            <td>点赞用户</td>
+                            <td>2016-11-01 23:11</td>
+                            <td><a>取消点赞</a></td>
+                        </tr>
+                        <tr>
+                            <td class="left"> 三体讨论大会> 三体社群</td>
+                            <td>赞我的</td>
+                            <td>点赞用户</td>
+                            <td>2016-11-01 23:11</td>
+                            <td><a>取消点赞</a></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-
         </div>
     </div>
 </div>
@@ -378,8 +392,15 @@
         $('.toggle-nav').mouseleave(function () {
             $(this).find('.dropdown-nav').hide();
         })
-    })
+        $("#lg2").click(function(){
+            $(".sussbtn").hide();
+        });
+        $("#lg1").click(function(){
+            $(".sussbtn").show();
+        });
+    })()
 </script>
+<script src="../js/tab.js" type="text/javascript" charset="utf-8"></script>
 <!--右侧悬浮导航-->
 <ul class="fix-nav">
     <li><a href="" class="iconfont icon-gouwuche2"></a></li>

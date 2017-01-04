@@ -1031,7 +1031,7 @@ li{list-style: none;}
 .z-right-wrap-shadow{
     font-family: "微软雅黑";
     padding: 0;
-    width: 795px;
+    width: 794px;
     h3.console-title{
         font-weight: normal;
         font-size: 18px;
@@ -1163,13 +1163,25 @@ li{list-style: none;}
     .zan-body{
         padding: 26px 20px 120px;
         min-height: 150px;
+        .sussbtn {
+            float: right;
+            margin-top: 20px;
+            margin-right: 80px;
+            a{
+                float:right;
+                color:#fff;
+                font-size:14px;
+                padding:5px 8px;
+                text-decoration: none;
+                cursor: pointer;
+                background-color:#ff9b2f;
+            }
+        }
         .dianzan-title{
             overflow: hidden;
-            height: 30px;
-            line-height: 30px;
-            li{
+            height: 50px;
+            span.limit{
                 float: left;
-                display: inline;
                 margin-right: 2px;
                 height: 30px;
                 cursor: pointer;
@@ -1197,6 +1209,24 @@ li{list-style: none;}
             color: @font-color6;
             line-height: 44px;
             overflow: hidden;
+            table{
+                text-align:center;
+                tr th{
+                    font-weight:normal;
+                    border-bottom: 1px solid #CBCBCB;
+                }
+                tr td{
+                    border-bottom: 1px solid #CBCBCB;
+                }
+                tr th.left{
+                    text-align:left;
+                    padding-left:14px;
+                }
+                tr td.left{
+                    text-align:left;
+                    padding-left:14px;
+                }
+            }
             .dianzan-body-tou{
                 border-bottom: 1px solid #CBCBCB;
                 font-size: 14px;
@@ -1465,7 +1495,7 @@ li{list-style: none;}
 @base-color1: #ececec;
 .z-right-wrap-shadow{
     font-family: "微软雅黑";
-    width: 795px;
+    width: 794px;
     //padding: 24px 18px;
     float: right;
     background-color: #FFFFFF;

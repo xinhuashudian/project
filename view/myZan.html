@@ -119,18 +119,17 @@
             </div>
         </div>
         <ul class="nav clearfix">
-            <ul class="nav clearfix">
-                <li><a href="">首页</a></li>
-                <li><a href="goods-pre-sale.html">预售</a></li>
-                <li><a href="ebook.html">电子书</a></li>
-                <li><a href="#">非出版</a></li>
-                <li><a href="publishing-list.html">出版社</a></li>
-                <li><a href="mylibrary.html">图书馆</a></li>
-                <li><a href="book-community.html">图书社群</a></li>
-                <li><a href="store-channel.html">门店频道</a></li>
-                <li><a href="webcast.html">视频直播</a></li>
-                <li><a href="">特价</a></li>
-            </ul>
+            <li><a href="">首页</a></li>
+            <li><a href="goods-pre-sale.html">预售</a></li>
+            <li><a href="ebook.html">电子书</a></li>
+            <li><a href="#">非出版</a></li>
+            <li><a href="publishing-list.html">出版社</a></li>
+            <li><a href="mylibrary.html">图书馆</a></li>
+            <li><a href="book-community.html">图书社群</a></li>
+            <li><a href="store-channel.html">门店频道</a></li>
+            <li><a href="webcast.html">视频直播</a></li>
+            <li><a href="">特价</a></li>
+        </ul>
     </div>
 </div>
 <div class="z-content-wrap">
@@ -191,59 +190,71 @@
         <div class="z-right-wrap-shadow shadow">
             <h3 class="console-title zan-title">我的赞</h3>
             <div class="zan-body">
-                <ul class="dianzan-title">
-                    <li>
-                        <a id="lg1" class="hover" onclick="setTab('lg',1,1,2,'hover')">我点的赞</a>
-                    </li>
-                    <li>
-                        <a id="lg2" onclick="setTab('lg',2,1,2,'hover')">我收到的赞</a>
-                    </li>
-                </ul>
-                <div class="dianzan-body" id="lg-DV1" style="display: block;">
-                    <div class="dianzan-body-tou">
-                        <span class="tiezi-title">帖子标题</span>
-                        <span class="tiezi-type">点赞类型</span>
-                        <span class="tiezi-user">点赞/赞我用户</span>
-                        <span class="tiezi-time">评价时间</span>
-                        <span class="tiezi-operate">操作</span>
-                    </div>
-                    <div class="dianzan-body-list">
-                        <span class="tiezi-title">三体讨论大会>三体社群</span>
-                        <span class="tiezi-type">赞我的</span>
-                        <span class="tiezi-user">点赞用户</span>
-                        <span class="tiezi-time">2015.01.21  23:11</span>
-                        <span class="tiezi-operate"><a href="">取消点赞</a></span>
-                    </div>
-                    <div class="dianzan-body-list">
-                        <span class="tiezi-title">三体讨论大会>三体社群</span>
-                        <span class="tiezi-type">赞我的</span>
-                        <span class="tiezi-user">点赞用户</span>
-                        <span class="tiezi-time">2015.01.21  23:11</span>
-                        <span class="tiezi-operate"><a href="">取消点赞</a></span>
-                    </div>
+                <div class="dianzan-title">
+                    <span class="limit">
+                        <a id="lg1" onclick="setTab('lg',1,1,2,'hover')">我点的赞</a>
+                    </span>
+                    <span class="limit">
+                        <a id="lg2" class="hover" onclick="setTab('lg',2,1,2,'hover')">我收到的赞</a>
+                    </span>
+                    <span class="sussbtn" style="display: none;"><a href="suggestions.html">新增意见修改</a></span>
                 </div>
-                <div class="dianzan-body" id="lg-DV2" style="display: none;">
-                    <div class="dianzan-body-tou">
-                        <span class="tiezi-title">帖子标题</span>
-                        <span class="tiezi-type">点赞类型</span>
-                        <span class="tiezi-user">点赞/赞我用户</span>
-                        <span class="tiezi-time">评价时间</span>
-                        <span class="tiezi-operate">操作</span>
-                    </div>
-                    <div class="dianzan-body-list">
-                        <span class="tiezi-title">三体讨论大会>三体社群</span>
-                        <span class="tiezi-type">赞我的</span>
-                        <span class="tiezi-user">点用户</span>
-                        <span class="tiezi-time">2015.01.21  23:11</span>
-                        <span class="tiezi-operate"><a href="">取消点赞</a></span>
-                    </div>
-                    <div class="dianzan-body-list">
-                        <span class="tiezi-title">三体讨论大会>三体社群</span>
-                        <span class="tiezi-type">赞的</span>
-                        <span class="tiezi-user">点赞用户</span>
-                        <span class="tiezi-time">2015.01.21  23:11</span>
-                        <span class="tiezi-operate"><a href="">取消点赞</a></span>
-                    </div>
+                <div class="dianzan-body" id="lg-DV1" style="display: none;">
+                    <table width="744" border="0" cellspacing="0" cellpadding="0" >
+                        <tr>
+                            <th width="185" class="left">帖子标题</th>
+                            <th width="110">点赞类型</th>
+                            <th width="140">点赞/赞我用户</th>
+                            <th width="140">评价时间</th>
+                            <th width="100">操作</th>
+                        </tr>
+                        <tr>
+                            <td class="left"> 三体讨论大会> 三体社群</td>
+                            <td>赞我的</td>
+                            <td>点赞用户</td>
+                            <td>2016-11-01 23:11</td>
+                            <td><a>取消点赞</a></td>
+                        </tr>
+                        <tr>
+                            <td class="left"> 三体讨论大会> 三体社群</td>
+                            <td>赞我的</td>
+                            <td>点赞用户</td>
+                            <td>2016-11-01 23:11</td>
+                            <td><a>取消点赞</a></td>
+                        </tr>
+                        <tr>
+                            <td class="left"> 三体讨论大会> 三体社群</td>
+                            <td>赞我的</td>
+                            <td>点赞用户</td>
+                            <td>2016-11-01 23:11</td>
+                            <td><a>取消点赞</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="dianzan-body" id="lg-DV2" style="display: block;">
+                    <table width="744" border="0" cellspacing="0" cellpadding="0" >
+                        <tr>
+                            <th width="185" class="left">帖子标题</th>
+                            <th width="110">点赞类型</th>
+                            <th width="140">点赞/赞我用户</th>
+                            <th width="140">评价时间</th>
+                            <th width="100">操作</th>
+                        </tr>
+                        <tr>
+                            <td class="left"> 三体讨论大会> 三体社群</td>
+                            <td>赞我的</td>
+                            <td>点赞用户</td>
+                            <td>2016-11-01 23:11</td>
+                            <td><a>取消点赞</a></td>
+                        </tr>
+                        <tr>
+                            <td class="left"> 三体讨论大会> 三体社群</td>
+                            <td>赞我的</td>
+                            <td>点赞用户</td>
+                            <td>2016-11-01 23:11</td>
+                            <td><a>取消点赞</a></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
@@ -373,6 +384,12 @@
         $('.toggle-nav').mouseleave(function () {
             $(this).find('.dropdown-nav').hide();
         })
+        $("#lg2").click(function(){
+            $(".sussbtn").hide();
+        });
+        $("#lg1").click(function(){
+            $(".sussbtn").show();
+        });
     })()
 </script>
 <script src="../js/tab.js" type="text/javascript" charset="utf-8"></script>
