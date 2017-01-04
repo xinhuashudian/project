@@ -13037,6 +13037,16 @@ li {
   background: #F2474D;
   border: solid 1px #F2474D;
 }
+.btn-gray {
+  color: #FFF;
+  background: #959595;
+  border: solid 1px #959595;
+}
+.btn-black {
+  color: #FFF;
+  background: #333;
+  border: solid 1px #333;
+}
 .btn-block {
   width: 100%;
   display: block;
