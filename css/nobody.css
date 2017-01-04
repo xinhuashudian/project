@@ -756,16 +756,7 @@
   margin-right: 5px;
 }
 .refund .item input[type=button] {
-  height: 24px;
-  width: 98px;
-  border: 0;
-  color: #fff;
-  background-color: #ff9b2f;
-  border-radius: 3px;
   margin-right: 10px;
-}
-.refund .item input[type=button].cal {
-  background-color: #c9c9c9;
 }
 .refund .item .textarea {
   position: relative;
@@ -977,19 +968,7 @@
   text-align: center;
 }
 .forget .option input {
-  width: 100px;
-  height: 30px;
-  line-height: 30px;
   margin: 0 20px;
-  color: #666;
-  border: 1px solid #b8b8b8;
-  background-color: #fff;
-  border-radius: 3px;
-}
-.forget .option .next {
-  border: 0;
-  background-color: #ff9b2f;
-  color: #fff;
 }
 .password-reset {
   padding: 25px;

@@ -110,7 +110,7 @@ li {
   padding-left: 22px;
 }
 .order-list-right ul.order-nav li {
-  width: 98px;
+  width: 108px;
   cursor: pointer;
   font-size: 16px;
   color: #666666;
@@ -119,7 +119,7 @@ li {
   line-height: 30px;
   float: left;
   margin-right: 12px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .order-list-right ul.order-nav li.cur {
   background: #f3474e;
@@ -140,13 +140,9 @@ li {
   width: 180px;
 }
 .order-list-right .order-search .search-btn {
-  border-radius: 5px;
-  border: 0;
   margin-left: 12px;
   width: 62px;
   height: 26px;
-  background: #ff9b2f;
-  color: #fff;
   text-align: center;
 }
 .order-list-right .order-header {
@@ -367,14 +363,8 @@ li {
 .buy-card-right .card-sure {
   margin-left: 110px;
   margin-top: 10px;
-  width: 100px;
-  text-align: center;
-  color: #fff;
-  background: #ff9b2f;
-  line-height: 32px;
-  border: 0;
+  line-height: 30px;
   font-size: 14px;
-  border-radius: 5px;
 }
 .buy-card-right .card-content-wrap {
   margin-top: 18px;
@@ -5663,16 +5653,7 @@ a {
   margin-right: 5px;
 }
 .refund .item input[type=button] {
-  height: 24px;
-  width: 98px;
-  border: 0;
-  color: #fff;
-  background-color: #ff9b2f;
-  border-radius: 3px;
   margin-right: 10px;
-}
-.refund .item input[type=button].cal {
-  background-color: #c9c9c9;
 }
 .refund .item .textarea {
   position: relative;
@@ -5884,19 +5865,7 @@ a {
   text-align: center;
 }
 .forget .option input {
-  width: 100px;
-  height: 30px;
-  line-height: 30px;
   margin: 0 20px;
-  color: #666;
-  border: 1px solid #b8b8b8;
-  background-color: #fff;
-  border-radius: 3px;
-}
-.forget .option .next {
-  border: 0;
-  background-color: #ff9b2f;
-  color: #fff;
 }
 .password-reset {
   padding: 25px;
@@ -9286,13 +9255,9 @@ input[type="reset"] {
 }
 .wrap-tyy .photo-con .bottom a {
   display: block;
-  width: 70px;
-  height: 25px;
-  background: #ff9b2f;
   margin-top: 15px;
-  line-height: 25px;
-  border-radius: 5px;
-  font: 12px/25px "微软雅黑";
+  line-height: 30px;
+  font: 14px/30px "微软雅黑";
   color: #fff;
   text-align: center;
   cursor: pointer;
@@ -9473,14 +9438,9 @@ input[type="reset"] {
 }
 .wrap-tyy .content-refund > a {
   display: block;
-  width: 70px;
-  height: 25px;
   float: right;
-  background: #ff9b2f;
   margin: 15px 30px 10px 0;
-  line-height: 25px;
-  border-radius: 5px;
-  font: 12px/25px "微软雅黑";
+  font: 14px/30px "微软雅黑";
   color: #fff;
   text-align: center;
   cursor: pointer;
@@ -9760,7 +9720,7 @@ li {
   padding-left: 22px;
 }
 .order-list-right ul.order-nav li {
-  width: 98px;
+  width: 108px;
   cursor: pointer;
   font-size: 16px;
   color: #666666;
@@ -9769,7 +9729,7 @@ li {
   line-height: 30px;
   float: left;
   margin-right: 12px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .order-list-right ul.order-nav li.cur {
   background: #f3474e;
@@ -9790,12 +9750,7 @@ li {
   width: 180px;
 }
 .order-list-right .order-search .search-btn {
-  border-radius: 5px;
-  border: 0;
   margin-left: 12px;
-  width: 62px;
-  height: 26px;
-  background: #ff9b2f;
   color: #fff;
   text-align: center;
 }
@@ -10025,26 +9980,14 @@ li {
 .buy-card-right .card-sure {
   margin-left: 110px;
   margin-top: 10px;
-  width: 100px;
-  text-align: center;
-  color: #fff;
-  background: #ff9b2f;
-  line-height: 32px;
-  border: 0;
+  line-height: 30px;
   font-size: 14px;
-  border-radius: 5px;
 }
 .buy-card-right .card-buy {
   margin-left: 16px;
   margin-top: 10px;
-  width: 100px;
-  text-align: center;
-  color: #fff;
-  background: #f3474e;
-  line-height: 32px;
-  border: 0;
+  line-height: 30px;
   font-size: 14px;
-  border-radius: 5px;
 }
 .buy-card-right .card-content-wrap {
   margin-top: 18px;
@@ -11921,12 +11864,7 @@ li {
   margin-left: 94px;
 }
 .user-center-right button.save {
-  width: 74px;
-  height: 24px;
-  border-radius: 5px;
   color: #fff;
-  background: #ff9b2f;
-  border: 0;
   margin-left: 94px;
   margin-top: 30px;
   margin-bottom: 70px;
