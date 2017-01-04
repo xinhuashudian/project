@@ -3006,3 +3006,114 @@ input[type="reset"] {
   height: 100%;
   color: #FFF;
 }
+.login-pannel .change-type {
+  display: none;
+  height: 24px;
+  line-height: 24px;
+}
+.login-pannel .change-phone {
+  display: block;
+}
+.login-pannel .login-box {
+  display: none;
+}
+.login-pannel .normal-login {
+  display: block;
+}
+.login-pannel .normal-login .input-text {
+  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  border: none;
+  padding: 0px 8px;
+  line-height: 50px;
+  margin-top: 8px;
+  outline: none;
+}
+.login-pannel .normal-login .phone {
+  width: 250px;
+}
+.login-pannel .normal-login .pwd {
+  width: 250px;
+}
+.login-pannel .normal-login .submit-btn {
+  width: 250px;
+  padding: 0px 8px;
+  line-height: 50px;
+  height: 50px;
+  background: #EE474E;
+  color: #FFF;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  margin: 8px 0px;
+  cursor: pointer;
+}
+.login-pannel .phone-login .input-text {
+  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  border: none;
+  padding: 0px 8px;
+  line-height: 50px;
+  margin-top: 8px;
+  outline: none;
+}
+.login-pannel .phone-login .phone {
+  width: 250px;
+}
+.login-pannel .phone-login div {
+  width: 286px;
+}
+.login-pannel .phone-login div .yzm {
+  float: left;
+  width: 135px;
+}
+.login-pannel .phone-login div .send-msg {
+  float: left;
+  width: 90px;
+  padding: 0px 8px;
+  line-height: 50px;
+  height: 50px;
+  background: #EE474E;
+  color: #FFF;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  margin: 8px 0px 0px 10px;
+  cursor: pointer;
+}
+.login-pannel .phone-login .submit-btn {
+  width: 250px;
+  padding: 0px 8px;
+  line-height: 50px;
+  height: 50px;
+  background: #EE474E;
+  color: #FFF;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  margin: 8px 0px;
+  cursor: pointer;
+}
+.login-pannel .other-way li {
+  float: left;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: solid 6px rgba(0, 0, 0, 0.1);
+  margin-left: 16px;
+  opacity: 0.7;
+}
+.login-pannel .other-way li img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #FFF;
+}
+.login-pannel .change-type {
+  cursor: pointer;
+}

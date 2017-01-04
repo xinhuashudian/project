@@ -31,12 +31,55 @@
     <div>
         <img src="../images/logo.png">
         <div>
-            <div class="content">
+            <div class="content login-pannel">
                 <span class="one" style="font-size:16px;">欢迎登录</span>
-                <span class="two">手机号快捷登录</span>
-                <input type="text" placeholder="手机号"/>
-                <input type="text" placeholder="密码"/>
-                <a href="login.html">登录</a>
+                <div class="change-phone change-type">手机号快捷登录</div>
+                <div class="change-account change-type">账号登录</div>
+                <div class="login-box normal-login">
+                    <input type="text" class="phone input-text" placeholder="手机号"/>
+                    <input type="password" class="pwd input-text" placeholder="密码"/>
+                    <input type="submit" value="登录" class="submit-btn">
+                </div>
+                <div class="login-box phone-login">
+                    <input type="text" class="phone input-text" placeholder="手机号"/>
+                    <div class="clearfix">
+                        <input type="text" class="yzm input-text" placeholder="手机验证码"/>
+                        <div class="send-msg" data-send="enable">发送短信验证码</div>
+                    </div>
+                    <input type="submit" value="登录" class="submit-btn">
+                </div>
+                <script>
+                    $('.change-phone').click(function () {
+                        $('.normal-login').hide();
+                        $('.phone-login').show();
+                        $('.change-phone').hide();
+                        $('.change-account').show();
+                    });
+                    $('.change-account').click(function () {
+                        $('.normal-login').show();
+                        $('.phone-login').hide();
+                        $('.change-phone').show();
+                        $('.change-account').hide();
+                    })
+                    $('.send-msg').click(function () {
+                        var send = $(this).attr('data-send');
+                        var _this = this;
+                        if(send == 'enable'){
+                            $(this).attr('data-send','disable');
+                            $(_this).text(60 + '秒后重新发送');
+                            var s = 59;
+                            var timer = setInterval(function () {
+                                $(_this).text(s + '秒后重新发送');
+                                s --;
+                                if(s < 0) {
+                                    clearInterval(timer);
+                                    $(_this).attr('data-send','enable');
+                                    $(_this).text('发送短信验证码');
+                                }
+                            },1000)
+                        }
+                    })
+                </script>
                 <ul class="top">
                     <li>
                         <input type="checkbox"/>
@@ -48,15 +91,15 @@
                     </li>
                 </ul>
                 <h4></h4>
-                <ul class="bottom">
+                <ul class="other-way">
                     <li>
-                        <a class="weixin"></a>
+                        <a href=""><img src="../images/wechat.png"></a>
                     </li>
                     <li>
-                        <a class="weibo"></a>
+                        <a href=""><img src="../images/weibo.png"></a>
                     </li>
                     <li>
-                        <a class="qq"></a>
+                        <a href=""><img src="../images/qq.png"></a>
                     </li>
                 </ul>
             </div>
