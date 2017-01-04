@@ -27,9 +27,9 @@
   font-family: "微软雅黑";
   font-size: 16px;
   position: relative;
-  left: 50px;
+  left: 30px;
   top: 15px;
-  color: white;
+  color: #ffffff;
 }
 .page4-content-font-div1 {
   font-family: "微软雅黑";
@@ -96,9 +96,9 @@
 }
 .page5-title-font {
   font-family: "微软雅黑";
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
-  left: 26px;
+  left: 25px;
   top: 13px;
 }
 .page5-content-right-title {
@@ -221,12 +221,12 @@
   background-color: #f2474d;
   color: white;
   font-family: "微软雅黑";
-  font-size: 20px;
+  font-size: 18px;
 }
 .page6-content-right-title div {
   position: relative;
   left: 27px;
-  top: 12px;
+  top: 13px;
 }
 .page6-div-font1 {
   font-family: "微软雅黑";
