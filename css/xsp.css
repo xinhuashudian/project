@@ -12,13 +12,14 @@
   float: left;
 }
 .page4-content-right {
-  width: 794px;
+  width: 780px;
   height: 400px;
   background-color: white;
-  float: right;
+  float: left;
+  margin-left: 30px;
 }
 .page4-content-right-title {
-  width: 100%;
+  width: 780px;
   height: 50px;
   background-color: #f2474d;
 }
@@ -26,9 +27,9 @@
   font-family: "微软雅黑";
   font-size: 16px;
   position: relative;
-  left: 50px;
+  left: 30px;
   top: 15px;
-  color: white;
+  color: #ffffff;
 }
 .page4-content-font-div1 {
   font-family: "微软雅黑";
@@ -87,20 +88,21 @@
   float: left;
 }
 .page5-content-right {
-  width: 794px;
+  width: 780px;
   height: 700px;
   background-color: white;
-  float: right;
+  float: left;
+  margin-left: 33px;
 }
 .page5-title-font {
   font-family: "微软雅黑";
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
-  left: 26px;
+  left: 25px;
   top: 13px;
 }
 .page5-content-right-title {
-  width: 100%;
+  width: 780px;
   height: 50px;
   background-color: #f4f4f4;
 }
@@ -207,23 +209,24 @@
   float: left;
 }
 .page6-content-right {
-  width: 794px;
+  width: 780px;
   height: 400px;
   background-color: white;
-  float: right;
+  float: left;
+  margin-left: 30px;
 }
 .page6-content-right-title {
-  width: 100%;
+  width: 780px;
   height: 50px;
   background-color: #f2474d;
   color: white;
   font-family: "微软雅黑";
-  font-size: 20px;
+  font-size: 18px;
 }
 .page6-content-right-title div {
   position: relative;
   left: 27px;
-  top: 12px;
+  top: 13px;
 }
 .page6-div-font1 {
   font-family: "微软雅黑";
@@ -296,9 +299,10 @@
   margin: 10px auto;
 }
 .cancel-content-right {
-  width: 794px;
+  width: 780px;
   background-color: white;
-  float: right;
+  float: left;
+  margin-left: 30px;
   padding-bottom: 50px;
 }
 .showcomment-content-right-title {

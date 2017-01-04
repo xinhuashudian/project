@@ -129,7 +129,7 @@
   background: #c3c0bb;
   height: 50px;
   padding-left: 25px;
-  font: 20px/50px "微软雅黑";
+  font: 18px/50px "微软雅黑";
   color: #fff;
 }
 .wrap-tyy .content-detail .top > div {
@@ -174,6 +174,7 @@
 }
 .wrap-tyy .content-detail textarea {
   min-height: 90px;
+  resize: none;
 }
 .wrap-tyy .content-detail .top a {
   display: block;
@@ -233,8 +234,8 @@
 .wrap-tyy .content-refund h4 {
   background: #c3c0bb;
   height: 50px;
-  padding-left: 25px;
-  font: 20px/50px "微软雅黑";
+  padding-left: 20px;
+  font: 18px/50px "微软雅黑";
   color: #fff;
 }
 .wrap-tyy .content-refund ul {
@@ -440,10 +441,7 @@
 .login .content .bottom a {
   display: block;
   height: 61px;
-  width: 61px;
   cursor: pointer;
-  margin: 0 auto;
-  border-radius: 50%;
 }
 .login .content .weixin {
   background: url(../images/weixin.jpg) no-repeat center center;

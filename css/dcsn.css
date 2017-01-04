@@ -19,7 +19,6 @@ a {
   color: #fff;
   font-size: 20px;
   padding-left: 36px;
-  box-shadow: 0px 0px 10px #b5afaf;
 }
 .recomm .recomm-center {
   background: #fff;
@@ -455,15 +454,14 @@ a {
   width: 794px;
   background: #fff;
   padding-bottom: 160px;
-  box-shadow: 0px 0px 10px #b5afaf;
 }
 .invoice .invoice-box .invoice-header {
   height: 50px;
   line-height: 50px;
   background: #c3c0bb;
   color: #fff;
-  font-size: 20px;
-  padding-left: 36px;
+  font-size: 18px;
+  padding-left: 20px;
 }
 .invoice .invoice-box .invoice-center .center-top {
   margin-top: 40px;
@@ -700,7 +698,7 @@ a {
   line-height: 50px;
   background: #f5f5f5;
   color: #333;
-  font-size: 16px;
+  font-size: 18px;
   padding-left: 20px;
 }
 .suggestion .suggestion-box .suggestion-header a {
@@ -867,7 +865,6 @@ a {
   padding: 0 20px;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-top: 4px solid #f3474e;
 }
 .bask .bask-box .bask-mokuai .bask-header {
   height: 64px;
