@@ -390,6 +390,7 @@
   line-height: 8px;
   float: left;
   text-decoration: none;
+  margin-top: 3px;
 }
 .content .goods-content .goods-nav .goods-pagenum-ebook lable {
   float: left;
@@ -733,6 +734,7 @@
   text-align: center;
   line-height: 8px;
   float: left;
+  margin-top: 3px;
 }
 .content .goods-content .goods-nav .pageselect .pagination span {
   float: left;
@@ -2035,7 +2037,7 @@
 }
 /*图书社群*/
 .book-community-content-left {
-  width: 229px;
+  width: 227px;
   float: left;
 }
 .book-community-content-left h1 {
@@ -2048,14 +2050,14 @@
   font-weight: normal;
 }
 .book-community-content-left .book-community-left-top {
-  width: 227px;
+  width: 225px;
   height: 369px;
   float: left;
   border: 1px solid #d8d8d8;
   background-color: #fff;
 }
 .book-community-content-left .book-community-left-bottom {
-  width: 227px;
+  width: 225px;
   float: left;
   margin-top: 20px;
   border: 1px solid #d8d8d8;
@@ -2111,8 +2113,8 @@
   color: #ffcc31;
 }
 .book-community-content-right {
-  width: 752px;
-  margin-left: 248px;
+  width: 755px;
+  float: right;
   overflow: hidden;
 }
 .book-community-content-right .book-community-search {
@@ -2156,7 +2158,7 @@
   border-right: 1px solid #fff;
 }
 .book-community-content-right .book-community-right-top {
-  width: 750px;
+  width: 753px;
   border: 1px solid #d4d3d0;
   float: left;
   margin-top: 19px;
@@ -2387,12 +2389,12 @@
 }
 /*小说社群*/
 .novel-community-content-left {
-  width: 752px;
+  width: 755px;
   overflow: hidden;
   float: left;
 }
 .novel-community-content-left .novel-community-left-bottom {
-  width: 752px;
+  width: 755px;
   float: left;
 }
 .novel-community-content-left .novel-community-left-bottom h1 {
@@ -2578,7 +2580,7 @@
   line-height: 50px;
 }
 .novel-community-content-right {
-  width: 229px;
+  width: 227px;
   margin-left: 771px;
 }
 .novel-community-content-right h1 {
@@ -2591,7 +2593,7 @@
   font-weight: normal;
 }
 .novel-community-content-right .novel-community-right-bottom {
-  width: 227px;
+  width: 225px;
   float: left;
   border: 1px solid #d8d8d8;
   background-color: #fff;
@@ -2647,8 +2649,13 @@
 }
 /*基本信息*/
 .basic-information-content-right {
+<<<<<<< HEAD
   width: 782px;
   margin-left: 206px;
+=======
+  width: 794px;
+  float: right;
+>>>>>>> 485ca6d8941a00340f76f40acd70231b2f8f326e
   overflow: hidden;
   background: #fff;
   padding-bottom: 108px;
@@ -2679,6 +2686,199 @@
 }
 .basic-information-content-right .basic-information-bottom .basic-information-title a.selected {
   color: #ff7200;
+}
+.basic-information-content-right .basic-information-bottom .basic-information-moreinfo table {
+  float: left;
+  margin-top: 12px;
+  margin-bottom: 30px;
+}
+.basic-information-content-right .basic-information-bottom .basic-information-moreinfo tr th {
+  font-size: 14px;
+  text-align: left;
+  color: #333;
+  font-weight: normal;
+  padding: 12px 0px 12px 20px;
+}
+.basic-information-content-right .basic-information-bottom .basic-information-moreinfo tr th span.red {
+  color: #f3474e;
+  margin-right: 5px;
+  font-size: 14px;
+  line-height: 14px;
+}
+.basic-information-content-right .basic-information-bottom .basic-information-moreinfo tr td {
+  font-size: 14px;
+  text-align: left;
+  color: #333;
+  font-weight: normal;
+}
+.basic-information-content-right .basic-information-bottom .basic-information-moreinfo tr td a.edit {
+  text-decoration: none;
+  color: #428cb6;
+  font-size: 14px;
+  margin-left: 21px;
+}
+.basic-information-content-right .basic-information-bottom .basic-information-moreinfo tr td input[type=text] {
+  width: 121px;
+  height: 14px;
+  font-size: 14px;
+  border: none;
+  border: 1px solid #c3c3c3;
+  color: #333;
+  padding: 5px;
+  outline: none;
+  border-radius: 4px;
+}
+.basic-information-content-right .basic-information-bottom .basic-information-moreinfo tr td input.longly {
+  width: 264px;
+}
+.basic-information-content-right .basic-information-bottom .basic-information-moreinfo tr td .lable-radio {
+  margin-left: 10px;
+  margin-right: 20px;
+  color: #333;
+  font-size: 14px;
+}
+.basic-information-content-right .basic-information-bottom .basic-information-moreinfo tr td select {
+  width: 130px;
+  height: 24px;
+  border-radius: 4px;
+  border: solid 1px #c3c3c3;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #666;
+  outline: none;
+}
+.basic-information-content-right .basic-information-bottom .basic-information-moreinfo tr td .love-book {
+  background-color: #FFF;
+}
+.basic-information-content-right .basic-information-bottom .basic-information-moreinfo tr td .love-book a {
+  display: block;
+  width: 60px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  font-size: 14px;
+  text-decoration: none;
+  float: left;
+  border-radius: 4px;
+  border: 1px solid #666;
+  color: #666;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.basic-information-content-right .basic-information-bottom .basic-information-moreinfo tr td .love-book a.selected {
+  color: #f3474e;
+  border: 1px solid #f3474e;
+}
+.basic-information-content-right .basic-information-bottom .basic-information-moreinfo .basic-submit input {
+  width: 72px;
+  height: 26px;
+  color: #fff;
+  font-size: 14px;
+  text-align: cneter;
+  margin-left: 100px;
+  background-color: #ff9b2f;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+.basic-information-content-right .basic-information-bottom .photo-con {
+  float: left;
+  margin-top: 30px;
+}
+.basic-information-content-right .basic-information-bottom .photo-con .left {
+  float: left;
+  width: 490px;
+  border-right: 1px solid #ededed;
+}
+.basic-information-content-right .basic-information-bottom .photo-con .but-one {
+  display: block;
+  background: #f7f8fa;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  font: 12px/30px "微软雅黑";
+  color: #333;
+}
+.basic-information-content-right .basic-information-bottom .photo-con p {
+  display: block;
+  margin: 10px auto 20px 0;
+  font: 12px "微软雅黑";
+  color: #999;
+}
+.basic-information-content-right .basic-information-bottom .photo-con .img-box {
+  margin-right: 20px;
+  height: 235px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  background: #f9f9f9;
+}
+.basic-information-content-right .basic-information-bottom .photo-con .img-box div {
+  width: 150px;
+  height: 150px;
+  margin: 40px auto 40px auto;
+  background: #f3f3f3;
+}
+.basic-information-content-right .basic-information-bottom .photo-con .bottom {
+  margin: 30px auto 0px auto;
+}
+.basic-information-content-right .basic-information-bottom .photo-con h4 {
+  display: block;
+  font: bold 14px "微软雅黑";
+  color: #333;
+}
+.basic-information-content-right .basic-information-bottom .photo-con .head-logo {
+  margin: 10px auto 20px auto;
+  overflow: hidden;
+}
+.basic-information-content-right .basic-information-bottom .photo-con .head-logo img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin: 10px 10px 0 0;
+}
+.basic-information-content-right .basic-information-bottom .photo-con .bottom a {
+  display: block;
+  width: 70px;
+  height: 25px;
+  background: #ff9b2f;
+  margin-top: 15px;
+  line-height: 25px;
+  border-radius: 5px;
+  font: 12px/25px "微软雅黑";
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.basic-information-content-right .basic-information-bottom .photo-con .right {
+  float: left;
+  margin-left: 20px;
+  width: 217px;
+}
+.basic-information-content-right .basic-information-bottom .photo-con .right span {
+  display: block;
+  font: 12px/20px "微软雅黑";
+  color: #999;
+}
+.basic-information-content-right .basic-information-bottom .photo-con .right .img {
+  border: 1px solid #ededed;
+  background: #f3f3f3;
+}
+.basic-information-content-right .basic-information-bottom .photo-con .right span {
+  margin-top: 5px;
+}
+.basic-information-content-right .basic-information-bottom .photo-con .large {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+.basic-information-content-right .basic-information-bottom .photo-con .small {
+  margin-top: 30px;
+  width: 50px;
+  height: 50px;
 }
 .basic-information-content-right .basic-information-bottom .basic-information-binfo {
   width: 727px;
@@ -2752,7 +2952,9 @@
   border-radius: 4px;
   margin-right: 10px;
   font-size: 14px;
+  border: 1px solid #c3c3c3;
   color: #666;
+  outline: none;
 }
 .basic-information-content-right .basic-information-bottom .basic-information-binfo tr td .love-book {
   background-color: #FFF;
