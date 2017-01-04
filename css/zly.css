@@ -1891,7 +1891,7 @@ input[type="reset"] {
 }
 .detail-box .right .goods-detail-Introduction .section .head {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   border-bottom: solid 3px #EDEDED;
 }
 .detail-box .right .goods-detail-Introduction .section .head span {
@@ -3116,4 +3116,78 @@ input[type="reset"] {
 }
 .login-pannel .change-type {
   cursor: pointer;
+}
+.goods-text-info {
+  width: 670px;
+  float: left;
+}
+.goods-text-info .martop {
+  float: left;
+  margin-top: 5px;
+}
+.goods-text-info .blue {
+  font-size: 16px;
+  color: #448bf7;
+}
+.goods-text-info .goods-info-main {
+  float: left;
+}
+.goods-text-info .goods-info-main ul li {
+  float: left;
+}
+.goods-text-info .goods-info-main ul li P {
+  margin-top: 12px;
+  font-size: 14px;
+  width: 670px;
+  float: left;
+}
+.goods-text-info .goods-info-main ul li P span {
+  float: left;
+  font-size: 14px;
+  color: #271717;
+  line-height: 24px;
+  padding: 0 5px;
+}
+.goods-text-info .goods-info-main ul li P span.red {
+  color: red;
+}
+.goods-text-info .goods-info-main ul li P span.has {
+  display: inline-block;
+}
+.goods-text-info .goods-info-main ul li P span.nohas {
+  display: none;
+}
+.goods-text-info .goods-info-main ul li P a {
+  color: #271717;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+}
+.goods-text-info .goods-info-main ul li P a.textindent {
+  margin-left: 20px;
+}
+.goods-text-info .goods-info-author {
+  width: 100%;
+  float: left;
+  color: #271717;
+  font-size: 16px;
+  line-height: 16px;
+}
+.goods-text-info .goods-info-author a.author {
+  color: #448bf7;
+  font-size: 16px;
+  line-height: 28px;
+  float: left;
+  text-decoration: none;
+  margin-left: 5px;
+}
+.goods-text-info .goods-info-author a {
+  float: left;
+  color: #271717;
+  font-size: 16px;
+  line-height: 28px;
+}
+.textheight {
+  height: 280px;
+  overflow: hidden;
 }

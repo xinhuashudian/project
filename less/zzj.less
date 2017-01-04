@@ -115,22 +115,20 @@ li {
         margin-top: 38px;
         height: 30px;
         padding-left: @order-list-left;
-        li {
+        li{
             width: 108px;
             cursor: pointer;
             font-size: 16px;
             color: #666666;
-            border: 1px solid #e9e9e7;
+            border-bottom:2px solid #d2d2d2;
             text-align: center;
             line-height: 30px;
             float: left;
             margin-right: 12px;
-            border-radius: 3px;
         }
-        li.cur {
-            background: #f3474e;
-            border: 1px solid #f3474e;
-            color: #fff;
+        li.cur{
+            border-bottom:1px solid #f3474e;
+            color: #333;
         }
     }
     .order-search {
@@ -138,18 +136,20 @@ li {
         margin-top: 16px;
         height: 26px;
         font-size: 12px;
-        input {
+        input{
             border-radius: @order-border-radius;
-            border: 1px solid #cacaca;
+            border:1px solid #cacaca;
             background: #f7f7f7;
             height: 22px;
-            width: 180px;
+            width: 120px;
         }
-        .search-btn {
-            margin-left: 12px;
-            width: 62px;
-            height: 26px;
+        .search-btn{
+            color: #fff;
+            width:58px;
+            height:22px;
             text-align: center;
+            line-height:22px;
+            position: relative;
         }
     }
     .order-header {
