@@ -2974,7 +2974,7 @@ a {
   text-decoration: none;
 }
 .content .coudan-title {
-  width: 120px;
+  width: 80px;
   height: 60px;
   margin: 0 auto;
 }
@@ -2982,7 +2982,7 @@ a {
   float: left;
   margin-top: 30px;
 }
-.content .coudan-title lable {
+.content .coudan-title label {
   float: right;
   font-size: 20px;
   color: #666;
