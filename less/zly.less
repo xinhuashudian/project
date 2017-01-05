@@ -2216,6 +2216,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 
 
 .receive-address-right{
+    position: relative;
     .title{
         width: 100%;
         height: 45px;
@@ -2229,6 +2230,14 @@ input[type="button"], input[type="submit"], input[type="reset"] {
             margin-left: 20px;
         }
     }
+    a{
+        color: #666666;
+        height: 44px;
+        position: absolute;
+        right: 0;
+        line-height: 44px;
+        top:0
+    }
 }
 
 .suggestions-box{
@@ -2236,9 +2245,6 @@ input[type="button"], input[type="submit"], input[type="reset"] {
         background: #C3C0BB;
     }
     .suggestions-content{
-        font-size: @font_minSize;
-        width: 710px;
-        margin: 0px auto;
         *{
             box-sizing: border-box!important;
         }

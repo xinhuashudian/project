@@ -2101,6 +2101,9 @@ input[type="reset"] {
   float: right;
   color: #FC2934;
 }
+.receive-address-right {
+  position: relative;
+}
 .receive-address-right .title {
   width: 100%;
   height: 45px;
@@ -2114,13 +2117,16 @@ input[type="reset"] {
 .receive-address-right .title span {
   margin-left: 20px;
 }
+.receive-address-right a {
+  color: #666666;
+  height: 44px;
+  position: absolute;
+  right: 0;
+  line-height: 44px;
+  top: 0;
+}
 .suggestions-box .title {
   background: #C3C0BB;
-}
-.suggestions-box .suggestions-content {
-  font-size: 12px;
-  width: 710px;
-  margin: 0px auto;
 }
 .suggestions-box .suggestions-content * {
   box-sizing: border-box !important;

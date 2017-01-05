@@ -8457,6 +8457,9 @@ input[type="reset"] {
   float: right;
   color: #FC2934;
 }
+.receive-address-right {
+  position: relative;
+}
 .receive-address-right .title {
   width: 100%;
   height: 45px;
@@ -8470,13 +8473,16 @@ input[type="reset"] {
 .receive-address-right .title span {
   margin-left: 20px;
 }
+.receive-address-right a {
+  color: #666666;
+  height: 44px;
+  position: absolute;
+  right: 0;
+  line-height: 44px;
+  top: 0;
+}
 .suggestions-box .title {
   background: #C3C0BB;
-}
-.suggestions-box .suggestions-content {
-  font-size: 12px;
-  width: 710px;
-  margin: 0px auto;
 }
 .suggestions-box .suggestions-content * {
   box-sizing: border-box !important;
@@ -12584,6 +12590,7 @@ li {
   width: 794px;
   float: right;
   background-color: #FFFFFF;
+  position: relative;
 }
 .z-right-wrap-shadowte h3.console-title {
   font-size: 20px;
@@ -12724,6 +12731,50 @@ li {
   float: left;
   margin-right: 20px;
   background: url(../images/sprite-safe.png) no-repeat 0px 0px;
+}
+.z-right-wrap-shadowte .safe-alert {
+  position: absolute;
+  top: 390px;
+  right: 0px;
+}
+.z-right-wrap-shadowte .safe-alert img {
+  width: 200px;
+  position: absolute;
+  right: 50px;
+}
+.z-right-wrap-shadowte .safe-alert .pwd-wrap {
+  display: none;
+  width: 300px;
+  background: #fff;
+  height: 160px;
+  border: 1px solid #666666;
+  color: #333333;
+  position: absolute;
+  right: 50px;
+  line-height: 30px;
+}
+.z-right-wrap-shadowte .safe-alert .pwd-wrap .pwd-sure {
+  height: 80px;
+  margin-top: 10px;
+}
+.z-right-wrap-shadowte .safe-alert .pwd-wrap .pwd-sure span {
+  width: 100px;
+  float: left;
+  display: block;
+  text-align: right;
+}
+.z-right-wrap-shadowte .safe-alert .pwd-wrap .pwd-sure input {
+  float: left;
+  display: block;
+  height: 30px;
+  margin-top: 10px;
+  border: 1px solid #666666;
+  width: 160px;
+}
+.z-right-wrap-shadowte .safe-alert .pwd-wrap .btn-pwd {
+  margin: 20px auto;
+  height: 30px;
+  width: 224px;
 }
 .register-body {
   background: url(../images/bg_zhuce.jpg) no-repeat;

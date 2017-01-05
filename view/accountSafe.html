@@ -198,7 +198,7 @@
                 <ol class="safe-dengji">
                     <li>
                         <dl>
-                            <dt><i class="pass"></i>账户安全</dt>
+                            <dt><i class="pass"></i>支付密码</dt>
                             <dd>
                                 <span class="mes">建议定期更滑密码，且数字、字母、符号至少包含两种的长度为8-20个字符的密码。</span>
                                 <a href="">修改</a>
@@ -229,6 +229,19 @@
                     <p>1.确认您登录的是就酒仙网址http://www.jiuxian.com,注意防范进入钓鱼让战，不要轻信各种几十通讯工具发
                         送的商品或支付链接，谨防网购诈骗。</p>
                     <p>2.建议您安装杀毒软件，并定期更新操作系统等软件补丁，确认账户及交易安全。</p>
+                </div>
+            </div>
+            <div class="safe-alert">
+                <img src="../images/img010.png" alt="">
+                <div class="pwd-wrap">
+                    <div class="pwd-sure">
+                        <div><span>支付密码：</span><input type="text"></div>
+                        <div><span>确认密码：</span><input type="text"></div>
+                    </div>
+                    <div class="btn-pwd">
+                        <button class="btn btn-warning btn-sm">提交</button>
+                        <button class="btn btn-default btn-sm">返回</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -356,6 +369,14 @@
 
         $('.toggle-nav').mouseleave(function () {
             $(this).find('.dropdown-nav').hide();
+        })
+        $(".btn-danger").click(function(){
+            $(".pwd-wrap").show();
+            $(".safe-alert img").hide();
+        })
+        $(".btn-default").click(function(){
+            $(".pwd-wrap").hide();
+            $(".safe-alert img").show();
         })
     })
 </script>
