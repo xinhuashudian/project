@@ -90,6 +90,16 @@ li {
 .z-content-wrap .z-left-wrap ul li.cur span {
   background: #fff;
 }
+.z-content-wrap .z-left-wrap ul .single {
+  text-indent: 1em;
+  margin-bottom: 13px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.z-content-wrap .z-left-wrap ul .single a {
+  font-size: 16px;
+  color: #333;
+}
 .order-list-right {
   width: 794px;
   margin-left: 206px;
