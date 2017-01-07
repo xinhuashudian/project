@@ -1274,6 +1274,9 @@ input[type="button"], input[type="submit"], input[type="reset"] {
                 margin-top: 8px;
                 color: #888787;
             }
+            a:hover{
+                color:#c81623
+            }
         }
     }
 }
@@ -1320,6 +1323,9 @@ input[type="button"], input[type="submit"], input[type="reset"] {
             border-left: solid 1px #333;
             &:first-child{
                 border-left: none;
+            }
+            a:hover{
+                color:#c81623;
             }
         }
     }
@@ -3181,9 +3187,29 @@ input[type="button"], input[type="submit"], input[type="reset"] {
         display: none;
         height: 24px;
         line-height: 24px;
+        position: absolute;
+        width: 100px;
+        right: 14px;
+        top: 10px;
+        line-height: 30px;
     }
     .change-phone{
         display: block;
+    }
+    .error-wrap{
+        position: absolute;
+        display: none;
+        top: 0;
+        color: #999999;
+        line-height: 20px;
+        padding: 4px 20px 4px 40px;
+        border: 1px solid #faccc6;
+        background: #ffebeb url("../images/error01.jpg") no-repeat 12px center;
+        background-size: 16px;
+        width: 204px;
+        a{
+            color: #e4393c;
+        }
     }
     .login-box{
         display: none;

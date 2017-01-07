@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>注册</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/zhanghu.css">
     <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_9xrcye5m5bhgp66r.css">
     <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
 </head>
@@ -63,16 +62,16 @@
     <div class="register-body clearfix">
         <div class="register-content">
             <form>
-                <ul>
-                    <li>
-                        <input type="text" value="" placeholder="请输入你的手机号" class="phone"/>
-                    </li>
-                    <li>
-                        <input type="text" value="" placeholder="验证码" class="yanzheng"/>
-                        <a href="" class="recevie-yanzheng">获取验证码</a>
-                    </li>
-                </ul>
-                <a class="checked">已阅读并同意服务协议</a>
+                <div class="login-box phone-login">
+                    <input type="text" class="phone input-text" placeholder="请输入你的手机号"/>
+                    <div class="clearfix">
+                        <input type="text" class="yzm input-text" placeholder="验证码"/>
+                        <div class="send-msg" data-send="enable">发送短信验证码</div>
+                    </div>
+                </div>
+                <div class="register-box">
+                    <input type="checkbox"/><span>已阅读并同意服务协议</span>
+                </div>
                 <input type="button" value="立即注册" title="立即注册" class="register-button">
             </form>
         </div>
@@ -206,6 +205,24 @@
     (function () {
         $('.register-button').click(function () {
             window.location.href = 'registerInfo.html'
+        })
+        $('.send-msg').click(function () {
+            var send = $(this).attr('data-send');
+            var _this = this;
+            if(send == 'enable'){
+                $(this).attr('data-send','disable');
+                $(_this).text(60 + '秒后重新发送');
+                var s = 59;
+                var timer = setInterval(function () {
+                    $(_this).text(s + '秒后重新发送');
+                    s --;
+                    if(s < 0) {
+                        clearInterval(timer);
+                        $(_this).attr('data-send','enable');
+                        $(_this).text('发送短信验证码');
+                    }
+                },1000)
+            }
         })
     })()
 </script>

@@ -68,12 +68,12 @@ li{list-style: none;}
                     display: block;
                     height: 12px;
                 }
-                }  
+                }
             }
             span.last{
                 color: @font-color9;
             }
-            
+
         }
         ol.safe-dengji{
             padding-left: 20px;
@@ -131,7 +131,7 @@ li{list-style: none;}
             h3{
                font-family: "黑体";
                font-size: 24px;
-               color: @font-color3; 
+               color: @font-color3;
                font-weight: normal;
             }
             p{
@@ -157,7 +157,7 @@ li{list-style: none;}
             float: left;
             margin-right: 20px;
             background: url(../images/sprite-safe.png) no-repeat 0px 0px;
-        }   
+        }
     }
     .safe-alert{
         position: absolute;
@@ -218,38 +218,56 @@ li{list-style: none;}
         padding: 30px 26px 0;
         font-size: 20px;
         font-family: "黑体";
-        li{
-            height: 54px;
-            margin-bottom: 10px;
-            width: 270px;
-            input{
-                height: 54px;
-                line-height: 54px;
-                float: left;
-                display: inline;
-                background: rgba(233,236,241,0.68);
+        .phone-login{
+            .input-text{
+                height: 50px;
+                background: rgba(255,255,255,.5);
+                border-radius: 4px;
                 border: none;
-                border-radius: 4px;
-                font-size: 18px;
-                padding-left: 10px;
-                font-family: "黑体";
+                padding: 0px 8px;
+                line-height: 50px;
+                margin-top: 12px;
+                outline: none;
             }
-            input.phone{
-                width: 260px;
+            .phone{
+                width: 265px;
             }
-            input.yanzheng{
-                width: 120px;
+            div{
+                width: 286px;
+                .yzm{
+                    float: left;
+                    width: 135px;
+                }
+                .send-msg{
+                    float: left;
+                    width: 120px;
+                    padding: 0px 8px;
+                    line-height: 50px;
+                    height: 50px;
+                    background: #EE474E;
+                    color: #FFF;
+                    text-align: center;
+                    border-radius: 4px;
+                    border: none;
+                    outline: none;
+                    margin: 12px 0px 0px 10px;
+                    cursor: pointer;
+                    font-size: 14px;
+                }
             }
-            a.recevie-yanzheng{
-                background: #ee474e;
-                width: 130px;
-                height: 54px;
-                float: right;
+            .submit-btn{
+                width: 250px;
+                padding: 0px 8px;
+                line-height: 50px;
+                height: 50px;
+                background: #EE474E;
+                color: #FFF;
                 text-align: center;
-                line-height: 54px;
-                color: #FFFFFF;
                 border-radius: 4px;
-                font-size: 18px;
+                border: none;
+                outline: none;
+                margin: 8px 0px;
+                cursor: pointer;
             }
         }
         input.register-button{
@@ -264,15 +282,20 @@ li{list-style: none;}
             border: none;
             font-family: "黑体";
         }
-        a.checked{
-            font-size: 18px;
-            color: #2a2a2a;
-            padding-left: 24px;
-            background: url(../images/bg_agree_check.png) no-repeat left center;
-            margin: 30px 0 12px 0;
-            display: block;
-            cursor: pointer;
-            line-height: 16px;
+        .register-box{
+            height: 30px;
+            font-size: 14px;
+            line-height: 30px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            input{
+              float: left;
+              margin-top: 10px;
+              margin-top: 2px;
+              width: 15px;
+              height: 15px;
+              margin-right: 5px;
+            }
         }
     }
 }

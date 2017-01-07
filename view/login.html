@@ -48,38 +48,9 @@
                     </div>
                     <input type="submit" value="登录" class="submit-btn">
                 </div>
-                <script>
-                    $('.change-phone').click(function () {
-                        $('.normal-login').hide();
-                        $('.phone-login').show();
-                        $('.change-phone').hide();
-                        $('.change-account').show();
-                    });
-                    $('.change-account').click(function () {
-                        $('.normal-login').show();
-                        $('.phone-login').hide();
-                        $('.change-phone').show();
-                        $('.change-account').hide();
-                    })
-                    $('.send-msg').click(function () {
-                        var send = $(this).attr('data-send');
-                        var _this = this;
-                        if(send == 'enable'){
-                            $(this).attr('data-send','disable');
-                            $(_this).text(60 + '秒后重新发送');
-                            var s = 59;
-                            var timer = setInterval(function () {
-                                $(_this).text(s + '秒后重新发送');
-                                s --;
-                                if(s < 0) {
-                                    clearInterval(timer);
-                                    $(_this).attr('data-send','enable');
-                                    $(_this).text('发送短信验证码');
-                                }
-                            },1000)
-                        }
-                    })
-                </script>
+                <div class="error-wrap">
+                    <p>你输入的密码与账号名不匹配，是否<a href="password_change.html">忘记密码</a>或<a href="password_change.html">忘记用户名</a></p>
+                </div>
                 <ul class="top">
                     <li>
                         <input type="checkbox"/>
@@ -229,5 +200,42 @@
     <li><a href="" class="iconfont icon-bianji"></a></li>
     <li onclick="$(document).scrollTop(0)"><a href="javascript:void(0)" class="iconfont icon-huidaodingbu"></a></li>
 </ul>
+<script>
+    $(document).ready(function(){
+        $('.submit-btn').click(function(){
+            $('.error-wrap').show()
+        })
+        $('.change-phone').click(function () {
+            $('.normal-login').hide();
+            $('.phone-login').show();
+            $('.change-phone').hide();
+            $('.change-account').show();
+        });
+        $('.change-account').click(function () {
+            $('.normal-login').show();
+            $('.phone-login').hide();
+            $('.change-phone').show();
+            $('.change-account').hide();
+        })
+        $('.send-msg').click(function () {
+            var send = $(this).attr('data-send');
+            var _this = this;
+            if(send == 'enable'){
+                $(this).attr('data-send','disable');
+                $(_this).text(60 + '秒后重新发送');
+                var s = 59;
+                var timer = setInterval(function () {
+                    $(_this).text(s + '秒后重新发送');
+                    s --;
+                    if(s < 0) {
+                        clearInterval(timer);
+                        $(_this).attr('data-send','enable');
+                        $(_this).text('发送短信验证码');
+                    }
+                },1000)
+            }
+        })
+    })
+</script>
 </body>
 </html>

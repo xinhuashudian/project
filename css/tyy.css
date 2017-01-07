@@ -365,6 +365,7 @@
   width: 320px;
   padding: 15px 25px 0 25px;
   float: right;
+  position: relative;
 }
 .login .content span {
   display: block;

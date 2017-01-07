@@ -1196,6 +1196,9 @@ input[type="reset"] {
   margin-top: 8px;
   color: #888787;
 }
+.help-item .wrap .help-box a:hover {
+  color: #c81623;
+}
 .qrcode-item {
   width: 1000px;
   margin: 32px auto;
@@ -1240,6 +1243,9 @@ input[type="reset"] {
 }
 .bottom-nav .nav-item li:first-child {
   border-left: none;
+}
+.bottom-nav .nav-item li a:hover {
+  color: #c81623;
 }
 .bottom-nav .website-info {
   margin-top: 4px;
@@ -3016,9 +3022,29 @@ input[type="reset"] {
   display: none;
   height: 24px;
   line-height: 24px;
+  position: absolute;
+  width: 100px;
+  right: 14px;
+  top: 10px;
+  line-height: 30px;
 }
 .login-pannel .change-phone {
   display: block;
+}
+.login-pannel .error-wrap {
+  position: absolute;
+  display: none;
+  top: 0;
+  color: #999999;
+  line-height: 20px;
+  padding: 4px 20px 4px 40px;
+  border: 1px solid #faccc6;
+  background: #ffebeb url("../images/error01.jpg") no-repeat 12px center;
+  background-size: 16px;
+  width: 204px;
+}
+.login-pannel .error-wrap a {
+  color: #e4393c;
 }
 .login-pannel .login-box {
   display: none;

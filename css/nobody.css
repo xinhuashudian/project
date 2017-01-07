@@ -1121,7 +1121,7 @@
   border-radius: 3px;
 }
 .password-set .form span {
-  display: inline-block;
+  display: none;
   font-size: 12px;
   color: #f3474e;
   margin-left: 10px;
