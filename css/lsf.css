@@ -85,19 +85,25 @@
   background: #fff;
   float: left;
 }
+.content .selectCondition dl dd .layout {
+  position: relative;
+  height: 38px;
+  overflow: hidden;
+  padding-right: 70px;
+}
 .content .selectCondition dl dd .selectmore {
-  margin-right: 18px;
-  float: right;
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  margin-top: -11px;
 }
 .content .selectCondition dl dd .selectmore span {
   display: block;
   width: 50px;
   height: 22px;
   background-color: #dedede;
-  margin-top: 8px;
   margin-left: 10px;
   line-height: 22px;
-  float: right;
   cursor: pointer;
 }
 .content .selectCondition dl dd .selectmore span lable {
@@ -105,6 +111,9 @@
 }
 .content .selectCondition dl dd .selectmore span img {
   width: 11px;
+}
+.content .selectCondition dl dd .selectmore span .selectmore2 {
+  display: none;
 }
 .content .selectCondition dl dd .pricechange {
   float: right;
@@ -189,7 +198,7 @@
   line-height: 45px;
   text-indent: 1em;
   text-align: left;
-  font-size: 14px;
+  font-size: 18px;
   color: #333;
 }
 .content .goods-content .left-nav .left-nav-color1 {
@@ -213,7 +222,7 @@
   margin-top: 7px;
 }
 .content .goods-content .left-nav .left-nav-info ul li {
-  cursor: pointer;
+  border-bottom: 1px solid #bfbfbf;
 }
 .content .goods-content .left-nav .left-nav-info ul li .goods-img {
   margin: 0 auto;
@@ -226,13 +235,29 @@
 }
 .content .goods-content .left-nav .left-nav-info ul li .goods-name {
   color: #333;
+  font-size: 16px;
   margin-left: 30px;
+  margin-bottom: 8px;
 }
 .content .goods-content .left-nav .left-nav-info ul li .goods-price {
-  color: #be4242;
-  font-weight: bold;
+  color: #ff7200;
   margin-left: 30px;
+  margin-right: 50px;
   margin-bottom: 7px;
+  font-size: 14px;
+}
+.content .goods-content .left-nav .left-nav-info ul li .goods-price span {
+  color: #999;
+  font-size: 12px;
+}
+.content .goods-content .left-nav .left-nav-info ul li .goods-price .tjsj {
+  display: block;
+  float: right;
+}
+.content .goods-content .left-nav .left-nav-info ul li .goods-price .tjsj img {
+  display: block;
+  width: 24px;
+  margin-top: -2px;
 }
 .content .goods-content .left-nav .left-nav-sale {
   width: 228px;
@@ -254,7 +279,6 @@
   margin: 0 10px;
   border-bottom: 1px solid #dedede;
   overflow: hidden;
-  cursor: pointer;
 }
 .content .goods-content .left-nav .left-nav-sale ul li span {
   display: block;
@@ -321,10 +345,10 @@
 .content .goods-content .goods-nav .goods-search {
   float: left;
   margin-top: 7px;
-  margin-left: 89px;
+  margin-left: 25px;
 }
 .content .goods-content .goods-nav .goods-search input {
-  width: 48px;
+  width: 110px;
   height: 20px;
   line-height: 20px;
   float: left;
@@ -438,6 +462,16 @@
   border: 1px solid #dedede;
   margin-top: 29px;
 }
+.content .goods-content .goods-nav .goods-list-ebook li .like {
+  margin: inherit;
+  border: none;
+  width: 18px;
+  height: 16px;
+  margin-right: 3px;
+  margin-top: 3px;
+  cursor: pointer;
+  display: inherit;
+}
 .content .goods-content .goods-nav .goods-list-ebook li .goods-list-info {
   float: left;
   width: 578px;
@@ -550,6 +584,13 @@
   border: 1px solid #dedede;
   margin-top: 29px;
 }
+.content .goods-content .goods-nav .goods-list-thr li .like {
+  margin: inherit;
+  border: none;
+  width: 18px;
+  height: 16px;
+  display: inherit;
+}
 .content .goods-content .goods-nav .goods-list-thr li .goods-list-info {
   float: left;
   width: 578px;
@@ -566,12 +607,12 @@
   font-size: 12px;
   font-weight: normal;
 }
-.content .goods-content .goods-nav .goods-list-thr li .goods-list-info p.thr-title span a {
+.content .goods-content .goods-nav .goods-list-thr li .goods-list-info p.thr-title span i {
   text-decoration: none;
   cursor: pointer;
   line-height: 22px;
 }
-.content .goods-content .goods-nav .goods-list-thr li .goods-list-info p.thr-title span a img {
+.content .goods-content .goods-nav .goods-list-thr li .goods-list-info p.thr-title span i img {
   display: block;
   width: 16px;
   height: 14px;
@@ -650,7 +691,6 @@
   height: 303px;
   float: left;
   word-break: break-all;
-  cursor: pointer;
 }
 .content .goods-content .goods-nav .goods-list li img {
   display: block;
@@ -704,12 +744,21 @@
   border: 1px solid #dedede;
   line-height: 10px;
   text-align: center;
+  cursor: pointer;
 }
 .content .goods-content .goods-nav .goods-list li .goods-list-info .goods-buy .goods-buy-icon {
   float: right;
 }
 .content .goods-content .goods-nav .goods-list li .goods-list-info .goods-buy .goods-buy-icon i {
   font-size: 20px;
+  margin-left: 6px;
+}
+.content .goods-content .goods-nav .goods-list li .goods-list-info .goods-buy .goods-buy-icon .like {
+  margin: inherit;
+  border: none;
+  width: 18px;
+  height: 16px;
+  display: inherit;
 }
 .content .goods-content .goods-nav .pageselect {
   width: 100%;
@@ -746,7 +795,7 @@
 .content .goods-content .goods-nav .pageselect .pagination .paggnum-inp {
   float: left;
   margin-left: 10px;
-  margin-top: -5px;
+  line-height: 16px;
 }
 .content .goods-content .goods-nav .pageselect .pagination .paggnum-inp input {
   width: 29px;
@@ -757,6 +806,7 @@
   vertical-align: middle;
   ime-mode: disabled;
   border: 1px solid #dedede;
+  margin-top: -3px;
 }
 .content .goods-content .goods-nav .pageselect .pagination .paggnum-inp button {
   width: 50px;
@@ -768,6 +818,7 @@
   background-color: #dedede;
   cursor: pointer;
   margin-right: 10px;
+  margin-top: -3px;
 }
 .content .goods-recommend {
   width: 100%;
@@ -2966,4 +3017,27 @@
 .basic-information-content-right .basic-information-bottom .basic-submit input {
   margin-left: 100px;
   outline: none;
+}
+.alert-inner {
+  text-align: center;
+  overflow: hidden;
+  font-size: 18px;
+  color: #000;
+  padding: 60px 20px 0 20px;
+}
+.alert-inner p {
+  margin-bottom: 40px;
+}
+.alert-inner p img {
+  width: 24px;
+  margin-right: 8px;
+  vertical-align: bottom;
+}
+.alert-inner .btn-qd {
+  border-color: #4898d5;
+  background-color: #2e8ded;
+  color: #fff;
+}
+.alert-inner .btn-qd:hover {
+  background-color: #2d88e4;
 }
