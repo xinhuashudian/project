@@ -117,6 +117,86 @@
                     </ul>
                 </div>
             </div>
+            <ul class="third-nav-wrap shadow">
+                <li class="third-nav">
+                    <div class="third-label">热门搜索</div>
+                    <ul class="third-little-label">
+                        <li><a href="#">平凡的世界</a></li>
+                        <li><a href="#">三体</a></li>
+                        <li><a href="#">平凡的世界</a></li>
+                        <li><a href="#">三体</a></li>
+                        <li><a href="#">法医秦明</a></li>
+                        <li><a href="#">平凡的世界</a></li>
+                        <li><a href="#">三体</a></li>
+                        <li><a href="#">法医秦明</a></li>
+                        <li><a href="#">平凡的世界</a></li>
+                        <li><a href="#">三体</a></li>
+                        <li><a href="#">法医秦明</a></li>
+                    </ul>
+                </li>
+                <li class="third-nav">
+                    <div class="third-label">热门搜索</div>
+                    <ul class="third-little-label">
+                        <li class="li-bold"><a href="#">畅销书</a></li>
+                        <li><a href="#">法医秦明</a></li>
+                        <li><a href="#">平凡的世界</a></li>
+                        <li><a href="#">平凡的世界</a></li>
+                        <li><a href="#">三体</a></li>
+                        <li><a href="#">三体</a></li>
+                        <li><a href="#">法医秦明</a></li>
+                        <li><a href="#">平凡的世界</a></li>
+                        <li><a href="#">三体</a></li>
+                        <li><a href="#">法医秦明</a></li>
+                        <li><a href="#">平凡的世界</a></li>
+                    </ul>
+                </li>
+                <li class="third-nav">
+                    <div class="third-label">小说</div>
+                    <ul class="third-little-label">
+                        <li class="li-bold"><a href="#">推荐书单</a></li>
+                        <li><a href="#">法医秦明</a></li>
+                        <li><a href="#">平凡的世界</a></li>
+                        <li><a href="#">平凡的世界</a></li>
+                        <li><a href="#">三体</a></li>
+                        <li><a href="#">法医秦明</a></li>
+                        <li><a href="#">平凡的世界</a></li>
+                        <li><a href="#">三体</a></li>
+                        <li><a href="#">法医秦明</a></li>
+                        <li><a href="#">平凡的世界</a></li>
+                    </ul>
+                </li>
+                <li class="third-nav">
+                    <div class="third-label">文学</div>
+                    <ul class="third-little-label">
+                        <li class="li-bold"><a href="#">推荐书单</a></li>
+                        <li><a href="#">法医秦明</a></li>
+                        <li><a href="#">平凡的世界</a></li>
+                        <li><a href="#">法医秦明</a></li>
+                        <li><a href="#">法医秦明</a></li>
+                        <li><a href="#">平凡的世界</a></li>
+                        <li><a href="#">三体</a></li>
+                        <li><a href="#">法医秦明</a></li>
+                        <li><a href="#">三体</a></li>
+                        <li><a href="#">法医秦明</a></li>
+                        <li><a href="#">平凡的世界</a></li>
+                    </ul>
+                </li>
+                <li class="third-nav">
+                    <div class="third-label">小说</div>
+                    <ul class="third-little-label">
+                        <li class="li-bold"><a href="#">推荐书单</a></li>
+                        <li>法医秦明</li>
+                        <li>平凡的世界</li>
+                        <li>三体</li>
+                        <li>法医秦明</li>
+                        <li>平凡的世界</li>
+                        <li>三体</li>
+                        <li>平凡的世界</li>
+                        <li>法医秦明</li>
+                        <li>平凡的世界</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
         <ul class="nav clearfix">
             <li><a href="">首页</a></li>
@@ -370,6 +450,15 @@
         $('.toggle-nav').mouseleave(function () {
             $(this).find('.dropdown-nav').hide();
         })
+
+        $('.block-item li').mouseover(function () {
+            $('.third-nav-wrap').show();
+        });
+
+        $('.block-item li').mouseleave(function () {
+            $('.third-nav-wrap').hide();
+        })
+
         $(".btn-danger").click(function(){
             $(".pwd-wrap").show();
             $(".safe-alert img").hide();
