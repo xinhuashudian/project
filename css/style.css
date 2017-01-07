@@ -1,4 +1,3 @@
-@charset "utf-8";
 h1,
 h2,
 h3,
@@ -2124,6 +2123,7 @@ a {
 .bask .bask-box .bask-item ul li .cuxiao img {
   float: right;
 }
+@charset "utf-8";
 /*正式样式表*/
 .content {
   width: 1000px;
@@ -2210,19 +2210,25 @@ a {
   background: #fff;
   float: left;
 }
+.content .selectCondition dl dd .layout {
+  position: relative;
+  height: 38px;
+  overflow: hidden;
+  padding-right: 70px;
+}
 .content .selectCondition dl dd .selectmore {
-  margin-right: 18px;
-  float: right;
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  margin-top: -11px;
 }
 .content .selectCondition dl dd .selectmore span {
   display: block;
   width: 50px;
   height: 22px;
   background-color: #dedede;
-  margin-top: 8px;
   margin-left: 10px;
   line-height: 22px;
-  float: right;
   cursor: pointer;
 }
 .content .selectCondition dl dd .selectmore span lable {
@@ -2230,6 +2236,9 @@ a {
 }
 .content .selectCondition dl dd .selectmore span img {
   width: 11px;
+}
+.content .selectCondition dl dd .selectmore span .selectmore2 {
+  display: none;
 }
 .content .selectCondition dl dd .pricechange {
   float: right;
@@ -2314,7 +2323,7 @@ a {
   line-height: 45px;
   text-indent: 1em;
   text-align: left;
-  font-size: 14px;
+  font-size: 18px;
   color: #333;
 }
 .content .goods-content .left-nav .left-nav-color1 {
@@ -2338,7 +2347,8 @@ a {
   margin-top: 7px;
 }
 .content .goods-content .left-nav .left-nav-info ul li {
-  cursor: pointer;
+  border-bottom: 1px solid #bfbfbf;
+  padding-bottom: 8px;
 }
 .content .goods-content .left-nav .left-nav-info ul li .goods-img {
   margin: 0 auto;
@@ -2351,13 +2361,29 @@ a {
 }
 .content .goods-content .left-nav .left-nav-info ul li .goods-name {
   color: #333;
+  font-size: 16px;
   margin-left: 30px;
+  margin-bottom: 8px;
 }
 .content .goods-content .left-nav .left-nav-info ul li .goods-price {
-  color: #be4242;
-  font-weight: bold;
+  color: #ff7200;
   margin-left: 30px;
+  margin-right: 50px;
   margin-bottom: 7px;
+  font-size: 14px;
+}
+.content .goods-content .left-nav .left-nav-info ul li .goods-price span {
+  color: #999;
+  font-size: 12px;
+}
+.content .goods-content .left-nav .left-nav-info ul li .goods-price .tjsj {
+  display: block;
+  float: right;
+}
+.content .goods-content .left-nav .left-nav-info ul li .goods-price .tjsj img {
+  display: block;
+  width: 24px;
+  margin-top: -2px;
 }
 .content .goods-content .left-nav .left-nav-sale {
   width: 228px;
@@ -2379,7 +2405,6 @@ a {
   margin: 0 10px;
   border-bottom: 1px solid #dedede;
   overflow: hidden;
-  cursor: pointer;
 }
 .content .goods-content .left-nav .left-nav-sale ul li span {
   display: block;
@@ -2446,10 +2471,10 @@ a {
 .content .goods-content .goods-nav .goods-search {
   float: left;
   margin-top: 7px;
-  margin-left: 89px;
+  margin-left: 25px;
 }
 .content .goods-content .goods-nav .goods-search input {
-  width: 48px;
+  width: 110px;
   height: 20px;
   line-height: 20px;
   float: left;
@@ -2563,6 +2588,16 @@ a {
   border: 1px solid #dedede;
   margin-top: 29px;
 }
+.content .goods-content .goods-nav .goods-list-ebook li .like {
+  margin: inherit;
+  border: none;
+  width: 18px;
+  height: 16px;
+  margin-right: 3px;
+  margin-top: 3px;
+  cursor: pointer;
+  display: inherit;
+}
 .content .goods-content .goods-nav .goods-list-ebook li .goods-list-info {
   float: left;
   width: 578px;
@@ -2675,6 +2710,13 @@ a {
   border: 1px solid #dedede;
   margin-top: 29px;
 }
+.content .goods-content .goods-nav .goods-list-thr li .like {
+  margin: inherit;
+  border: none;
+  width: 18px;
+  height: 16px;
+  display: inherit;
+}
 .content .goods-content .goods-nav .goods-list-thr li .goods-list-info {
   float: left;
   width: 578px;
@@ -2691,12 +2733,12 @@ a {
   font-size: 12px;
   font-weight: normal;
 }
-.content .goods-content .goods-nav .goods-list-thr li .goods-list-info p.thr-title span a {
+.content .goods-content .goods-nav .goods-list-thr li .goods-list-info p.thr-title span i {
   text-decoration: none;
   cursor: pointer;
   line-height: 22px;
 }
-.content .goods-content .goods-nav .goods-list-thr li .goods-list-info p.thr-title span a img {
+.content .goods-content .goods-nav .goods-list-thr li .goods-list-info p.thr-title span i img {
   display: block;
   width: 16px;
   height: 14px;
@@ -2775,7 +2817,6 @@ a {
   height: 303px;
   float: left;
   word-break: break-all;
-  cursor: pointer;
 }
 .content .goods-content .goods-nav .goods-list li img {
   display: block;
@@ -2829,12 +2870,21 @@ a {
   border: 1px solid #dedede;
   line-height: 10px;
   text-align: center;
+  cursor: pointer;
 }
 .content .goods-content .goods-nav .goods-list li .goods-list-info .goods-buy .goods-buy-icon {
   float: right;
 }
 .content .goods-content .goods-nav .goods-list li .goods-list-info .goods-buy .goods-buy-icon i {
   font-size: 20px;
+  margin-left: 6px;
+}
+.content .goods-content .goods-nav .goods-list li .goods-list-info .goods-buy .goods-buy-icon .like {
+  margin: inherit;
+  border: none;
+  width: 18px;
+  height: 16px;
+  display: inherit;
 }
 .content .goods-content .goods-nav .pageselect {
   width: 100%;
@@ -2871,7 +2921,7 @@ a {
 .content .goods-content .goods-nav .pageselect .pagination .paggnum-inp {
   float: left;
   margin-left: 10px;
-  margin-top: -5px;
+  line-height: 16px;
 }
 .content .goods-content .goods-nav .pageselect .pagination .paggnum-inp input {
   width: 29px;
@@ -2882,6 +2932,7 @@ a {
   vertical-align: middle;
   ime-mode: disabled;
   border: 1px solid #dedede;
+  margin-top: -3px;
 }
 .content .goods-content .goods-nav .pageselect .pagination .paggnum-inp button {
   width: 50px;
@@ -2893,6 +2944,7 @@ a {
   background-color: #dedede;
   cursor: pointer;
   margin-right: 10px;
+  margin-top: -3px;
 }
 .content .goods-recommend {
   width: 100%;
@@ -5092,6 +5144,29 @@ a {
   margin-left: 100px;
   outline: none;
 }
+.alert-inner {
+  text-align: center;
+  overflow: hidden;
+  font-size: 18px;
+  color: #000;
+  padding: 60px 20px 0 20px;
+}
+.alert-inner p {
+  margin-bottom: 40px;
+}
+.alert-inner p img {
+  width: 24px;
+  margin-right: 8px;
+  vertical-align: bottom;
+}
+.alert-inner .btn-qd {
+  border-color: #4898d5;
+  background-color: #2e8ded;
+  color: #fff;
+}
+.alert-inner .btn-qd:hover {
+  background-color: #2d88e4;
+}
 .publishing {
   width: 1000px;
   margin: 0 auto;
@@ -5195,7 +5270,7 @@ a {
   width: 1000px;
   margin: 34px auto;
   padding: 65px 0 65px 415px;
-  background: url(../images/02.jpg) no-repeat 300px center #fff;
+  background: url(../images/02.jpg) no-repeat 300px center #ffffff;
 }
 .submit-tips * {
   box-sizing: content-box;
@@ -6380,8 +6455,8 @@ body {
   min-width: 1000px;
   font-family: "PingFangSC-Regular", "Microsoft YaHei", STHeiti, Helvetica, Arial, sans-serif;
   font-size: 14px;
-  color: #333;
-  background: #FFF;
+  color: #333333;
+  background: #ffffff;
   overflow-y: auto;
 }
 body * {
@@ -6389,7 +6464,7 @@ body * {
 }
 a {
   text-decoration: none;
-  color: #333;
+  color: #333333;
 }
 a img {
   border: none;
@@ -6416,7 +6491,7 @@ input[type="reset"] {
 .top-nav-wrap {
   width: 100%;
   height: 30px;
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 .top-nav-wrap .top-nav-content {
   width: 1000px;
@@ -6660,7 +6735,7 @@ input[type="reset"] {
 .main-nav-wrap {
   width: 100%;
   height: 35px;
-  background: #F2474D;
+  background: #f2474d;
 }
 .main-nav-wrap .main-nav {
   width: 1000px;
@@ -6677,7 +6752,7 @@ input[type="reset"] {
   height: 100%;
   color: #FFF;
   line-height: 35px;
-  background: #E01721;
+  background: #e01721;
   cursor: pointer;
 }
 .main-nav-wrap .main-nav .dropdown .dropdown-title i {
@@ -6699,7 +6774,7 @@ input[type="reset"] {
   left: 0px;
   top: 35px;
   z-index: 99;
-  background: #E01721;
+  background: #e01721;
 }
 .main-nav-wrap .main-nav .dropdown .dropdown-nav .block {
   padding: 15px 0px 20px;
@@ -6739,10 +6814,10 @@ input[type="reset"] {
   float: left;
   height: 35px;
   line-height: 35px;
-  background: #F2474D;
+  background: #f2474d;
 }
 .main-nav-wrap .main-nav .nav li:hover {
-  background: #E01721;
+  background: #e01721;
 }
 .main-nav-wrap .main-nav .nav li a {
   display: block;
@@ -6750,22 +6825,22 @@ input[type="reset"] {
   color: #FFF;
 }
 .book-index-nav-wrap {
-  background: #6C0BA4;
+  background: #6c0ba4;
 }
 .book-index-nav-wrap .main-nav .dropdown .dropdown-title {
-  background: #32014E;
+  background: #32014e;
 }
 .book-index-nav-wrap .main-nav .dropdown .dropdown-nav {
-  background: #32014E;
+  background: #32014e;
 }
 .book-index-nav-wrap .main-nav .dropdown .dropdown-nav .block {
   border-bottom: solid 1px #655171;
 }
 .book-index-nav-wrap .main-nav .nav li {
-  background: #6C0BA4;
+  background: #6c0ba4;
 }
 .book-index-nav-wrap .main-nav .nav li:hover {
-  background: #32014E;
+  background: #32014e;
 }
 .ad-gallery {
   width: 100%;
@@ -6853,7 +6928,7 @@ input[type="reset"] {
   width: 100%;
   height: 25px;
   line-height: 25px;
-  border-bottom: solid 2px #6C0BA4;
+  border-bottom: solid 2px #6c0ba4;
 }
 .recommend-wrap .recommend .title .text {
   float: left;
@@ -6934,7 +7009,7 @@ input[type="reset"] {
 }
 .columns-block .col-left .block-title {
   height: 26px;
-  border-bottom: solid 2px #6C0BA4;
+  border-bottom: solid 2px #6c0ba4;
 }
 .columns-block .col-left .heavy-recommended {
   background: #FFF;
@@ -7181,7 +7256,7 @@ input[type="reset"] {
 }
 .columns-block .col-right .block-title {
   height: 26px;
-  border-bottom: solid 2px #6C0BA4;
+  border-bottom: solid 2px #6c0ba4;
 }
 .columns-block .col-right .leaderboard {
   background: #FFF;
@@ -7282,7 +7357,7 @@ input[type="reset"] {
 }
 .full-column-block .block-title {
   height: 26px;
-  border-bottom: solid 2px #6C0BA4;
+  border-bottom: solid 2px #6c0ba4;
 }
 .full-column-block .block-title .refresh {
   float: right;
@@ -8378,10 +8453,16 @@ input[type="reset"] {
   background: #A46095;
   line-height: 45px;
   color: #FFF;
+  overflow: hidden;
 }
 .products-featured .title span {
   margin-left: 20px;
   font-size: 16px;
+}
+.products-featured .title a {
+  float: right;
+  margin-right: 20px;
+  color: #fff;
 }
 .products-featured .featured-slide-box {
   position: relative;
@@ -11199,7 +11280,7 @@ li {
 .z-right-wrap-shadow .console-body .fenye a {
   font-size: 14px;
   color: #2953a6;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   padding: 7px 13px;
   margin-right: 15px;
   float: left;
@@ -11906,7 +11987,7 @@ li {
   position: relative;
   left: 30px;
   top: 15px;
-  color: white;
+  color: #ffffff;
 }
 .page4-content-font-div1 {
   font-family: "微软雅黑";

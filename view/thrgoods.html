@@ -3,6 +3,7 @@
 <head>
     <title> 商品纵向 - 新华书店 </title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="../css/layer.css"/>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_9xrcye5m5bhgp66r.css">
     <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
@@ -137,17 +138,22 @@
     <div class="breadcrumb">
         <a href="#">电子书</a>
         <span>&gt;</span>
-        <a href="#">小说</a><img src="../images/icon-01.png"/><span>&gt;</span>
-        <span class="current">北京理工大学出版社</span><img src="../images/icon-01.png"/>
+        <a href="#">小说</a><span>&gt;</span>
+        <span class="current">北京理工大学出版社</span>
         <span class="right-num">共<lable>99</lable>个商品</span>
     </div>
     <div class="selectCondition">
-        <dl class="shaixuan">
+        <dl class="shaixuan clearfix">
             <dt>相关分类:</dt>
             <dd>
                 <div id="layout" class="layout">
                     <a href="javascript:void(0)">心理学</a>
                     <a href="javascript:void(0)">宗教</a>
+                    <a href="javascript:void(0)">哲学</a>
+                    <a href="javascript:void(0)">文化</a>
+                    <a href="javascript:void(0)">政治</a>
+                    <a href="javascript:void(0)">科学</a>
+                    <a href="javascript:void(0)">法律</a>
                     <a href="javascript:void(0)">哲学</a>
                     <a href="javascript:void(0)">文化</a>
                     <a href="javascript:void(0)">政治</a>
@@ -160,7 +166,8 @@
                     <div class="selectmore">
                     <span>
                       <lable>更多</lable>
-                      <img src="../images/icon-01.png"/>
+                      <img src="../images/icon-01.png" class="selectmore1"/>
+                      <img src="../images/icon-02.png" class="selectmore2"/>
                     </span>
                     </div>
                 </div>
@@ -174,14 +181,16 @@
                     <a href="javascript:void(0)">浙江理工大学出版社</a>
                     <a href="javascript:void(0)">北京理工大学出版社</a>
                     <a href="javascript:void(0)">清华大学出版社</a>
+                    <a href="javascript:void(0)">湖南文艺出版社</a>
+                    <a href="javascript:void(0)">浙江理工大学出版社</a>
+                    <a href="javascript:void(0)">北京理工大学出版社</a>
+                    <a href="javascript:void(0)">清华大学出版社</a>
                     <a href="javascript:void(0)">电子工业大学出版社</a>
                     <div class="selectmore">
-                    <span>
-                      <lable>添加&nbsp;+</lable>
-                    </span>
                         <span>
                       <lable>更多</lable>
-                      <img src="../images/icon-01.png"/>
+                      <img src="../images/icon-01.png" class="selectmore1"/>
+                      <img src="../images/icon-02.png" class="selectmore2"/>
                     </span>
                     </div>
                 </div>
@@ -261,26 +270,50 @@
             <div class="left-nav-info left-nav-color2">
                 <p class="b-title">推荐书籍</p>
                 <ul>
-                    <li onclick="window.location.href='#'">
-                        <div class="goods-img">
-                            <img src="../images/goods01.png"/>
+                    <li>
+                    	<a href="javascript:">
+	                        <div class="goods-img">
+	                            <img src="../images/goods01.png"/>
+	                        </div>
+                        	<div class="goods-name">余罪，我的刑侦笔记</div>
+                        </a>
+                        <div class="goods-price">
+                        	<span>促销价:</span>
+                    		￥<em>72</em>.68
+							<a href="javascript:" class="tjsj">
+								<img src="../images/cuxiao.png"/>
+							</a>
                         </div>
-                        <div class="goods-name">余罪，我的刑侦笔记</div>
-                        <div class="goods-price">￥100.49</div>
                     </li>
-                    <li onclick="window.location.href='#'">
-                        <div class="goods-img">
-                            <img src="../images/goods01.png"/>
+                    <li>
+                        <a href="javascript:">
+	                        <div class="goods-img">
+	                            <img src="../images/goods01.png"/>
+	                        </div>
+                        	<div class="goods-name">余罪，我的刑侦笔记</div>
+                        </a>
+                        <div class="goods-price">
+                        	<span>促销价:</span>
+                    		￥<em>72</em>.68
+							<a href="javascript:" class="tjsj">
+								<img src="../images/cuxiao.png"/>
+							</a>
                         </div>
-                        <div class="goods-name">余罪，我的刑侦笔记</div>
-                        <div class="goods-price">￥100.49</div>
                     </li>
-                    <li onclick="window.location.href='#'">
-                        <div class="goods-img">
-                            <img src="../images/goods01.png"/>
+                   	<li>
+                       <a href="javascript:">
+	                        <div class="goods-img">
+	                            <img src="../images/goods01.png"/>
+	                        </div>
+                        	<div class="goods-name">余罪，我的刑侦笔记</div>
+                        </a>
+                        <div class="goods-price">
+                        	<span>促销价:</span>
+                    		￥<em>72</em>.68
+							<a href="javascript:" class="tjsj">
+								<img src="../images/cuxiao.png"/>
+							</a>
                         </div>
-                        <div class="goods-name">余罪，我的刑侦笔记</div>
-                        <div class="goods-price">￥100.49</div>
                     </li>
                 </ul>
             </div>
@@ -288,112 +321,152 @@
             <div class="left-nav-sale left-nav-color2">
                 <p class="b-title">销售排行</p>
                 <ul>
-                    <li onclick="window.location.href='#'">
+                    <li>
                         <span>1</span>
                         <div class="goods-img-sale">
-                            <img src="../images/hotsale.png"/>
+                        	<a href="javascript:">
+                            	<img src="../images/hotsale.png"/>
+                            </a>
                         </div>
                         <div class="goods-name-sale">
-                            <p class="bold">一本书读懂销售心理学</p>
+                        	<a href="javascript:">
+                            	<p class="bold">一本书读懂销售心理学</p>
+                            </a>
                             <p>销量：1159|评论：599</p>
                             <p class="red">￥32.00</p>
                         </div>
                     </li>
-                    <li onclick="window.location.href='#'">
+                    <li>
                         <span>2</span>
                         <div class="goods-img-sale">
-                            <img src="../images/hotsale.png"/>
+                        	<a href="javascript:">
+                            	<img src="../images/hotsale.png"/>
+                            </a>
                         </div>
                         <div class="goods-name-sale">
-                            <p class="bold">一本书读懂销售心理学</p>
+                        	<a href="javascript:">
+                            	<p class="bold">一本书读懂销售心理学</p>
+                            </a>
                             <p>销量：1159|评论：599</p>
                             <p class="red">￥32.00</p>
                         </div>
                     </li>
-                    <li onclick="window.location.href='#'">
+                    <li>
                         <span>3</span>
                         <div class="goods-img-sale">
-                            <img src="../images/hotsale.png"/>
+                        	<a href="javascript:">
+                            	<img src="../images/hotsale.png"/>
+                            </a>
                         </div>
                         <div class="goods-name-sale">
-                            <p class="bold">一本书读懂销售心理学</p>
+                        	<a href="javascript:">
+                            	<p class="bold">一本书读懂销售心理学</p>
+                            </a>
                             <p>销量：1159|评论：599</p>
                             <p class="red">￥32.00</p>
                         </div>
                     </li>
-                    <li onclick="window.location.href='#'">
+                    <li>
                         <span>4</span>
                         <div class="goods-img-sale">
-                            <img src="../images/hotsale.png"/>
+                        	<a href="javascript:">
+                            	<img src="../images/hotsale.png"/>
+                            </a>
                         </div>
                         <div class="goods-name-sale">
-                            <p class="bold">一本书读懂销售心理学</p>
+                        	<a href="javascript:">
+                            	<p class="bold">一本书读懂销售心理学</p>
+                            </a>
                             <p>销量：1159|评论：599</p>
                             <p class="red">￥32.00</p>
                         </div>
                     </li>
-                    <li onclick="window.location.href='#'">
+                    <li>
                         <span>5</span>
                         <div class="goods-img-sale">
-                            <img src="../images/hotsale.png"/>
+                        	<a href="javascript:">
+                            	<img src="../images/hotsale.png"/>
+                            </a>
                         </div>
                         <div class="goods-name-sale">
-                            <p class="bold">一本书读懂销售心理学</p>
+                        	<a href="javascript:">
+                            	<p class="bold">一本书读懂销售心理学</p>
+                            </a>
                             <p>销量：1159|评论：599</p>
                             <p class="red">￥32.00</p>
                         </div>
                     </li>
-                    <li onclick="window.location.href='#'">
+                    <li>
                         <span>6</span>
                         <div class="goods-img-sale">
-                            <img src="../images/hotsale.png"/>
+                        	<a href="javascript:">
+                            	<img src="../images/hotsale.png"/>
+                            </a>
                         </div>
                         <div class="goods-name-sale">
-                            <p class="bold">一本书读懂销售心理学</p>
+                        	<a href="javascript:">
+                            	<p class="bold">一本书读懂销售心理学</p>
+                            </a>
                             <p>销量：1159|评论：599</p>
                             <p class="red">￥32.00</p>
                         </div>
                     </li>
-                    <li onclick="window.location.href='#'">
+                    <li>
                         <span>7</span>
                         <div class="goods-img-sale">
-                            <img src="../images/hotsale.png"/>
+                        	<a href="javascript:">
+                            	<img src="../images/hotsale.png"/>
+                            </a>
                         </div>
                         <div class="goods-name-sale">
-                            <p class="bold">一本书读懂销售心理学</p>
+                        	<a href="javascript:">
+                            	<p class="bold">一本书读懂销售心理学</p>
+                            </a>
                             <p>销量：1159|评论：599</p>
                             <p class="red">￥32.00</p>
                         </div>
                     </li>
-                    <li onclick="window.location.href='#'">
+                    <li>
                         <span>8</span>
                         <div class="goods-img-sale">
-                            <img src="../images/hotsale.png"/>
+                        	<a href="javascript:">
+                            	<img src="../images/hotsale.png"/>
+                            </a>
                         </div>
                         <div class="goods-name-sale">
-                            <p class="bold">一本书读懂销售心理学</p>
+                        	<a href="javascript:">
+                            	<p class="bold">一本书读懂销售心理学</p>
+                            </a>
                             <p>销量：1159|评论：599</p>
                             <p class="red">￥32.00</p>
                         </div>
                     </li>
-                    <li onclick="window.location.href='#'">
+                    <li>
                         <span>9</span>
                         <div class="goods-img-sale">
-                            <img src="../images/hotsale.png"/>
+                        	<a href="javascript:">
+                            	<img src="../images/hotsale.png"/>
+                            </a>
                         </div>
                         <div class="goods-name-sale">
-                            <p class="bold">一本书读懂销售心理学</p>
+                        	<a href="javascript:">
+                            	<p class="bold">一本书读懂销售心理学</p>
+                            </a>
                             <p>销量：1159|评论：599</p>
                             <p class="red">￥32.00</p>
                         </div>
                     </li>
-                    <li class="lasted" onclick="window.location.href='#'">
+                    <li>
                         <span>10</span>
                         <div class="goods-img-sale">
-                            <img src="../images/hotsale.png"/>
+                        	<a href="javascript:">
+                            	<img src="../images/hotsale.png"/>
+                            </a>
                         </div>
                         <div class="goods-name-sale">
-                            <p class="bold">一本书读懂销售心理学</p>
+                        	<a href="javascript:">
+                            	<p class="bold">一本书读懂销售心理学</p>
+                            </a>
                             <p>销量：1159|评论：599</p>
                             <p class="red">￥32.00</p>
                         </div>
@@ -422,13 +495,17 @@
                 </div>
                 <div class="sort-right">
                     <div class="css-change">
-                <span>
-                  <img src="../images/datuHL.png"/>
-                  <lable>大图</lable>
+                <span class="selected">
+                	<a href="thrgoods.html">
+	                  <img src="../images/datu.png"/>
+	                  <lable>大图</lable>
+                  	</a>
                 </span>
-                        <span class="selected">
-                  <img src="../images/list.png"/>
-                  <lable>列表</lable>
+                <span>
+                	<a href="goods.html">
+	                  <img src="../images/listHL.png"/>
+	                  <lable>列表</lable>
+                  	</a>
                 </span>
                     </div>
                     <div class="goods-pagenum">
@@ -441,141 +518,188 @@
             <div class="goods-list-thr">
                 <ul>
                     <li>
-                        <img src="../images/goods03.png">
+                    	<a href="javascript:">
+                        	<img src="../images/goods03.png">
+                        </a>
                         <div class="goods-list-info">
-                            <p class="thr-title">一瘦一辈子，邱医帮你瘦<span><a><img src="../images/love.png">关注</a></span></p>
+                            <p class="thr-title"><a href="javascript:">一瘦一辈子，邱医帮你瘦</a><span><i><img src="../images/love.png" class="like">关注</i></span></p>
                             <span class="thr-info">已有<a>2</a>人评价&nbsp;|&nbsp;已有<a>3002</a>人购买</span>
                             <span class="thr-price">￥<a class="red">32</a>.00</span>
                             <div class="thr-buy-fr">
-                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
-                                                                                name="quantity" value="1" maxlength="4"
-                                                                                onpaste="return false;"><span>-</span>
+                                <div class="goods-buy-qua">
+                                	<span class="goods-add">+</span>
+                                	<input type="text" id="quantity" name="quantity" value="1" maxlength="4" onpaste="return false;">
+                                	<span class="good-reduce">-</span>
                                     <a>立即购买</a>
                                 </div>
                             </div>
                     </li>
                     <li>
-                        <img src="../images/goods03.png">
+                    	<a href="javascript:">
+                        	<img src="../images/goods03.png">
+                        </a>
                         <div class="goods-list-info">
-                            <p class="thr-title">一瘦一辈子，邱医帮你瘦<span><a><img src="../images/love.png">关注</a></span></p>
+                            <p class="thr-title"><a href="javascript:">一瘦一辈子，邱医帮你瘦</a><span><i><img src="../images/love.png" class="like">关注</i></span></p>
                             <span class="thr-info">已有<a>2</a>人评价&nbsp;|&nbsp;已有<a>3002</a>人购买</span>
                             <span class="thr-price">￥<a class="red">32</a>.00</span>
                             <div class="thr-buy-fr">
-                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
-                                                                                name="quantity" value="1" maxlength="4"
-                                                                                onpaste="return false;"><span>-</span>
+                                <div class="goods-buy-qua">
+                                	<span class="goods-add">+</span>
+                                	<input type="text" id="quantity" name="quantity" value="1" maxlength="4" onpaste="return false;">
+                                	<span class="good-reduce">-</span>
                                     <a>立即购买</a>
                                 </div>
                             </div>
                     </li>
                     <li>
-                        <img src="../images/goods03.png">
+                    	<a href="javascript:">
+                        	<img src="../images/goods03.png">
+                        </a>
                         <div class="goods-list-info">
-                            <p class="thr-title">一瘦一辈子，邱医帮你瘦<span><a><img src="../images/love.png">关注</a></span></p>
+                            <p class="thr-title"><a href="javascript:">一瘦一辈子，邱医帮你瘦</a><span><i><img src="../images/love.png" class="like">关注</i></span></p>
                             <span class="thr-info">已有<a>2</a>人评价&nbsp;|&nbsp;已有<a>3002</a>人购买</span>
                             <span class="thr-price">￥<a class="red">32</a>.00</span>
                             <div class="thr-buy-fr">
-                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
-                                                                                name="quantity" value="1" maxlength="4"
-                                                                                onpaste="return false;"><span>-</span>
+                                <div class="goods-buy-qua">
+                                	<span class="goods-add">+</span>
+                                	<input type="text" id="quantity" name="quantity" value="1" maxlength="4" onpaste="return false;">
+                                	<span class="good-reduce">-</span>
                                     <a>立即购买</a>
                                 </div>
                             </div>
                     </li>
                     <li>
-                        <img src="../images/goods03.png">
+                    	<a href="javascript:">
+                        	<img src="../images/goods03.png">
+                        </a>
                         <div class="goods-list-info">
-                            <p class="thr-title">一瘦一辈子，邱医帮你瘦<span><a><img src="../images/love.png">关注</a></span></p>
+                            <p class="thr-title"><a href="javascript:">一瘦一辈子，邱医帮你瘦</a><span><i><img src="../images/love.png" class="like">关注</i></span></p>
                             <span class="thr-info">已有<a>2</a>人评价&nbsp;|&nbsp;已有<a>3002</a>人购买</span>
                             <span class="thr-price">￥<a class="red">32</a>.00</span>
                             <div class="thr-buy-fr">
-                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
-                                                                                name="quantity" value="1" maxlength="4"
-                                                                                onpaste="return false;"><span>-</span>
+                                <div class="goods-buy-qua">
+                                	<span class="goods-add">+</span>
+                                	<input type="text" id="quantity" name="quantity" value="1" maxlength="4" onpaste="return false;">
+                                	<span class="good-reduce">-</span>
                                     <a>立即购买</a>
                                 </div>
                             </div>
                     </li>
                     <li>
-                        <img src="../images/goods03.png">
+                    	<a href="javascript:">
+                        	<img src="../images/goods03.png">
+                        </a>
                         <div class="goods-list-info">
-                            <p class="thr-title">一瘦一辈子，邱医帮你瘦<span><a><img src="../images/love.png">关注</a></span></p>
+                            <p class="thr-title"><a href="javascript:">一瘦一辈子，邱医帮你瘦</a><span><i><img src="../images/love.png" class="like">关注</i></span></p>
                             <span class="thr-info">已有<a>2</a>人评价&nbsp;|&nbsp;已有<a>3002</a>人购买</span>
                             <span class="thr-price">￥<a class="red">32</a>.00</span>
                             <div class="thr-buy-fr">
-                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
-                                                                                name="quantity" value="1" maxlength="4"
-                                                                                onpaste="return false;"><span>-</span>
+                                <div class="goods-buy-qua">
+                                	<span class="goods-add">+</span>
+                                	<input type="text" id="quantity" name="quantity" value="1" maxlength="4" onpaste="return false;">
+                                	<span class="good-reduce">-</span>
                                     <a>立即购买</a>
                                 </div>
                             </div>
                     </li>
                     <li>
-                        <img src="../images/goods03.png">
+                    	<a href="javascript:">
+                        	<img src="../images/goods03.png">
+                        </a>
                         <div class="goods-list-info">
-                            <p class="thr-title">一瘦一辈子，邱医帮你瘦<span><a><img src="../images/love.png">关注</a></span></p>
+                            <p class="thr-title"><a href="javascript:">一瘦一辈子，邱医帮你瘦</a><span><i><img src="../images/love.png" class="like">关注</i></span></p>
                             <span class="thr-info">已有<a>2</a>人评价&nbsp;|&nbsp;已有<a>3002</a>人购买</span>
                             <span class="thr-price">￥<a class="red">32</a>.00</span>
                             <div class="thr-buy-fr">
-                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
-                                                                                name="quantity" value="1" maxlength="4"
-                                                                                onpaste="return false;"><span>-</span>
+                                <div class="goods-buy-qua">
+                                	<span class="goods-add">+</span>
+                                	<input type="text" id="quantity" name="quantity" value="1" maxlength="4" onpaste="return false;">
+                                	<span class="good-reduce">-</span>
                                     <a>立即购买</a>
                                 </div>
                             </div>
                     </li>
                     <li>
-                        <img src="../images/goods03.png">
+                    	<a href="javascript:">
+                        	<img src="../images/goods03.png">
+                        </a>
                         <div class="goods-list-info">
-                            <p class="thr-title">一瘦一辈子，邱医帮你瘦<span><a><img src="../images/love.png">关注</a></span></p>
+                            <p class="thr-title"><a href="javascript:">一瘦一辈子，邱医帮你瘦</a><span><i><img src="../images/love.png" class="like">关注</i></span></p>
                             <span class="thr-info">已有<a>2</a>人评价&nbsp;|&nbsp;已有<a>3002</a>人购买</span>
                             <span class="thr-price">￥<a class="red">32</a>.00</span>
                             <div class="thr-buy-fr">
-                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
-                                                                                name="quantity" value="1" maxlength="4"
-                                                                                onpaste="return false;"><span>-</span>
+                                <div class="goods-buy-qua">
+                                	<span class="goods-add">+</span>
+                                	<input type="text" id="quantity" name="quantity" value="1" maxlength="4" onpaste="return false;">
+                                	<span class="good-reduce">-</span>
                                     <a>立即购买</a>
                                 </div>
                             </div>
                     </li>
                     <li>
-                        <img src="../images/goods03.png">
+                    	<a href="javascript:">
+                        	<img src="../images/goods03.png">
+                        </a>
                         <div class="goods-list-info">
-                            <p class="thr-title">一瘦一辈子，邱医帮你瘦<span><a><img src="../images/love.png">关注</a></span></p>
+                            <p class="thr-title"><a href="javascript:">一瘦一辈子，邱医帮你瘦</a><span><i><img src="../images/love.png" class="like">关注</i></span></p>
                             <span class="thr-info">已有<a>2</a>人评价&nbsp;|&nbsp;已有<a>3002</a>人购买</span>
                             <span class="thr-price">￥<a class="red">32</a>.00</span>
                             <div class="thr-buy-fr">
-                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
-                                                                                name="quantity" value="1" maxlength="4"
-                                                                                onpaste="return false;"><span>-</span>
+                                <div class="goods-buy-qua">
+                                	<span class="goods-add">+</span>
+                                	<input type="text" id="quantity" name="quantity" value="1" maxlength="4" onpaste="return false;">
+                                	<span class="good-reduce">-</span>
                                     <a>立即购买</a>
                                 </div>
                             </div>
                     </li>
                     <li>
-                        <img src="../images/goods03.png">
+                    	<a href="javascript:">
+                        	<img src="../images/goods03.png">
+                        </a>
                         <div class="goods-list-info">
-                            <p class="thr-title">一瘦一辈子，邱医帮你瘦<span><a><img src="../images/love.png">关注</a></span></p>
+                            <p class="thr-title"><a href="javascript:">一瘦一辈子，邱医帮你瘦</a><span><i><img src="../images/love.png" class="like">关注</i></span></p>
                             <span class="thr-info">已有<a>2</a>人评价&nbsp;|&nbsp;已有<a>3002</a>人购买</span>
                             <span class="thr-price">￥<a class="red">32</a>.00</span>
                             <div class="thr-buy-fr">
-                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
-                                                                                name="quantity" value="1" maxlength="4"
-                                                                                onpaste="return false;"><span>-</span>
+                                <div class="goods-buy-qua">
+                                	<span class="goods-add">+</span>
+                                	<input type="text" id="quantity" name="quantity" value="1" maxlength="4" onpaste="return false;">
+                                	<span class="good-reduce">-</span>
                                     <a>立即购买</a>
                                 </div>
                             </div>
                     </li>
                     <li>
-                        <img src="../images/goods03.png">
+                    	<a href="javascript:">
+                        	<img src="../images/goods03.png">
+                        </a>
                         <div class="goods-list-info">
-                            <p class="thr-title">一瘦一辈子，邱医帮你瘦<span><a><img src="../images/love.png">关注</a></span></p>
+                            <p class="thr-title"><a href="javascript:">一瘦一辈子，邱医帮你瘦</a><span><i><img src="../images/love.png" class="like">关注</i></span></p>
                             <span class="thr-info">已有<a>2</a>人评价&nbsp;|&nbsp;已有<a>3002</a>人购买</span>
                             <span class="thr-price">￥<a class="red">32</a>.00</span>
                             <div class="thr-buy-fr">
-                                <div class="goods-buy-qua"><span>+</span><input type="text" id="quantity"
-                                                                                name="quantity" value="1" maxlength="4"
-                                                                                onpaste="return false;"><span>-</span>
+                                <div class="goods-buy-qua">
+                                	<span class="goods-add">+</span>
+                                	<input type="text" id="quantity" name="quantity" value="1" maxlength="4" onpaste="return false;">
+                                	<span class="good-reduce">-</span>
+                                    <a>立即购买</a>
+                                </div>
+                            </div>
+                    </li>
+                    <li>
+                    	<a href="javascript:">
+                        	<img src="../images/goods03.png">
+                        </a>
+                        <div class="goods-list-info">
+                            <p class="thr-title"><a href="javascript:">一瘦一辈子，邱医帮你瘦</a><span><i><img src="../images/love.png" class="like">关注</i></span></p>
+                            <span class="thr-info">已有<a>2</a>人评价&nbsp;|&nbsp;已有<a>3002</a>人购买</span>
+                            <span class="thr-price">￥<a class="red">32</a>.00</span>
+                            <div class="thr-buy-fr">
+                                <div class="goods-buy-qua">
+                                	<span class="goods-add">+</span>
+                                	<input type="text" id="quantity" name="quantity" value="1" maxlength="4" onpaste="return false;">
+                                	<span class="good-reduce">-</span>
                                     <a>立即购买</a>
                                 </div>
                             </div>
@@ -727,6 +851,7 @@
     <li onclick="$(document).scrollTop(0)"><a href="javascript:void(0)" class="iconfont icon-huidaodingbu"></a></li>
 </ul>
 </body>
+<script type="text/javascript" src="../js/layer.js" ></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $("#sortClick a").click(function () {
@@ -750,5 +875,61 @@
         }
 
     }
+    
+    $('.selectmore').click(function(){
+    	if ($(this).hasClass('active')) {
+    		$(this).parent().css('height','38px');
+    		$(this).find('.selectmore1').show();
+    		$(this).find('.selectmore2').hide();
+    		$(this).removeClass('active');
+    	} else{
+    		$(this).parent().css('height','inherit');
+    		$(this).find('.selectmore1').hide();
+    		$(this).find('.selectmore2').show();
+    		$(this).addClass('active');
+    	}
+    })
+    
+    $(document).ready(function(){
+		//加的效果
+		$(".goods-add").click(function(){
+		var n=$(this).next().val();
+		var num=parseInt(n)+1;
+		if(num==0){ return;}
+		$(this).next().val(num);
+		});
+		//减的效果
+		$(".good-reduce").click(function(){
+		var n=$(this).prev().val();
+		var num=parseInt(n)-1;
+		if(num==0){ return}
+		$(this).prev().val(num);
+		});
+	});
+
+	$('.like').on('click', function(){
+		var srcBefor = "../images/like.png";
+        var srcOn = "../images/like-on.png";
+		if($(this).hasClass('active')){
+			$(this).removeClass('active');
+            $(this).attr('src', srcBefor);
+		}else{
+			$(this).addClass('active');
+            $(this).attr('src', srcOn);
+			layer.open({
+			  type: 1,
+			  title: '',
+			  area: ['400px', '200px'],
+			  shadeClose: true, //点击遮罩关闭
+			  content: '\<\div class="alert-inner"><p><img src="../images/alert-img.png"/>已加入关注中心<p><button class="btn btn-primary" onclick="btnclose()">确定</button>\<\/div>',
+			  yes: function(){
+			    layer.closeAll();
+			  }
+		  });
+		}
+	});
+	function btnclose(){
+		layer.closeAll();
+	}
 </script>
 </html>
