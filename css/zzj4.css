@@ -551,7 +551,6 @@
   background-size: 30px;
 }
 .third-nav-wrap {
-  display: none;
   width: 820px;
   background: #fff;
   padding: 20px 50px 44px 20px;
@@ -583,4 +582,12 @@
   margin: 4px 0;
   line-height: 16px;
   padding: 0 12px;
+}
+.third-nav-wrap .third-nav .third-little-label li.li-bold {
+  border-left: 0;
+  color: #333;
+  font-weight: bold;
+}
+.third-nav-wrap .third-nav .third-little-label li:first-child {
+  border-left: 0;
 }
