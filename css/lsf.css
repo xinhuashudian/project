@@ -223,6 +223,7 @@
 }
 .content .goods-content .left-nav .left-nav-info ul li {
   border-bottom: 1px solid #bfbfbf;
+  padding-bottom: 8px;
 }
 .content .goods-content .left-nav .left-nav-info ul li .goods-img {
   margin: 0 auto;
