@@ -1,4 +1,3 @@
-@charset "utf-8";
 h1,
 h2,
 h3,
@@ -2124,6 +2123,55 @@ a {
 .bask .bask-box .bask-item ul li .cuxiao img {
   float: right;
 }
+.cbsxq {
+  background: #FFFFFF;
+  padding: 15px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.cbsxq .cbsxq-left {
+  float: left;
+  width: 700px;
+}
+.cbsxq .cbsxq-left .cbs-title {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 25px;
+}
+.cbsxq .cbsxq-left .cbsxq-info {
+  overflow: hidden;
+}
+.cbsxq .cbsxq-left .cbsxq-info img {
+  display: block;
+  float: left;
+  width: 178px;
+  height: 98px;
+  margin-right: 15px;
+  border: 1px solid #e0e0e0;
+}
+.cbsxq .cbsxq-left .cbsxq-info p {
+  float: left;
+  width: 500px;
+  height: 98px;
+  color: #333333;
+  margin-top: 8px;
+  font-size: 14px;
+  overflow: hidden;
+}
+.cbsxq .cbsxq-right {
+  float: right;
+  width: 260px;
+}
+.cbsxq .cbsxq-right a {
+  display: block;
+}
+.cbsxq .cbsxq-right a img {
+  display: block;
+  width: 263px;
+  height: 160px;
+}
+@charset "utf-8";
 /*正式样式表*/
 .content {
   width: 1000px;
@@ -5592,6 +5640,115 @@ img {
 .boxbox .og_prev {
   left: 3px;
 }
+.book-commit {
+  width: 750px;
+  float: left;
+  padding-bottom: 100px;
+}
+.book-commit li.outli {
+  width: 100%;
+  padding: 19px 17px;
+  float: left;
+  border-bottom: 1px solid #ddd;
+}
+.book-commit li.outli .commit-img {
+  width: 180px;
+  height: 180px;
+  float: left;
+  margin-right: 17px;
+}
+.book-commit li.outli .commit-img img {
+  width: 178px;
+  height: 178px;
+  border: 1px solid #dcdcdc;
+}
+.book-commit li.outli .commit-info {
+  width: 519px;
+  float: right;
+}
+.book-commit li.outli .commit-info p {
+  width: 100%;
+  float: left;
+  line-height: 30px;
+}
+.book-commit li.outli .commit-info .commit-name {
+  width: 100%;
+  float: left;
+}
+.book-commit li.outli .commit-info .commit-name .one {
+  width: 180px;
+  float: left;
+  color: #333;
+  font-size: 14px;
+}
+.book-commit li.outli .commit-info .commit-name .two {
+  float: left;
+  color: #666;
+  font-size: 12px;
+}
+.book-commit li.outli .commit-info .commit-name .three {
+  float: right;
+  color: #666;
+  font-size: 12px;
+}
+.book-commit li.outli .commit-info .hot-commit {
+  width: 100%;
+  float: left;
+  color: #f5454f;
+  font-size: 12px;
+}
+.book-commit li.outli .commit-info ul li {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.book-commit li.outli .commit-info ul li .title {
+  width: 240px;
+  float: left;
+}
+.book-commit li.outli .commit-info ul li .title .jing {
+  width: 22px;
+  height: 22px;
+  color: #fff;
+  float: left;
+  background-color: #f2474f;
+  line-height: 22px;
+  text-align: center;
+  border-radius: 4px;
+}
+.book-commit li.outli .commit-info ul li .title a {
+  float: left;
+  margin-left: 11px;
+  color: #333;
+  font-size: 12px;
+  line-height: 22px;
+  width: 207px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.book-commit li.outli .commit-info ul li .name {
+  float: left;
+  color: #333;
+  font-size: 12px;
+  line-height: 22px;
+  width: 75px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.book-commit li.outli .commit-info ul li .speak {
+  float: left;
+  color: #333;
+  font-size: 12px;
+  line-height: 22px;
+}
+.book-commit li.outli .commit-info ul li .time {
+  float: right;
+  color: #989898;
+  font-size: 12px;
+  line-height: 22px;
+}
 .publishing {
   width: 1000px;
   margin: 0 auto;
@@ -5695,7 +5852,7 @@ img {
   width: 1000px;
   margin: 34px auto;
   padding: 65px 0 65px 415px;
-  background: url(../images/02.jpg) no-repeat 300px center #fff;
+  background: url(../images/02.jpg) no-repeat 300px center #ffffff;
 }
 .submit-tips * {
   box-sizing: content-box;
@@ -6880,8 +7037,8 @@ body {
   min-width: 1000px;
   font-family: "PingFangSC-Regular", "Microsoft YaHei", STHeiti, Helvetica, Arial, sans-serif;
   font-size: 14px;
-  color: #333;
-  background: #FFF;
+  color: #333333;
+  background: #ffffff;
   overflow-y: auto;
 }
 body * {
@@ -6889,7 +7046,7 @@ body * {
 }
 a {
   text-decoration: none;
-  color: #333;
+  color: #333333;
 }
 a img {
   border: none;
@@ -6916,7 +7073,7 @@ input[type="reset"] {
 .top-nav-wrap {
   width: 100%;
   height: 30px;
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 .top-nav-wrap .top-nav-content {
   width: 1000px;
@@ -7160,7 +7317,7 @@ input[type="reset"] {
 .main-nav-wrap {
   width: 100%;
   height: 35px;
-  background: #F2474D;
+  background: #f2474d;
 }
 .main-nav-wrap .main-nav {
   width: 1000px;
@@ -7177,7 +7334,7 @@ input[type="reset"] {
   height: 100%;
   color: #FFF;
   line-height: 35px;
-  background: #E01721;
+  background: #e01721;
   cursor: pointer;
 }
 .main-nav-wrap .main-nav .dropdown .dropdown-title i {
@@ -7199,7 +7356,7 @@ input[type="reset"] {
   left: 0px;
   top: 35px;
   z-index: 99;
-  background: #E01721;
+  background: #e01721;
 }
 .main-nav-wrap .main-nav .dropdown .dropdown-nav .block {
   padding: 15px 0px 20px;
@@ -7239,10 +7396,10 @@ input[type="reset"] {
   float: left;
   height: 35px;
   line-height: 35px;
-  background: #F2474D;
+  background: #f2474d;
 }
 .main-nav-wrap .main-nav .nav li:hover {
-  background: #E01721;
+  background: #e01721;
 }
 .main-nav-wrap .main-nav .nav li a {
   display: block;
@@ -7250,22 +7407,22 @@ input[type="reset"] {
   color: #FFF;
 }
 .book-index-nav-wrap {
-  background: #6C0BA4;
+  background: #6c0ba4;
 }
 .book-index-nav-wrap .main-nav .dropdown .dropdown-title {
-  background: #32014E;
+  background: #32014e;
 }
 .book-index-nav-wrap .main-nav .dropdown .dropdown-nav {
-  background: #32014E;
+  background: #32014e;
 }
 .book-index-nav-wrap .main-nav .dropdown .dropdown-nav .block {
   border-bottom: solid 1px #655171;
 }
 .book-index-nav-wrap .main-nav .nav li {
-  background: #6C0BA4;
+  background: #6c0ba4;
 }
 .book-index-nav-wrap .main-nav .nav li:hover {
-  background: #32014E;
+  background: #32014e;
 }
 .ad-gallery {
   width: 100%;
@@ -7353,7 +7510,7 @@ input[type="reset"] {
   width: 100%;
   height: 25px;
   line-height: 25px;
-  border-bottom: solid 2px #6C0BA4;
+  border-bottom: solid 2px #6c0ba4;
 }
 .recommend-wrap .recommend .title .text {
   float: left;
@@ -7434,7 +7591,7 @@ input[type="reset"] {
 }
 .columns-block .col-left .block-title {
   height: 26px;
-  border-bottom: solid 2px #6C0BA4;
+  border-bottom: solid 2px #6c0ba4;
 }
 .columns-block .col-left .heavy-recommended {
   background: #FFF;
@@ -7681,7 +7838,7 @@ input[type="reset"] {
 }
 .columns-block .col-right .block-title {
   height: 26px;
-  border-bottom: solid 2px #6C0BA4;
+  border-bottom: solid 2px #6c0ba4;
 }
 .columns-block .col-right .leaderboard {
   background: #FFF;
@@ -7782,7 +7939,7 @@ input[type="reset"] {
 }
 .full-column-block .block-title {
   height: 26px;
-  border-bottom: solid 2px #6C0BA4;
+  border-bottom: solid 2px #6c0ba4;
 }
 .full-column-block .block-title .refresh {
   float: right;
@@ -11707,7 +11864,7 @@ li {
 .z-right-wrap-shadow .console-body .fenye a {
   font-size: 14px;
   color: #2953a6;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   padding: 7px 13px;
   margin-right: 15px;
   float: left;
@@ -12414,7 +12571,7 @@ li {
   position: relative;
   left: 30px;
   top: 15px;
-  color: white;
+  color: #ffffff;
 }
 .page4-content-font-div1 {
   font-family: "微软雅黑";
