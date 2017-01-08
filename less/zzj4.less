@@ -614,3 +614,154 @@
     }
   }
 }
+.bind-user-wrap{
+  margin-top: 40px;
+  background: #fff;
+  height:450px;
+  position: relative;
+  border-bottom: 4px solid #f2474f;
+  .bind-user{
+    height: 320px;
+    width: 480px;
+    margin: 10px auto;
+    font-size: 14px;
+  }
+  h2{
+    line-height: 80px;
+    font-size: 20px;
+    color:#333;
+    text-align: center;
+  }
+  .guide{
+    height: 32px;
+    li{
+      float: left;
+      width: 240px;
+      border-bottom: 2px solid #c3c3c3;
+      color:#333;
+      font-size: 16px;
+      text-align: center;
+      line-height: 30px;
+      cursor: pointer;
+    }
+    li.cur{
+      color: #f2474f;
+      border-bottom: 2px solid #f2474f;
+    }
+  }
+  .bind-wrap li{
+    display: none;
+  }
+  .bind-wrap li.bind-cur{
+    display: block;
+  }
+  .skip{
+    display: block;
+    line-height: 30px;
+    width: 270px;
+    margin: auto;
+    padding-top: 16px;
+    text-align: right;
+    color: #3594fe;
+  }
+  .item{
+    width: 270px;
+    margin: auto;
+    height: 36px;
+    label{
+      margin-right: 20px;
+    }
+    input{
+      border: 1px solid #c3c3c3;
+      height: 32px;
+      padding-left: 4px;
+      color: #999;
+      width: 194px;
+      border-radius: 4px;
+    }
+    ::-moz-placeholder{color:#999;}              //ff
+    ::-webkit-input-placeholder{color:#999;}     //chrome,safari
+    :-ms-input-placeholder{color:#999;}
+    .send-msg{
+      width: 80px;
+      line-height: 30px;
+      background: #EE474E;
+      color: #FFF;
+      text-align: center;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+      margin-left:10px;
+      cursor: pointer;
+    }
+  }
+  .option input{
+    background: #ee474e;
+    cursor: pointer;
+    width: 194px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+    margin-top: 30px;
+    margin-left: 182px;
+  }
+  .item-down {
+    height: 66px;
+    padding-top: 30px;
+    .short{
+      width: 104px;
+    }
+  }
+  .register-box{
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 20px;
+    padding-left: 182px;
+    input{
+      float: left;
+      margin-top: 10px;
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+    }
+  }
+  .bind-alert{
+    top:158px;
+    display: none;
+  }
+}
+.showAlert{
+  position: absolute;
+  left: 50%;
+  width: 300px;
+  height: 160px;
+  border-radius: 5px;
+  margin-left: -150px;
+  background: #fff;
+  padding-top: 0;
+  .text{
+    margin-top: 44px;
+    margin-left: 40px;
+    background: url("../images/right01.png") no-repeat left;
+    background-size: 32px;
+    padding-left: 40px;
+    height: 32px;
+    line-height: 30px;
+    font-size: 20px;
+  }
+  button{
+    width: 150px;
+    margin-top: 22px;
+    margin-left: 80px;
+    background: #f2474f;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+  }
+}
+
