@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_9xrcye5m5bhgp66r.css">
     <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
     <script src="../js/swiper.min.js"></script>
+    <script src="../js/jquery.jqzoom.js"></script>
 </head>
 <body class="book-home-bg">
 <!-- 顶部导航 -->
@@ -147,7 +148,26 @@
 <!-- 商品信息 -->
 <div class="goods-info shadow clearfix">
     <div class="left">
-        <div class="goods-gallery"></div>
+        <div class="productImage">
+        <!-- 大图begin -->
+        <div id="preview" class="spec-preview"> 
+            <span class="jqzoom"><img jqimg="http://demo.lanrenzhijia.com/2014/jd0912/images/b1.jpg" src="http://demo.lanrenzhijia.com/2014/jd0912/images/s1.jpg" /></span> 
+        </div>
+        <!-- 大图end -->
+        <!-- 缩略图begin -->
+        <div class="spec-scroll">
+          <div class="items">
+            <ul>
+              <li><img bimg="http://demo.lanrenzhijia.com/2014/jd0912/images/b1.jpg" src="http://demo.lanrenzhijia.com/2014/jd0912/images/s1.jpg" onmousemove="preview(this);"><div class="hover-class"><img src="../images/onclick.png"></div></li>
+              <li><img bimg="http://demo.lanrenzhijia.com/2014/jd0912/images/b2.jpg" src="http://demo.lanrenzhijia.com/2014/jd0912/images/s2.jpg" onmousemove="preview(this);"><div class="hover-class"><img src="../images/onclick.png"></div></li>
+              <li><img bimg="http://demo.lanrenzhijia.com/2014/jd0912/images/b3.jpg" src="http://demo.lanrenzhijia.com/2014/jd0912/images/s3.jpg" onmousemove="preview(this);"><div class="hover-class"><img src="../images/onclick.png"></div></li>
+              <li><img class="last" bimg="http://demo.lanrenzhijia.com/2014/jd0912/images/b1.jpg" src="http://demo.lanrenzhijia.com/2014/jd0912/images/s1.jpg" onmousemove="preview(this);"><div class="hover-class"><img src="../images/onclick.png"></div></li>
+            </ul>
+          </div>
+        </div>
+        <!-- 缩略图end -->
+        
+        </div>
         <div class="share clearfix">
             <label><i class="iconfont icon-fenxiang1"></i>分享到</label>
             <ul>
@@ -215,9 +235,9 @@
             <div class="specification clearfix">
                 <label>规格：</label>
                 <ul>
-                    <li>特别定制套装（5册）</li>
-                    <li>三体1-3定制（3册）</li>
-                    <li class="active">三体标准本（3册）</li>
+                    <li>特别定制套装（5册）<img src="../images/gou.png"></li>
+                    <li>三体1-3定制（3册）<img src="../images/gou.png"></li>
+                    <li class="active">三体标准本（3册）<img src="../images/gou.png" style="display:block;"></li>
                 </ul>
             </div>
             <div class="quantity clearfix">
@@ -293,25 +313,111 @@
     <div class="tab-content hot-sale">
         <h3 class="title">热销商品</h3>
         <div class="recommended-products">
-            <div class="goods">
-                <a href="" class="cover"><img src=""></a>
-                <span class="price">￥35.00</span>
-                <a href="" class="name">瞬间的触觉</a>
-            </div>
-            <div class="goods">
-                <a href="" class="cover"><img src=""></a>
-                <span class="price">￥35.00</span>
-                <a href="" class="name">瞬间的触觉</a>
-            </div>
-            <div class="goods">
-                <a href="" class="cover"><img src=""></a>
-                <span class="price">￥35.00</span>
-                <a href="" class="name">瞬间的触觉</a>
-            </div>
-            <div class="goods">
-                <a href="" class="cover"><img src=""></a>
-                <span class="price">￥35.00</span>
-                <a href="" class="name">瞬间的触觉</a>
+            <!--热销商品-->
+            <div class="boxbox">
+                <div class="picbox">
+                    <ul class="piclist mainlist">
+                        <li>
+                            <a href="http://www.juheweb.com/" target="_blank">
+                                <div class="goods-new">
+                                    <a href="" class="cover"><i class="hg"></i><img src=""/></a>
+                                    <a href="" class="name">孙俪推荐 皇帝内径</a>
+                                    <div class="price clearfix">
+                                        <span class="old-price">￥45.00</span>
+                                        <i class="cur-price">￥35.00</i>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.juheweb.com/" target="_blank">
+                                <div class="goods-new">
+                                    <a href="" class="cover"><i class="hg"></i><img src=""/></a>
+                                    <a href="" class="name">孙俪推荐 皇帝内径</a>
+                                    <div class="price clearfix">
+                                        <span class="old-price">￥45.00</span>
+                                        <i class="cur-price">￥35.00</i>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.juheweb.com/" target="_blank">
+                                <div class="goods-new">
+                                    <a href="" class="cover"><i class="hg"></i><img src=""/></a>
+                                    <a href="" class="name">孙俪推荐 皇帝内径</a>
+                                    <div class="price clearfix">
+                                        <span class="old-price">￥45.00</span>
+                                        <i class="cur-price">￥35.00</i>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.juheweb.com/" target="_blank">
+                                <div class="goods-new">
+                                    <a href="" class="cover"><i class="hg"></i><img src=""/></a>
+                                    <a href="" class="name">孙俪推荐 皇帝内径</a>
+                                    <div class="price clearfix">
+                                        <span class="old-price">￥45.00</span>
+                                        <i class="cur-price">￥35.00</i>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.juheweb.com/" target="_blank">
+                                <div class="goods-new">
+                                    <a href="" class="cover"><i class="hg"></i><img src=""/></a>
+                                    <a href="" class="name">孙俪推荐 皇帝内径</a>
+                                    <div class="price clearfix">
+                                        <span class="old-price">￥45.00</span>
+                                        <i class="cur-price">￥35.00</i>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.juheweb.com/" target="_blank">
+                                <div class="goods-new">
+                                    <a href="" class="cover"><i class="hg"></i><img src=""/></a>
+                                    <a href="" class="name">孙俪推荐 皇帝内径</a>
+                                    <div class="price clearfix">
+                                        <span class="old-price">￥45.00</span>
+                                        <i class="cur-price">￥35.00</i>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.juheweb.com/" target="_blank">
+                                <div class="goods-new">
+                                    <a href="" class="cover"><i class="hg"></i><img src=""/></a>
+                                    <a href="" class="name">孙俪推荐 皇帝内径</a>
+                                    <div class="price clearfix">
+                                        <span class="old-price">￥45.00</span>
+                                        <i class="cur-price">￥35.00</i>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.juheweb.com/" target="_blank">
+                                <div class="goods-new">
+                                    <a href="" class="cover"><i class="hg"></i><img src=""/></a>
+                                    <a href="" class="name">孙俪推荐 皇帝内径</a>
+                                    <div class="price clearfix">
+                                        <span class="old-price">￥45.00</span>
+                                        <i class="cur-price">￥35.00</i>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="piclist swaplist"></ul>
+                </div>
+                <div class="og_prev btn iconfont icon-jiantou"></div>
+                <div class="og_next btn iconfont icon-jiantou-copy"></div>
             </div>
         </div>
     </div>
@@ -531,39 +637,16 @@
                         <li>印次：平装</li>
                         <li>是否套装：是</li>
                         <li>国标标准书号ISBN：248548399</li>
-                        <li>出版社：中国华侨出版社公司</li>
-                        <li>作者：刘慈欣</li>
+                        <li>出版社：<a href="#">中国华侨出版社公司</a></li>
+                        <li>作者：<a href="#">刘慈欣</a></li>
                     </ul>
                 </div>
                 <div class="section">
                     <div class="head">
-                        <span>特色产品</span>
+                        <span>产品特色</span>
                     </div>
                     <div class="featured-products clearfix">
-                        <div class="goods">
-                            <a href="" class="cover"><img src=""/></a>
-                            <a href="" class="name">孙俪推荐 皇帝内径</a>
-                            <div class="price clearfix">
-                                <span class="old-price">￥45.00</span>
-                                <i class="cur-price">￥35.00</i>
-                            </div>
-                        </div>
-                        <div class="goods">
-                            <a href="" class="cover"><img src=""/></a>
-                            <a href="" class="name">孙俪推荐 皇帝内径</a>
-                            <div class="price clearfix">
-                                <span class="old-price">￥45.00</span>
-                                <i class="cur-price">￥35.00</i>
-                            </div>
-                        </div>
-                        <div class="goods">
-                            <a href="" class="cover"><img src=""/></a>
-                            <a href="" class="name">孙俪推荐 皇帝内径</a>
-                            <div class="price clearfix">
-                                <span class="old-price">￥45.00</span>
-                                <i class="cur-price">￥35.00</i>
-                            </div>
-                        </div>
+                        <img src="../images/tabimg.png" />
                     </div>
                 </div>
                 <div class="section">
@@ -849,10 +932,141 @@
 
 
             <div class="info-box">
-                <div class="section"></div>
-                <div class="section"></div>
-                <div class="section"></div>
-                <div class="section"></div>
+                <div class="goods-comment">
+                    <div class="comment-top">
+                        <ul>
+                            <li class="selected"><span>全部评价</span>（<em>110</em>）</li>
+                            <li><span>好评</span>（<em>70</em>）</li>
+                            <li><span>晒图</span>（<em>30</em>）</li>
+                            <li><span>中评</span>（<em>40</em>）</li>
+                            <li><span>差评</span>（<em>0</em>）</li>
+                        </ul>
+                    </div>
+                    <div class="comment-info">
+                        <ul>
+                            <li class="outli">
+                                <div class="c-name">
+                                    <p><img src="../images/comment_01.png"><a href="#">大耳朵</a></p>
+                                </div>
+                                <div class="c-info">
+                                    <span class="c-text">宝贝很好很喜欢！！书籍的质量很好，卖家的发货速度也很快，宝贝质量非常好，很好看，谢谢卖家热情服务，这么好的店家以后会常来你们这里。
+                                    </span>
+                                    <div class="c-img">
+                                        <ul>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                        </ul>
+                                    </div>
+                                    <p class="c-done">
+                                        <span class="done-zan"><a href="">点赞</a>（<em>101</em>）</span>
+                                        <span class="done-time">2016-11-03    22:30</span>
+                                        <span class="done-ju"><a href="">举报</a></span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="outli">
+                                <div class="c-name">
+                                    <p><img src="../images/comment_01.png"><a href="#">大耳朵</a></p>
+                                </div>
+                                <div class="c-info">
+                                    <span class="c-text">宝贝很好很喜欢！！书籍的质量很好，卖家的发货速度也很快，宝贝质量非常好，很好看，谢谢卖家热情服务，这么好的店家以后会常来你们这里。
+                                    </span>
+                                    <div class="c-img">
+                                        <ul>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                        </ul>
+                                    </div>
+                                    <p class="c-done">
+                                        <span class="done-zan"><a href="">点赞</a>（<em>101</em>）</span>
+                                        <span class="done-time">2016-11-03    22:30</span>
+                                        <span class="done-ju"><a href="">举报</a></span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="outli">
+                                <div class="c-name">
+                                    <p><img src="../images/comment_01.png"><a href="#">大耳朵</a></p>
+                                </div>
+                                <div class="c-info">
+                                    <span class="c-text">宝贝很好很喜欢！！书籍的质量很好，卖家的发货速度也很快，宝贝质量非常好，很好看，谢谢卖家热情服务，这么好的店家以后会常来你们这里。
+                                    </span>
+                                    <div class="c-img">
+                                        <ul>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                        </ul>
+                                    </div>
+                                    <p class="c-done">
+                                        <span class="done-zan"><a href="">点赞</a>（<em>101</em>）</span>
+                                        <span class="done-time">2016-11-03    22:30</span>
+                                        <span class="done-ju"><a href="">举报</a></span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="outli">
+                                <div class="c-name">
+                                    <p><img src="../images/comment_01.png"><a href="#">大耳朵</a></p>
+                                </div>
+                                <div class="c-info">
+                                    <span class="c-text">宝贝很好很喜欢！！书籍的质量很好，卖家的发货速度也很快，宝贝质量非常好，很好看，谢谢卖家热情服务，这么好的店家以后会常来你们这里。
+                                    </span>
+                                    <div class="c-img">
+                                        <ul>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                        </ul>
+                                    </div>
+                                    <p class="c-done">
+                                        <span class="done-zan"><a href="">点赞</a>（<em>101</em>）</span>
+                                        <span class="done-time">2016-11-03    22:30</span>
+                                        <span class="done-ju"><a href="">举报</a></span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="outli">
+                                <div class="c-name">
+                                    <p><img src="../images/comment_01.png"><a href="#">大耳朵</a></p>
+                                </div>
+                                <div class="c-info">
+                                    <span class="c-text">宝贝很好很喜欢！！书籍的质量很好，卖家的发货速度也很快，宝贝质量非常好，很好看，谢谢卖家热情服务，这么好的店家以后会常来你们这里。
+                                    </span>
+                                    <div class="c-img">
+                                        <ul>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                            <li><img src="../images/comment_01.png"></li>
+                                        </ul>
+                                    </div>
+                                    <p class="c-done">
+                                        <span class="done-zan"><a href="">点赞</a>（<em>101</em>）</span>
+                                        <span class="done-time">2016-11-03    22:30</span>
+                                        <span class="done-ju"><a href="">举报</a></span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="info-box">
                 <div class="section"></div>
@@ -861,10 +1075,88 @@
                 <div class="section"></div>
             </div>
             <div class="info-box">
-                <div class="section"></div>
-                <div class="section"></div>
-                <div class="section"></div>
-                <div class="section"></div>
+                <div class="goods-console">
+                    <div class="top">
+                        <span class="top-left">全部咨询</span>
+                        <span class="top-right"><img src="../images/sendconsole.png"><a>发表咨询</a></span>
+                    </div>
+                    <div class="textsend" style="display: none;">
+                        <textarea placeholder="填写咨询内容！"></textarea>
+                        <button class="btn btn-danger">发表</button>
+                    </div>
+                    <div class="console-talk">
+                        <ul>
+                            <li>
+                                <p class="name"><span>网&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;友：</span><span>李**新</span></p>
+                                <div class="question">
+                                    <p>2016-11-01   23:11</p>
+                                    <div class="text-info">
+                                        <span class="left">咨询内容：</span>
+                                        <span class="right">这本书大概有多重，还有没有第二部？</span>
+                                    </div>
+                                </div>
+                                <div class="answer">
+                                    <p>2016-11-01   23:11</p>
+                                    <div class="text-info">
+                                        <span class="left">平台回复：</span>
+                                        <span class="right">大约200g左右，本书没有第二部的哦，这是链接地址，亲可以前往购买，祝您购物愉快！大约200g左右，本书没有第二部的哦，这是链接地址，亲可以前往购买，祝您购物愉快！</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="name"><span>网&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;友：</span><span>李**新</span></p>
+                                <div class="question">
+                                    <p>2016-11-01   23:11</p>
+                                    <div class="text-info">
+                                        <span class="left">咨询内容：</span>
+                                        <span class="right">这本书大概有多重，还有没有第二部？</span>
+                                    </div>
+                                </div>
+                                <div class="answer">
+                                    <p>2016-11-01   23:11</p>
+                                    <div class="text-info">
+                                        <span class="left">平台回复：</span>
+                                        <span class="right">大约200g左右，本书没有第二部的哦，这是链接地址，亲可以前往购买，祝您购物愉快！</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="name"><span>网&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;友：</span><span>李**新</span></p>
+                                <div class="question">
+                                    <p>2016-11-01   23:11</p>
+                                    <div class="text-info">
+                                        <span class="left">咨询内容：</span>
+                                        <span class="right">这本书大概有多重，还有没有第二部？</span>
+                                    </div>
+                                </div>
+                                <div class="answer">
+                                    <p>2016-11-01   23:11</p>
+                                    <div class="text-info">
+                                        <span class="left">平台回复：</span>
+                                        <span class="right">大约200g左右，本书没有第二部的哦，这是链接地址，亲可以前往购买，祝您购物愉快！大约200g左右，本书没有第二部的哦，这是链接地址，亲可以前往购买，祝您购物愉快！</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="name"><span>网&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;友：</span><span>李**新</span></p>
+                                <div class="question">
+                                    <p>2016-11-01   23:11</p>
+                                    <div class="text-info">
+                                        <span class="left">咨询内容：</span>
+                                        <span class="right">这本书大概有多重，还有没有第二部？</span>
+                                    </div>
+                                </div>
+                                <div class="answer">
+                                    <p>2016-11-01   23:11</p>
+                                    <div class="text-info">
+                                        <span class="left">平台回复：</span>
+                                        <span class="right">大约200g左右，本书没有第二部的哦，这是链接地址，亲可以前往购买，祝您购物愉快！</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1071,8 +1363,103 @@
         可信平台·工商认证·信用企业
     </div>
 </div>
+<script type="text/javascript">
+        //鼠标经过预览图片函数
+        function preview(img){
+            $("#preview .jqzoom img").attr("src",$(img).attr("src"));
+            $("#preview .jqzoom img").attr("jqimg",$(img).attr("bimg"));
+        }
+        //图片放大镜效果
+        $(function(){
+            $(".jqzoom").jqueryzoom({xzoom:440,yzoom:600});
+        });
+        $(".items li").hover(function(){
+            $(this).children('.hover-class').show();
+            $(this).siblings().children('.hover-class').hide();
+        });
+
+
+// JavaScript Document
+$(document).ready(function(e) {
+    linum = $('.mainlist li').length;//图片数量
+    w = linum * 230;//ul宽度
+    $('.piclist').css('width', w + 'px');//ul宽度
+    $('.swaplist').html($('.mainlist').html());//复制内容
+    
+    $('.og_next').click(function(){
+        
+        if($('.swaplist,.mainlist').is(':animated')){
+            $('.swaplist,.mainlist').stop(true,true);
+        }
+        
+        if($('.mainlist li').length>4){//多于4张图片
+            ml = parseInt($('.mainlist').css('left'));//默认图片ul位置
+            sl = parseInt($('.swaplist').css('left'));//交换图片ul位置
+            if(ml<=0 && ml>w*-1){//默认图片显示时
+                $('.swaplist').css({left: '920px'});//交换图片放在显示区域右侧
+                $('.mainlist').animate({left: ml - 920 + 'px'},'slow');//默认图片滚动                
+                if(ml==(w-920)*-1){//默认图片最后一屏时
+                    $('.swaplist').animate({left: '0px'},'slow');//交换图片滚动
+                }
+            }else{//交换图片显示时
+                $('.mainlist').css({left: '920px'})//默认图片放在显示区域右
+                $('.swaplist').animate({left: sl - 920 + 'px'},'slow');//交换图片滚动
+                if(sl==(w-920)*-1){//交换图片最后一屏时
+                    $('.mainlist').animate({left: '0px'},'slow');//默认图片滚动
+                }
+            }
+        }
+    })
+    $('.og_prev').click(function(){
+        
+        if($('.swaplist,.mainlist').is(':animated')){
+            $('.swaplist,.mainlist').stop(true,true);
+        }
+        
+        if($('.mainlist li').length>4){
+            ml = parseInt($('.mainlist').css('left'));
+            sl = parseInt($('.swaplist').css('left'));
+            if(ml<=0 && ml>w*-1){
+                $('.swaplist').css({left: w * -1 + 'px'});
+                $('.mainlist').animate({left: ml + 920 + 'px'},'slow');                
+                if(ml==0){
+                    $('.swaplist').animate({left: (w - 920) * -1 + 'px'},'slow');
+                }
+            }else{
+                $('.mainlist').css({left: (w - 920) * -1 + 'px'});
+                $('.swaplist').animate({left: sl + 920 + 'px'},'slow');
+                if(sl==0){
+                    $('.mainlist').animate({left: '0px'},'slow');
+                }
+            }
+        }
+    })    
+});
+
+$(document).ready(function(){
+    $('.og_prev,.og_next').hover(function(){
+            $(this).fadeTo('fast',1);
+        },function(){
+            $(this).fadeTo('fast',0.7);
+    })
+
+})
+
+
+</script>
 <script>
+
     (function () {
+        $('.comment-top li').click(function(){
+            $(this).addClass('selected').siblings().removeClass('selected');
+        })
+        $('.goods-console .top .top-right').click(function () {
+            $('.goods-console .textsend').show();
+        });
+        $('.goods-console .textsend button').click(function () {
+            $('.goods-console .textsend').hide();
+        });
+
         $('.goods-text-info-btn .showall').click(function () {
             $(this).parent('.goods-text-info-btn').siblings('.textheight').css("height","auto");
             $(this).hide();
@@ -1164,6 +1551,8 @@
 
         $('.specification li').click(function () {
             $(this).addClass('active').siblings().removeClass('active');
+            $(this).children('img').show();
+            $(this).siblings().children('img').hide();
         });
         $(".info-nav li").click(function () {
             $(this).addClass("active").siblings().removeClass("active");
@@ -1172,6 +1561,7 @@
         });
     })()
 </script>
+
 <!--右侧悬浮导航-->
 <ul class="fix-nav">
     <li><a href="" class="iconfont icon-gouwuche2"></a></li>
