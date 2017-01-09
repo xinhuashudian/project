@@ -551,12 +551,14 @@
   background-size: 30px;
 }
 .third-nav-wrap {
+  display: none;
   width: 820px;
   background: #fff;
   padding: 20px 50px 44px 20px;
   position: absolute;
   left: 180px;
   z-index: 9;
+  top: 0;
 }
 .third-nav-wrap .third-nav {
   height: 66px;
@@ -746,4 +748,172 @@
   color: #fff;
   border: 0;
   cursor: pointer;
+}
+.fix-content {
+  position: fixed;
+  display: none;
+  right: 0;
+  top: 0;
+  width: 270px;
+  z-index: 999;
+  background: #eceaeb;
+}
+.fix-content .title {
+  height: 38px;
+  color: #666;
+  line-height: 38px;
+  border-bottom: 1px solid #000;
+}
+.fix-content .title span {
+  display: block;
+  float: left;
+  height: 38px;
+  width: 38px;
+  font-size: 24px;
+  padding-left: 10px;
+}
+.fix-content .title .text {
+  width: 190px;
+  font-size: 18px;
+}
+.fix-content .title .closed {
+  background: url('../images/error.png') no-repeat center;
+  background-size: 20px;
+  cursor: pointer;
+}
+.fix-content p.browse {
+  height: 26px;
+  line-height: 26px;
+  padding-left: 10px;
+  color: #333;
+  font-size: 14px;
+}
+.fix-content p.browse em {
+  color: #f3474e;
+}
+.fix-content .book-list {
+  background: #eceaeb;
+}
+.fix-content .book-list li {
+  background: #fff;
+  height: 120px;
+  margin-bottom: 10px;
+}
+.fix-content .book-list li .img-wrap {
+  float: left;
+  margin-left: 10px;
+  margin-top: 12px;
+  width: 88px;
+  height: 88px;
+  border: 1px solid #999;
+}
+.fix-content .book-list li .good-brief {
+  margin-left: 110px;
+  padding-top: 10px;
+  margin-right: 24px;
+}
+.fix-content .book-list li .good-brief a {
+  display: block;
+  height: 60px;
+}
+.fix-content .book-list li .good-brief p {
+  font-size: 14px;
+  color: #333;
+  line-height: 18px;
+}
+.fix-content .book-list li .good-brief p.price {
+  color: #f3474e;
+}
+.fix-content .book-list li .good-brief button {
+  border: 1px solid #f3474e;
+  color: #f3474e;
+}
+.fix-content .coupon-list {
+  margin-top: 10px;
+  padding: 0 10px;
+}
+.fix-content .coupon-list li {
+  position: relative;
+  margin-bottom: 12px;
+}
+.fix-content .coupon-list li button {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  color: #f3474e;
+  text-align: right;
+  font-size: 16px;
+  border: 0;
+  width: 80px;
+  height: 20px;
+  background: #fff;
+}
+.fix-content .act-list {
+  background: #eceaeb;
+}
+.fix-content .act-list li {
+  height: 68px;
+  position: relative;
+  background: #fff;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.fix-content .act-list li .img-wrap {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #999;
+  float: left;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+.fix-content .act-list li .act-text {
+  padding-top: 8px;
+  margin-left: 62px;
+  margin-right: 10px;
+}
+.fix-content .act-list li .act-text p {
+  line-height: 18px;
+}
+.fix-content .act-list li .act-text p.price {
+  color: #f3474e;
+}
+.fix-content .act-list li .act-text p.price em {
+  color: #999;
+  font-size: 12px;
+}
+.fix-content .act-list li button {
+  color: #225ed0;
+  position: absolute;
+  right: 10px;
+  text-align: right;
+  width: 30px;
+  height: 20px;
+  border: 0;
+  bottom: 8px;
+  background: #fff;
+}
+.good-cur {
+  display: block;
+}
+.fix-page-wrap {
+  margin: 20px auto;
+  width: 188px;
+}
+.fix-page-wrap a {
+  border: 1px solid #d5d5d5;
+  width: 34px;
+  height: 34px;
+  background: #fff;
+  color: #999;
+  text-align: center;
+  line-height: 34px;
+  display: inline-block;
+}
+.fix-page-wrap a.cur {
+  color: #f3474e;
+}
+.fix-page-wrap a.icon {
+  border: 1px solid #b8b8b8;
+  color: #000;
 }

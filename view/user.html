@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>个人中心</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_9xrcye5m5bhgp66r.css">
     <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
 </head>
 <body class="book-home-bg">
 <!-- 顶部导航 -->
@@ -244,15 +246,96 @@
                     <li><a href="#"><img src="../images/tushu.jpg"><span>《吉米绘本》</span></a></li>
                 </ul>
             </div>
-            <div class="show">
-                <h2 class="title">商品推荐<a href="#">更多</a></h2>
-                <ul class="goods">
-                    <li><a href="#"><img src="../images/tushu.jpg"><span>《吉米绘本》</span></a></li>
-                    <li><a href="#"><img src="../images/tushu.jpg"><span>《吉米绘本》</span></a></li>
-                    <li><a href="#"><img src="../images/tushu.jpg"><span>《吉米绘本》</span></a></li>
-                    <li><a href="#"><img src="../images/tushu.jpg"><span>《吉米绘本》</span></a></li>
-                    <li><a href="#"><img src="../images/tushu.jpg"><span>《吉米绘本》</span></a></li>
-                </ul>
+        </div>
+    </div>
+</div>
+<!--商品推荐-->
+<div class="products-featured">
+    <div class="title">
+        <span>商品推荐</span>
+        <a href="javascript:">更多</a>
+    </div>
+    <div class="featured-slide-box">
+        <div class="prev btn iconfont icon-jiantou"></div>
+        <div class="next btn iconfont icon-jiantou-copy"></div>
+        <div class="products-featured-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-slide-wrap">
+                        <div class="goods">
+                            <a href="" class="cover"><i class="hg"></i><img src=""/></a>
+                            <a href="" class="name">孙俪推荐 皇帝内径</a>
+                            <div class="price clearfix">
+                                <span class="old-price">￥45.00</span>
+                                <i class="cur-price">￥35.00</i>
+                            </div>
+                        </div>
+                        <div class="goods">
+                            <a href="" class="cover"><i class="hg"></i><img src=""/></a>
+                            <a href="" class="name">孙俪推荐 皇帝内径</a>
+                            <div class="price clearfix">
+                                <span class="old-price">￥45.00</span>
+                                <i class="cur-price">￥35.00</i>
+                            </div>
+                        </div>
+                        <div class="goods">
+                            <a href="" class="cover"><i class="hg"></i><img src=""/></a>
+                            <a href="" class="name">孙俪推荐 皇帝内径</a>
+                            <div class="price clearfix">
+                                <span class="old-price">￥45.00</span>
+                                <i class="cur-price">￥35.00</i>
+                            </div>
+                        </div>
+                        <div class="goods">
+                            <a href="" class="cover">
+                                <span class="cx">慢100减40</span>
+                                <img src=""/></a>
+                            <a href="" class="name">孙俪推荐 皇帝内径</a>
+                            <div class="price clearfix">
+                                <span class="old-price">￥45.00</span>
+                                <i class="cur-price">￥35.00</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide-wrap">
+                        <div class="goods">
+                            <a href="" class="cover"><i class="hg"></i><img src=""/></a>
+                            <a href="" class="name">孙俪推荐 皇帝内径</a>
+                            <div class="price clearfix">
+                                <span class="old-price">￥45.00</span>
+                                <i class="cur-price">￥35.00</i>
+                            </div>
+                        </div>
+                        <div class="goods">
+                            <a href="" class="cover"><i class="hg"></i><img src=""/></a>
+                            <a href="" class="name">孙俪推荐 皇帝内径</a>
+                            <div class="price clearfix">
+                                <span class="old-price">￥45.00</span>
+                                <i class="cur-price">￥35.00</i>
+                            </div>
+                        </div>
+                        <div class="goods">
+                            <a href="" class="cover"><i class="hg"></i><img src=""/></a>
+                            <a href="" class="name">孙俪推荐 皇帝内径</a>
+                            <div class="price clearfix">
+                                <span class="old-price">￥45.00</span>
+                                <i class="cur-price">￥35.00</i>
+                            </div>
+                        </div>
+                        <div class="goods">
+                            <a href="" class="cover">
+                                <span class="cx">慢100减40</span>
+                                <img src=""/></a>
+                            <a href="" class="name">孙俪推荐 皇帝内径</a>
+                            <div class="price clearfix">
+                                <span class="old-price">￥45.00</span>
+                                <i class="cur-price">￥35.00</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -380,6 +463,18 @@
         $('.toggle-nav').mouseleave(function () {
             $(this).find('.dropdown-nav').hide();
         })
+
+        var featured = new Swiper('.products-featured-container', {
+            loop: true,
+        });
+
+        $('.featured-slide-box .prev').click(function () {
+            featured.slidePrev();
+        });
+
+        $('.featured-slide-box .next').click(function () {
+            featured.slideNext();
+        });
     })()
 </script>
 <!--右侧悬浮导航-->
