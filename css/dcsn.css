@@ -953,8 +953,42 @@ a {
   background: #FFFFFF;
   border-radius: 6px;
   margin-right: 12px;
+  margin-bottom: 12px;
   cursor: pointer;
   border: 1px solid #c3c3c3;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .basl-biaoqian .zdybq {
+  float: left;
+  overflow: hidden;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .basl-biaoqian .zdybq .zdybq-inner {
+  float: left;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .basl-biaoqian .zdybq .zdybq-inner label {
+  display: block;
+  float: left;
+  font-size: 14px;
+  padding: 4px 12px;
+  color: #333333;
+  background: #FFFFFF;
+  border-radius: 6px;
+  margin-right: 12px;
+  cursor: pointer;
+  border: 1px solid #c3c3c3;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .basl-biaoqian .zdybq .zdybq-box {
+  display: none;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .basl-biaoqian .zdybq .zdybq-box input {
+  width: 85px;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .basl-biaoqian .zdybq .zdybq-box a {
+  margin-left: 6px;
+  color: #333;
+  background: #d4d4d4;
+  padding: 4px 6px;
 }
 .bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .basl-biaoqian .active {
   border-color: #f54149;
@@ -973,8 +1007,26 @@ a {
 .bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .bask-enter textarea {
   width: 100%;
   resize: none;
-  height: 130px;
+  height: 100px;
+  margin-top: 50px;
   border: none;
+  padding: 0 8px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .bask-enter .textarea {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  padding: 0 8px;
+  box-sizing: border-box;
+  background: whitesmoke;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .bask-enter .textarea span {
+  line-height: 50px;
+  margin-right: 12px;
 }
 .bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .bask-enter p {
   height: 30px;
@@ -989,6 +1041,13 @@ a {
   color: #666666;
   font-size: 14px;
   margin-bottom: 20px;
+}
+.bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .bask-addimg input {
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
 }
 .bask .bask-box .bask-mokuai .bask-pj .form-group .bask-inner .bask-inner-box .bask-addimg .bask-addimg {
   overflow: hidden;
