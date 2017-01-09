@@ -223,23 +223,40 @@
                                     <div class="bask-inner">
                                         <div class="bask-inner-box">
                                             <div class="basl-biaoqian">
-                                                <span class="active">好书</span>
-                                                <span>值得一看</span>
-                                                <span>物有所值</span>
-                                                <span>自定义标签</span>
-                                                <img src="../images/addbiaoqian.jpg" alt=""/>
+                                                <span id="bask1">好书</span>
+                                                <span id="bask2">值得一看</span>
+                                                <span id="bask3">物有所值</span>
+                                                <div class="zdybq">
+                                                	<div class="zdybq-inner">
+	                                                	<label>自定义标签</label>
+	                                                	<img src="../images/addbiaoqian.jpg" alt=""/>
+                                                	</div>
+                                                	<div class="zdybq-box">
+	                                                	<input type="text" placeholder="请输入标签名"/>
+	                                                	<a href="javascript:" class="bask-add">添加</a>
+	                                                	<a href="javascript:" class="bask-esc">取消</a>
+                                                	</div>
+                                                </div>
                                             </div>
                                             <div class="bask-enter">
                                                 <textarea name="" rows="" cols=""></textarea>
+                                                <div class="textarea">
+                                                	
+                                                </div>
                                                 <p>还可以输入<span class="word">500</span>个汉字</p>
                                             </div>
                                             <div class="bask-addimg">
                                                 <p>晒图限5张，照片在1个工作日后展示，审核通过后可获得额外10个积分</p>
                                                 <div class="bask-addimg">
+                                                	<input type="file" name="" id="" value="" />
                                                     <img src="../images/bask-addimg.png" alt=""/>
+                                                    <input type="file" name="" id="" value="" />
                                                     <img src="../images/bask-addimg.png" alt=""/>
+                                                    <input type="file" name="" id="" value="" />
                                                     <img src="../images/bask-addimg.png" alt=""/>
+                                                    <input type="file" name="" id="" value="" />
                                                     <img src="../images/bask-addimg.png" alt=""/>
+                                                    <input type="file" name="" id="" value="" />
                                                     <img src="../images/bask-addimg.png" alt=""
                                                          style="margin-right: 0;"/>
                                                 </div>
@@ -475,10 +492,49 @@
 <script type="text/javascript">
     $(function () {
         $('#star').raty({score: 3});
-        $('.basl-biaoqian span').on('click', function () {
-            $(this).addClass("active").siblings().removeClass("active");
+        $("body").on("click",".basl-biaoqian span",function(){
+        	var $text = $(this).text();
+            var $ids = $(this).attr("id");
+            var $htmls = '<span id="'+ $ids +'">'+ $text +'</span>';
+            if($(this).hasClass('active')){
+            	$(this).removeClass('active');
+            	$('.bask-enter .textarea').find("#" + $ids).remove();
+            }else{
+            	$(this).addClass('active');
+            	$('.bask-enter .textarea').append($htmls);	
+            }
         })
-
+        /*自定义标签添加*/
+         $('.zdybq-inner').click(function () {
+        	$(this).hide();
+        	$('.zdybq-box').show();
+        })
+        $('.bask-esc').click(function () {
+        	$('.zdybq-inner').show();
+        	$('.zdybq-box').hide();
+        	$(this).prev().prev().val("");
+        })
+        $('.bask-add').click(function () {
+        	var addInput = $(this).prev().val();
+        	var myID = Math.round(Math.random() * 10000);
+        	var addHTML = '<span id="'+ myID +'">'+ addInput +'</span>';
+        	if (addInput == "") {
+        		alert("输入值不能为空");
+        	} else{
+        		$('.zdybq-inner').show();
+        		$('.zdybq-box').hide();
+        		$('.basl-biaoqian').prepend(addHTML);	
+        		$(this).prev().val("");
+        	}
+        	
+        })
+         
+         
+         
+         
+         
+         
+         
         $('.sq').click(function () {
             if ($(this).hasClass('active')) {
                 $('.bask-pj').slideDown();
