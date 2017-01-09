@@ -8,6 +8,7 @@
     <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
 </head>
 <body>
+<div class="dialogOverlay"></div>
 <!-- 顶部导航 -->
 <div class="top-nav-wrap">
     <div class="top-nav-content clearfix">
@@ -64,6 +65,7 @@
             <div class="add">
                 <a href="#">+新增收货地址</a>
             </div>
+            
         </div>
         <div class="line"></div>
         <h2 class="title">配送信息</h2>
@@ -71,23 +73,102 @@
             <ul>
                 <li class="clearfix">
                     <label>
-                        <input type="radio" name="way">
+                        <input type="radio" name="way" id="peisongChange">
                         <span>快递配送</span>
                     </label>
                 </li>
                 <li class="clearfix">
                     <label>
-                        <input type="radio" name="way">
+                        <input type="radio" name="way" id="zitiChange">
                         <span>用户自提</span>
                         <span>陈楠楠</span>
                         <span>北京啊啊啊啊啊啊啊啊啊</span>
                         <span>136****4566</span>
                     </label>
                     <span class="option">
-							<a href="#">更改自提地址</a>
-						</span>
+							<a href="javascript:;" id="newReceiverButton">更改自提地址</a>
+					</span>
                 </li>
             </ul>
+            <div class="newReceiver shadow" style="display: none;">
+                <fieldset>  
+                    <legend>编辑自提点</legend>
+                    <div class="ziarea">    
+                        <lable>选择区域：</lable>
+                        <select name="province">
+                            <option value ="北京">北京</option>
+                            <option value ="上海">上海</option>
+                            <option value="广东省">广东省</option>
+                            <option value="浙江省">浙江省</option>
+                        </select>  
+                        <select name="city"> 
+                            <option value ="北京市">北京市</option>
+                            <option value ="上海市">上海市</option>
+                            <option value="深圳">深圳</option>
+                            <option value="杭州">杭州</option>
+                        </select>  
+                        <select name="county"> 
+                            <option value ="朝阳区">朝阳区</option>
+                            <option value ="浦东区">浦东区</option>
+                            <option value="罗湖区">罗湖区</option>
+                            <option value="滨江区">滨江区</option>
+                        </select> 
+                        <select name="road"> 
+                            <option value ="街道小区">街道小区</option>
+                            <option value ="街道小区">街道小区</option>
+                            <option value="街道小区">街道小区</option>
+                            <option value="街道小区">街道小区</option> 
+                        </select>  
+                    </div>  
+                    <p>选择自提点</p>
+                    <div class="zitilist">
+                        <ul>
+                            <li>
+                                <span class="check"><input type="radio" name="zarea"></span>
+                                <span class="where">北京工业大学中栏公寓自提点</span>
+                                <span class="areainfo">北京朝阳区平乐园工业大学中栏学生公寓广场中心高校收发室</span>
+                                <span class="caozuo"><a href="">查看详细地图</a></span>
+                            </li>
+                            <li>
+                                <span class="check"><input type="radio" name="zarea"></span>
+                                <span class="where">北京工业大学中栏公寓自提点</span>
+                                <span class="areainfo">北京朝阳区平乐园工业大学中栏学生公寓广场中心高校收发室</span>
+                                <span class="caozuo"><a href="">查看详细地图</a></span>
+                            </li>
+                            <li>
+                                <span class="check"><input type="radio" name="zarea"></span>
+                                <span class="where">北京工业大学中栏公寓自提点</span>
+                                <span class="areainfo">北京朝阳区平乐园工业大学中栏学生公寓广场中心高校收发室</span>
+                                <span class="caozuo"><a href="">查看详细地图</a></span>
+                            </li>
+                            <li>
+                                <span class="check"><input type="radio" name="zarea"></span>
+                                <span class="where">北京工业大学中栏公寓自提点</span>
+                                <span class="areainfo">北京朝阳区平乐园工业大学中栏学生公寓广场中心高校收发室</span>
+                                <span class="caozuo"><a href="">查看详细地图</a></span>
+                            </li>
+                            <li>
+                                <span class="check"><input type="radio" name="zarea"></span>
+                                <span class="where">北京工业大学中栏公寓自提点</span>
+                                <span class="areainfo">北京朝阳区平乐园工业大学中栏学生公寓广场中心高校收发室</span>
+                                <span class="caozuo"><a href="">查看详细地图</a></span>
+                            </li>
+                            <li>
+                                <span class="check"><input type="radio" name="zarea"></span>
+                                <span class="where">北京工业大学中栏公寓自提点</span>
+                                <span class="areainfo">北京朝阳区平乐园工业大学中栏学生公寓广场中心高校收发室</span>
+                                <span class="caozuo"><a href="">查看详细地图</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="submit" id="newReceiverSubmit" class="btn btn-danger" value="确 定" />
+                    <input type="button" id="newReceiverCancelButton" class="btn btn-default" value="取 消" />
+                </fieldset> 
+            </div>
+        </div>
+        <div class="ziti-alert" style="display: none;">
+            <h2>自提时间</h2>
+            <p>请耐心等待自提时间通知</p>
         </div>
         <div class="line"></div>
         <h2 class="title">支付信息</h2>
@@ -221,9 +302,9 @@
             </div>
             <div class="item clearfix">
                 <div class="tag"><label><input type="checkbox" name="">使用礼品卡</label></div>
-                <div>
+                <div class="giftcard-main" style="display: block;">
                     <div>
-                        <span>请输入您的礼品卡卡号：</span><input type="text" class="long"><a href="#" class="option">选择已绑定礼品卡</a>
+                        <span>请输入您的礼品卡卡号：</span><input type="text" class="long">
                     </div>
                     <div>
                         <span>请输入您的礼品卡卡号：</span><input type="text" class="short">&nbsp;-&nbsp;<input type="text"
@@ -231,9 +312,60 @@
                             type="text" class="short">&nbsp;-&nbsp;<input type="text" class="short">
                     </div>
                     <div>
-                        <span>&nbsp;</span><button type="button" class="btn btn-warning btn-sm">绑定并使用</button>
+                        <span>&nbsp;</span><button type="button" id="giftcardButton" class="btn btn-warning btn-sm">绑定并使用</button>
                         <button type="button" class="btn btn-gray btn-sm" style="margin-left: 8px;">使用</button>
                     </div>
+                </div>
+                <div class="giftcard-sure" style="display: none;">
+                    <p>
+                        <a class="radio"><input type="radio" name="giftcard" checked></a>
+                        <a class="cardnum">3768534****76665</a>
+                        <a class="cardprice">¥ 100</a>
+                    </p>
+                </div>
+                <div><a href="javascript:;" class="option" id="newChanceButton">选择已绑定礼品卡</a></div>
+            </div>
+            <div class="newChance shadow" style="display: none;">
+                <div class="chance-table">
+                    <table width="478" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td width="25" class="tdfirst"><input type="radio" name="giftcard"></td>
+                            <td width="345">3768534****76665</td>
+                            <td width="108">¥ 100</td>
+                        </tr>
+                        <tr>
+                            <td width="25" class="tdfirst"><input type="radio" name="giftcard"></td>
+                            <td width="345">3768534****76665</td>
+                            <td width="108">¥ 100</td>
+                        </tr>
+                        <tr>
+                            <td width="25" class="tdfirst"><input type="radio" name="giftcard"></td>
+                            <td width="345">3768534****76665</td>
+                            <td width="108">¥ 100</td>
+                        </tr>
+                        <tr>
+                            <td width="25" class="tdfirst"><input type="radio" name="giftcard"></td>
+                            <td width="345">3768534****76665</td>
+                            <td width="108">¥ 100</td>
+                        </tr>
+                        <tr>
+                            <td width="25" class="tdfirst"><input type="radio" name="giftcard"></td>
+                            <td width="345">3768534****76665</td>
+                            <td width="108">¥ 100</td>
+                        </tr>
+                        <tr>
+                            <td width="25" class="tdfirst"><input type="radio" name="giftcard"></td>
+                            <td width="345">3768534****76665</td>
+                            <td width="108">¥ 100</td>
+                        </tr>
+                        <tr>
+                            <td width="25" class="tdfirst"><input type="radio" name="giftcard"></td>
+                            <td width="345">3768534****76665</td>
+                            <td width="108">¥ 100</td>
+                        </tr>
+                    </table>
+                    <input type="submit" id="newChanceSubmit" class="btn btn-danger" value="确 定" />
+                    <input type="button" id="newChanceCancelButton" class="btn btn-default" value="取 消" />
                 </div>
             </div>
             <div class="item clearfix">
@@ -389,6 +521,40 @@
         $('.submit-btn input').click(function () {
             window.location.href = 'submit-tips.html'
         })
+        // 更改自提地址
+        $('#newReceiverButton').click(function() {
+            $(".dialogOverlay").show();
+            $(".newReceiver").show();
+        });
+        // 更改自提地址取消
+        $("#newReceiverCancelButton").click(function() {
+            $(".dialogOverlay").hide();
+            $(".newReceiver").hide();
+        });
+        // 选择已绑定礼品卡
+        $('#newChanceButton').click(function(){
+            $(".dialogOverlay").show();
+            $(".newChance").show();
+        })
+        // 选择已绑定礼品卡取消
+        $('#newChanceCancelButton').click(function(){
+            $(".dialogOverlay").hide();
+            $(".newChance").hide();
+        })
+        //最后个样式改变
+        $(".chance-table table tr:last-child").children('td').css("border","none");
+        $("#zitiChange").change(function() { 
+            $('.ziti-alert').show();
+        }); 
+        $("#peisongChange").change(function() { 
+            $('.ziti-alert').hide();
+        }); 
+        //绑定并使用按钮点击
+        $('#giftcardButton').click(function(){
+            $('.giftcard-sure').show();
+            $('.giftcard-main').hide();
+        })
+
     })
 </script>
 </html>
