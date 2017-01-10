@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_9xrcye5m5bhgp66r.css">
     <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/flatpickr.min.css">
     <link rel="stylesheet" type="text/css" href="../css/imgareaselect-default.css"/>
     <script type="text/javascript" src="../js/jquery.imgareaselect.pack.js"></script>
     <script type="text/javascript" src="../js/jQueryRotate.js"></script>
+    <script type="text/javascript" src="../js/flatpickr.js"></script>
 </head>
 <body class="book-home-bg">
 <!-- 顶部导航 -->
@@ -222,8 +224,11 @@
                         </tr>
                         <tr>
                             <th><span class="red">*</span>出生日期：</th>
-                            <td><input type="text" name=""></td>
+                            <td><input type="text" id="birthday" name=""></td>
                         </tr>
+                        <script>
+                            document.getElementById("birthday").flatpickr();
+                        </script>
                         <tr>
                             <th>邮箱地址：</th>
                             <td><label>jeox@sohu.com</label><a href="#" class="edit">修改</a></td>
