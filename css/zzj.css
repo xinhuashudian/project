@@ -478,6 +478,17 @@ li {
   background: #fff;
   padding-left: 18px;
 }
+.receive-address-right ul.receive-li li .operate .cancel {
+  position: static;
+  float: left;
+  display: block;
+  width: 30px;
+  height: 80px;
+  line-height: 80px;
+  cursor: pointer;
+  background: #fff;
+  padding-left: 18px;
+}
 .receive-address-right ul.receive-li li.receive-title {
   color: #464646;
   height: 54px;
