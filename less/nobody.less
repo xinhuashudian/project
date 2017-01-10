@@ -451,6 +451,10 @@
     *{
         box-sizing: content-box;
     }
+    input[type=checkbox]{
+        vertical-align: middle;
+        margin-top: -3px;
+    }
     width: 1000px;
     margin: 0 auto;
     .guide {
@@ -459,6 +463,8 @@
         padding: 16px 0;
     }
     table {
+        border: 1px solid #ededed;
+        table-layout:fixed;
         border-collapse: collapse;
         border-spacing: 0;
         font-size: 12px;
@@ -475,54 +481,51 @@
                 float: left;
             }
         }
-        .tl {
-            text-align: left;
-        }
-        .tr-title {
+    }
+    .item{
+        .top{
             line-height: 30px;
-        }
-        .tr-list {
-            border-left: 1px solid #ededed;
-            border-right: 1px solid #ededed;
-            td {
-                padding: 4px;
-            }
-            .less {
+            font-size: 12px;
+            span{
                 float: left;
-                margin-right: 5px;
-                width: 27px;
-                height: 17px;
-                background: url("../images/less.png") no-repeat center;
-            }
-            .to-shop {
-                color: #ac0805;
-            }
-            .cover {
-                width: 58px;
-                height: 58px;
-                border: 1px solid #e9e9e9;
+                width: 40px;
+                text-align: center;
             }
         }
-        .first {
-            border-top: 1px solid #ededed;
-        }
-        .foot {
-            text-align: right;
-            border: 1px solid #e9e9e9;
-            border-top: 0;
-            td {
-                padding: 10px;
-            }
-        }
-        .line {
-            border-left: 1px solid #ededed;
-            border-right: 1px solid #ededed;
-            hr {
+        .line{
+            hr{
                 padding: 0;
                 height: 0;
                 border: 0;
                 border-top: 1px dashed #e0e0e0;
                 margin-right: 10px;
+            }
+        }
+        td{
+            padding: 5px;
+        }
+        .to-shop {
+            color: #ac0805;
+        }
+        .tl {
+            text-align: left;
+        }
+        .tr {
+            text-align: right;
+        }
+        .less {
+            display: inline-block;
+            margin: 2px 5px 0 0;
+            width: 27px;
+            height: 12px;
+            background: url("../images/less.png") no-repeat center;
+        }
+        .cover{
+            display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+            img{
+                width: 58px;
+                height: 58px;
+                border: 1px solid #e9e9e9;
             }
         }
         .number {
@@ -553,38 +556,39 @@
         .supply {
             color: #999;
         }
-        tfoot {
-            text-align: left;
-            line-height: 58px;
-            .end {
-                padding-left: 10px;
-                border: 1px solid #ba0404;
+    }
+    .foot {
+        font-size: 12px;
+        text-align: left;
+        line-height: 58px;
+        .end {
+            padding-left: 10px;
+            border: 1px solid #ba0404;
+        }
+        input[type=checkbox] {
+            vertical-align: middle;
+            margin-top: -2px;
+        }
+        a {
+            margin: 0 10px;
+        }
+        .end-num {
+            float: right;
+            height: 58px;
+            strong {
+                font-size: 18px;
+                color: #ba0404;
+                font-weight: normal;
             }
-            input[type=checkbox] {
-                vertical-align: middle;
-                margin-top: -2px;
-            }
-            a {
-                margin: 0 10px;
-            }
-            .end-num {
+            .submit-btn {
                 float: right;
                 height: 58px;
-                strong {
-                    font-size: 18px;
-                    color: #ba0404;
-                    font-weight: normal;
-                }
-                .submit-btn {
-                    float: right;
-                    height: 58px;
-                    border: 0;
-                    background-color: #ba0404;
-                    width: 160px;
-                    color: #fff;
-                    margin-left: 5px;
-                    font-size: 16px;
-                }
+                border: 0;
+                background-color: #ba0404;
+                width: 160px;
+                color: #fff;
+                margin-left: 5px;
+                font-size: 16px;
             }
         }
     }

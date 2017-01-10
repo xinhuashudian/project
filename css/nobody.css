@@ -449,12 +449,18 @@
 .cart * {
   box-sizing: content-box;
 }
+.cart input[type=checkbox] {
+  vertical-align: middle;
+  margin-top: -3px;
+}
 .cart .guide {
   font-size: 18px;
   color: #333;
   padding: 16px 0;
 }
 .cart table {
+  border: 1px solid #ededed;
+  table-layout: fixed;
   border-collapse: collapse;
   border-spacing: 0;
   font-size: 12px;
@@ -472,73 +478,69 @@
 .cart table th label {
   float: left;
 }
-.cart table .tl {
-  text-align: left;
-}
-.cart table .tr-title {
+.cart .item .top {
   line-height: 30px;
+  font-size: 12px;
 }
-.cart table .tr-list {
-  border-left: 1px solid #ededed;
-  border-right: 1px solid #ededed;
-}
-.cart table .tr-list td {
-  padding: 4px;
-}
-.cart table .tr-list .less {
+.cart .item .top span {
   float: left;
-  margin-right: 5px;
-  width: 27px;
-  height: 17px;
-  background: url("../images/less.png") no-repeat center;
+  width: 40px;
+  text-align: center;
 }
-.cart table .tr-list .to-shop {
-  color: #ac0805;
-}
-.cart table .tr-list .cover {
-  width: 58px;
-  height: 58px;
-  border: 1px solid #e9e9e9;
-}
-.cart table .first {
-  border-top: 1px solid #ededed;
-}
-.cart table .foot {
-  text-align: right;
-  border: 1px solid #e9e9e9;
-  border-top: 0;
-}
-.cart table .foot td {
-  padding: 10px;
-}
-.cart table .line {
-  border-left: 1px solid #ededed;
-  border-right: 1px solid #ededed;
-}
-.cart table .line hr {
+.cart .item .line hr {
   padding: 0;
   height: 0;
   border: 0;
   border-top: 1px dashed #e0e0e0;
   margin-right: 10px;
 }
-.cart table .number {
+.cart .item td {
+  padding: 5px;
+}
+.cart .item .to-shop {
+  color: #ac0805;
+}
+.cart .item .tl {
+  text-align: left;
+}
+.cart .item .tr {
+  text-align: right;
+}
+.cart .item .less {
+  display: inline-block;
+  margin: 2px 5px 0 0;
+  width: 27px;
+  height: 12px;
+  background: url("../images/less.png") no-repeat center;
+}
+.cart .item .cover {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cart .item .cover img {
+  width: 58px;
+  height: 58px;
+  border: 1px solid #e9e9e9;
+}
+.cart .item .number {
   width: 92px;
   margin: 0 auto;
 }
-.cart table .number input {
+.cart .item .number input {
   float: left;
   text-align: center;
   font-size: 12px;
 }
-.cart table .number input[type=text] {
+.cart .item .number input[type=text] {
   width: 48px;
   height: 18px;
   border: 1px solid #c1c1c1;
   margin: 0 5px;
   line-height: 18px;
 }
-.cart table .number input[type=button] {
+.cart .item .number input[type=button] {
   margin-top: 2px;
   width: 14px;
   height: 14px;
@@ -547,34 +549,35 @@
   background: #fff;
   cursor: pointer;
 }
-.cart table .supply {
+.cart .item .supply {
   color: #999;
 }
-.cart table tfoot {
+.cart .foot {
+  font-size: 12px;
   text-align: left;
   line-height: 58px;
 }
-.cart table tfoot .end {
+.cart .foot .end {
   padding-left: 10px;
   border: 1px solid #ba0404;
 }
-.cart table tfoot input[type=checkbox] {
+.cart .foot input[type=checkbox] {
   vertical-align: middle;
   margin-top: -2px;
 }
-.cart table tfoot a {
+.cart .foot a {
   margin: 0 10px;
 }
-.cart table tfoot .end-num {
+.cart .foot .end-num {
   float: right;
   height: 58px;
 }
-.cart table tfoot .end-num strong {
+.cart .foot .end-num strong {
   font-size: 18px;
   color: #ba0404;
   font-weight: normal;
 }
-.cart table tfoot .end-num .submit-btn {
+.cart .foot .end-num .submit-btn {
   float: right;
   height: 58px;
   border: 0;
