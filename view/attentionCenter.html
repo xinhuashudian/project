@@ -187,68 +187,150 @@
         <div class="attention-center-right shadow">
             <h2>关注中心</h2>
             <ul class="attention-nav">
-                <li class="cur">商品</li>
-                <li>社群</li>
-                <li>帖子</li>
-                <li>直播</li>
-                <li>活动</li>
-                <li style="width: 48px;">出版社</li>
+                <li id="ac1"  onclick="setTab('ac',1,1,6,'cur')"  class="cur">商品</li>
+                <li id="ac2"  onclick="setTab('ac',2,1,6,'cur')">社群</li>
+                <li id="ac3"  onclick="setTab('ac',3,1,6,'cur')">帖子</li>
+                <li id="ac4"  onclick="setTab('ac',4,1,6,'cur')">直播</li>
+                <li id="ac5"  onclick="setTab('ac',5,1,6,'cur')">活动</li>
+                <li id="ac6"  onclick="setTab('ac',6,1,6,'cur')">出版社</li>
             </ul>
-            <div class="choose-wrap">
-                <div class="all-choose">全选</div>
-                <button class="cancel btn btn-default btn-xs">批量取消</button>
-                <button class="buy btn btn-default btn-xs">批量购买</button>
+            <div id="ac-DV1" style="display: block;">
+                <div class="choose-wrap">
+                    <div class="all-choose">全选</div>
+                    <button class="cancel btn btn-default btn-xs">批量取消</button>
+                    <button class="buy btn btn-default btn-xs">批量购买</button>
+                </div>
+                <div class="attention-header">
+                    <div class="detail">商品</div>
+                    <div class="price">价格</div>
+                    <div class="time">关注</div>
+                    <div class="operate">操作</div>
+                </div>
+                <ul class="attention-detail-wrap">
+                    <li class="attention-li">
+                        <div class="attention-choose"></div>
+                        <div class="attention-detail">
+                            <div class="img-wrap">
+                                <img src="../images/book.png" alt="" width="100%">
+                            </div>
+                            <div class="brief-wrap">
+                                <p class="brief-title">寻找时间的灰度(全2册)(电子书)</p>
+                                <p class="brief-text">纸质书</p>
+                            </div>
+                        </div>
+                        <div class="price">￥72<em>.68</em></div>
+                        <div class="time">
+                            2016-12-26</br>
+                            14:12:19
+                        </div>
+                        <div class="operate">
+                            <button class="shoppingCart btn btn-warning btn-sm" style="padding: 0px 16px;margin-left: 36px;">加入购物车</button>
+                            <button class="cancel btn btn-default btn-sm" style="margin-left: 36px;">取消关注</button>
+                        </div>
+                    </li>
+                    <li class="attention-li">
+                        <div class="attention-choose"></div>
+                        <div class="attention-detail">
+                            <div class="img-wrap">
+                                <img src="../images/book.png" alt="" width="100%">
+                            </div>
+                            <div class="brief-wrap">
+                                <p class="brief-title">寻找时间的灰度(全2册)(电子书)</p>
+                                <p class="brief-text">纸质书</p>
+                            </div>
+                        </div>
+                        <div class="price">￥72<em>.68</em></div>
+                        <div class="time">
+                            2016-12-26</br>
+                            14:12:19
+                        </div>
+                        <div class="operate">
+                            <button class="shoppingCart btn btn-warning btn-sm" style="padding: 0px 16px;margin-left: 36px;">加入购物车</button>
+                            <button class="cancel btn btn-default btn-sm" style="margin-left: 36px;">取消关注</button>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="attention-header">
-                <div class="detail">商品</div>
-                <div class="price">价格</div>
-                <div class="time">关注</div>
-                <div class="operate">操作</div>
+            <div id="ac-DV2" style="display: none;"></div>
+            <div id="ac-DV3" style="display: none;"></div>
+            <div id="ac-DV4" style="display: none;"></div>
+            <div id="ac-DV5" style="display: none;">
+                <div class="center-activity">
+                    <table width="754" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th width="196">标题</th>
+                            <th width="76">活动时间</th>
+                            <th width="216">活动内容</th>
+                            <th width="116">活动状态</th>
+                            <th width="150">操作</th>
+                        </tr>
+                        <tr>
+                            <td class="first">0元狂欢正版书，限时免费</td>
+                            <td>2016-12-26 14:12:19</td>
+                            <td>满500免费下载10本电子书</td>
+                            <td>已经结束</td>
+                            <td><button class="btn btn-cancel btn-sm">取消关注</button></td>
+                        </tr>
+                        <tr>
+                            <td class="first">0元狂欢正版书，限时免费</td>
+                            <td>2016-12-26 14:12:19</td>
+                            <td>满500免费下载10本电子书</td>
+                            <td>正在进行</td>
+                            <td><button class="btn btn-cancel btn-sm">取消关注</button></td>
+                        </tr>
+                        <tr>
+                            <td class="first">0元狂欢正版书，限时免费</td>
+                            <td>2016-12-26 14:12:19</td>
+                            <td>满500免费下载10本电子书</td>
+                            <td>未开始</td>
+                            <td><button class="btn btn-cancel btn-sm">取消关注</button></td>
+                        </tr>
+                        <tr>
+                            <td class="first">0元狂欢正版书，限时免费</td>
+                            <td>2016-12-26 14:12:19</td>
+                            <td>满500免费下载10本电子书</td>
+                            <td>正在进行</td>
+                            <td><button class="btn btn-cancel btn-sm">取消关注</button></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-            <ul class="attention-detail-wrap">
-                <li class="attention-li">
-                    <div class="attention-choose"></div>
-                    <div class="attention-detail">
-                        <div class="img-wrap">
-                            <img src="../images/book.png" alt="" width="100%">
-                        </div>
-                        <div class="brief-wrap">
-                            <p class="brief-title">寻找时间的灰度(全2册)(电子书)</p>
-                            <p class="brief-text">纸质书</p>
-                        </div>
-                    </div>
-                    <div class="price">￥72<em>.68</em></div>
-                    <div class="time">
-                        2016-12-26</br>
-                        14:12:19
-                    </div>
-                    <div class="operate">
-                        <button class="shoppingCart btn btn-warning btn-sm" style="padding: 0px 16px;margin-left: 36px;">加入购物车</button>
-                        <button class="cancel btn btn-default btn-sm" style="margin-left: 36px;">取消关注</button>
-                    </div>
-                </li>
-                <li class="attention-li">
-                    <div class="attention-choose"></div>
-                    <div class="attention-detail">
-                        <div class="img-wrap">
-                            <img src="../images/book.png" alt="" width="100%">
-                        </div>
-                        <div class="brief-wrap">
-                            <p class="brief-title">寻找时间的灰度(全2册)(电子书)</p>
-                            <p class="brief-text">纸质书</p>
-                        </div>
-                    </div>
-                    <div class="price">￥72<em>.68</em></div>
-                    <div class="time">
-                        2016-12-26</br>
-                        14:12:19
-                    </div>
-                    <div class="operate">
-                        <button class="shoppingCart btn btn-warning btn-sm" style="padding: 0px 16px;margin-left: 36px;">加入购物车</button>
-                        <button class="cancel btn btn-default btn-sm" style="margin-left: 36px;">取消关注</button>
-                    </div>
-                </li>
-            </ul>
+            <div id="ac-DV6" style="display: none;">
+                <div class="center-publishing">
+                    <table width="754" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th width="260">出版社名称</th>
+                            <th width="190">出版社简介</th>
+                            <th width="154"></th>
+                            <th width="150">操作</th>
+                        </tr>
+                        <tr>
+                            <td class="first"><img src="../images/friend-user.jpg"><span>北京理工大学出版社</span></td>
+                            <td>北京理工大学出版社</td>
+                            <td></td>
+                            <td><button class="btn btn-default btn-sm">取消关注</button></td>
+                        </tr>
+                        <tr>
+                            <td class="first"><img src="../images/friend-user.jpg"><span>北京理工大学出版社</span></td>
+                            <td>北京理工大学出版社</td>
+                            <td></td>
+                            <td><button class="btn btn-default btn-sm">取消关注</button></td>
+                        </tr>
+                        <tr>
+                            <td class="first"><img src="../images/friend-user.jpg"><span>北京理工大学出版社</span></td>
+                            <td>北京理工大学出版社</td>
+                            <td></td>
+                            <td><button class="btn btn-default btn-sm">取消关注</button></td>
+                        </tr>
+                        <tr>
+                            <td class="first"><img src="../images/friend-user.jpg"><span>北京理工大学出版社</span></td>
+                            <td>北京理工大学出版社</td>
+                            <td></td>
+                            <td><button class="btn btn-default btn-sm">取消关注</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -366,6 +448,7 @@
         可信平台·工商认证·信用企业
     </div>
 </div>
+<script src="../js/tab.js" type="text/javascript" charset="utf-8"></script>
 <script>
     $(document).ready(function () {
         $('.attention-nav li').click(function () {

@@ -577,27 +577,31 @@ li {
   padding-bottom: 48px;
 }
 .attention-center-right h2 {
-  margin-left: 18px;
+  padding-left: 18px;
   height: 54px;
   font-size: 20px;
   line-height: 60px;
+  border-bottom: 4px solid #f3474e;
 }
 .attention-center-right ul.attention-nav {
   height: 20px;
-  margin-top: 12px;
+  margin-top: 26px;
   margin-left: 18px;
 }
 .attention-center-right ul.attention-nav li {
-  color: #333333;
+  color: #666;
   cursor: pointer;
-  font-size: 16px;
-  width: 32px;
-  margin-right: 26px;
+  font-size: 14px;
+  width: 62px;
+  margin-right: 20px;
+  text-align: center;
+  line-height: 32px;
+  border-bottom: 4px solid #d2d2d2;
   float: left;
 }
 .attention-center-right ul.attention-nav li.cur {
-  color: #ff7200;
-  border-bottom: 1px solid #ff7200;
+  color: #f3474e;
+  border-bottom: 4px solid #f3474e;
 }
 .attention-center-right .choose-wrap {
   height: 20px;
