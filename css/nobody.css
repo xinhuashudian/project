@@ -454,9 +454,23 @@
   margin-top: -3px;
 }
 .cart .guide {
+  padding: 16px 0;
+  overflow: hidden;
+}
+.cart .guide span {
   font-size: 18px;
   color: #333;
-  padding: 16px 0;
+}
+.cart .guide form {
+  float: right;
+  overflow: hidden;
+}
+.cart .guide form label {
+  float: left;
+}
+.cart .guide form .form-group {
+  float: left;
+  margin-left: 10px;
 }
 .cart table {
   border: 1px solid #ededed;
@@ -499,6 +513,9 @@
 }
 .cart .item .to-shop {
   color: #ac0805;
+}
+.cart .item .look {
+  margin-left: 60px;
 }
 .cart .item .tl {
   text-align: left;
@@ -594,9 +611,13 @@
   position: relative;
 }
 .cart .picMarquee-left .top {
-  font-size: 14px;
-  line-height: 28px;
-  border-bottom: 2px solid #666;
+  font-size: 18px;
+  height: 50px;
+  background: #665999;
+  color: #fff;
+  line-height: 50px;
+  padding-left: 30px;
+  font-weight: normal;
 }
 .cart .picMarquee-left .top .more {
   float: right;
@@ -615,22 +636,20 @@
 .cart .picMarquee-left .hd .next {
   position: absolute;
   right: 10px;
-  margin-top: -20px;
-  top: 50%;
-  width: 15px;
-  height: 40px;
+  top: 70px;
+  width: 20px;
+  height: 200px;
   cursor: pointer;
-  background: url("../images/next.png") no-repeat center;
+  background: url("../images/next.jpg") no-repeat center;
 }
 .cart .picMarquee-left .hd .prev {
   position: absolute;
   left: 10px;
-  margin-top: -20px;
-  top: 50%;
-  width: 15px;
-  height: 40px;
+  top: 70px;
+  width: 20px;
+  height: 200px;
   cursor: pointer;
-  background: url("../images/prev.png") no-repeat center;
+  background: url("../images/prv.jpg") no-repeat center;
 }
 .cart .picMarquee-left .bd {
   padding: 20px 49px;
@@ -651,12 +670,9 @@
   text-align: center;
 }
 .cart .picMarquee-left .bd ul li .pic img {
-  width: 130px;
-  height: 130px;
+  width: 160px;
+  height: 160px;
   border: 1px solid #ccc;
-}
-.cart .picMarquee-left .bd ul li .pic a:hover img {
-  border-color: #999;
 }
 .cart .picMarquee-left .bd ul li .title {
   line-height: 24px;

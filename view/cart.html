@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../css/jquery.bxslider.css"/>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_9xrcye5m5bhgp66r.css">
     <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="../js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="../js/jquery.bxslider.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body style="background: #fff">
 <!-- 顶部导航 -->
@@ -28,7 +30,22 @@
     </div>
 </div>
 <div class="cart">
-    <div class="guide">确认订单信息</div>
+    <div class="guide">
+    	<span>我的购物车</span>
+    	<form action="" method="post">
+    		<label for="">配送至：</label>
+    		<div class="form-group">
+    			<select name="">
+    				<option value="北京市" selected="selected">北京市</option>
+    			</select>
+    		</div>
+    		<div class="form-group">
+    			<select name="">
+    				<option value="东城区" selected="selected">东城区</option>
+    			</select>
+    		</div>
+    	</form>
+    </div>
     <table>
         <tr><th width="40"><input type="checkbox" class="all-product" id="all"></th><th width="360"><label for="all">全选</label>商品</th><th width="112">价格</th><th width="112">送积分</th><th width="112">商品数量</th><th width="40">&nbsp;</th><th width="112">商品合计</th><th width="112">操作</th></tr>
     </table>
@@ -53,11 +70,11 @@
                 <td>
                     <div class="number clearfix">
                         <input type="button" class="add" value="+">
-                        <input type="text" class="num">
+                        <input type="text" class="num" value="1">
                         <input type="button" class="cut" value="-">
                     </div>
                 </td>
-                <td class="supply">无货</td>
+                <td class="supply">有货</td>
                 <td>¥&nbsp;300.00</td>
                 <td>
                     <div><a href="#">关注</a></div>
@@ -74,7 +91,7 @@
                 <td>
                     <div class="number clearfix">
                         <input type="button" class="add" value="+">
-                        <input type="text" class="num">
+                        <input type="text" class="num" value="1">
                         <input type="button" class="cut" value="-">
                     </div>
                 </td>
@@ -100,7 +117,7 @@
             <colgroup><col width="40"><col width="360"><col width="112"><col width="112"><col width="112"><col width="40"><col width="112"><col width="112"></colgroup>
             <tr>
                 <td colspan="8" class="tl">
-                    <i class="less"></i>活动商品满4件，即可享受满减<a href="#" class="to-shop">&gt;去凑单&gt;</a>
+                    <i class="less"></i>可享受赠品<a href="#" class="to-shop">&gt;去凑单&gt;</a><a href="javascript:" class="look">查看赠品</a>
                 </td>
             </tr>
             <tr class="line"><td></td><td colspan="7"><hr></td></tr>
@@ -113,11 +130,11 @@
                 <td>
                     <div class="number clearfix">
                         <input type="button" class="add" value="+">
-                        <input type="text" class="num">
+                        <input type="text" class="num" value="1">
                         <input type="button" class="cut" value="-">
                     </div>
                 </td>
-                <td class="supply">无货</td>
+                <td class="supply">有货</td>
                 <td>¥&nbsp;300.00</td>
                 <td>
                     <div><a href="#">关注</a></div>
@@ -134,7 +151,67 @@
                 <td>
                     <div class="number clearfix">
                         <input type="button" class="add" value="+">
-                        <input type="text" class="num">
+                        <input type="text" class="num" value="1">
+                        <input type="button" class="cut" value="-">
+                    </div>
+                </td>
+                <td class="supply">无货</td>
+                <td>¥&nbsp;300.00</td>
+                <td>
+                    <div><a href="#">关注</a></div>
+                    <div><a href="#">删除</a></div>
+                </td>
+            </tr>
+            <tr class="line"><td></td><td colspan="7"><hr></td></tr>
+            <tr>
+                <td class="tr" colspan="8">运费：6.00</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="item">
+        <div class="top">
+            <label><span><input class="shop" type="checkbox"></span>新华发行自营店</label>
+        </div>
+        <table>
+            <colgroup><col width="40"><col width="360"><col width="112"><col width="112"><col width="112"><col width="40"><col width="112"><col width="112"></colgroup>
+            <tr>
+                <td colspan="8" class="tl">
+                    <i class="less"></i>活动商品购满￥200.00，可以加价换购商品<a href="#" class="to-shop">&gt;去凑单&gt;</a><a href="javascript:" class="look">查看加价购商品</a>
+                </td>
+            </tr>
+            <tr class="line"><td></td><td colspan="7"><hr></td></tr>
+            <tr>
+                <td><input class="product" type="checkbox"></td>
+                <td class="tl"><a class="cover" href="#"><img src="http://www.superslide2.com/demo/images/pic6.jpg">天才在左疯子在右</a>
+                </td>
+                <td>￥14.60</td>
+                <td>15</td>
+                <td>
+                    <div class="number clearfix">
+                        <input type="button" class="add" value="+">
+                        <input type="text" class="num" value="1">
+                        <input type="button" class="cut" value="-">
+                    </div>
+                </td>
+                <td class="supply">有货</td>
+                <td>¥&nbsp;300.00</td>
+                <td>
+                    <div><a href="#">关注</a></div>
+                    <div><a href="#">删除</a></div>
+                </td>
+            </tr>
+            <tr class="line"><td></td><td colspan="7"><hr></td></tr>
+            <tr>
+                <td><input class="product" type="checkbox"></td>
+                <td class="tl"><a class="cover" href="#"><img src="http://www.superslide2.com/demo/images/pic6.jpg">天才在左疯子在右</a>
+                </td>
+                <td>￥14.60</td>
+                <td>15</td>
+                <td>
+                    <div class="number clearfix">
+                        <input type="button" class="add" value="+">
+                        <input type="text" class="num" value="1">
                         <input type="button" class="cut" value="-">
                     </div>
                 </td>
@@ -163,9 +240,218 @@
             </span>
         </div>
     </div>
+	
+	
+	<div class="shop-recomm" style="margin-top: 30px;">
+		<div class="container">
+			<div class="care-header">
+				购买此商品的人还购买了
+			</div>
+			<div class="shop-center">
+				<div class="slider">
+			        <div class="slide">
+			        	<a href="javascript:">
+			        		<img src="../images/cart1.jpg">
+			        	</a>
+			        	<a href="javascript:">
+			        		<p>孙俪推荐 皇帝内经</p>
+			        	</a>
+			        	<span>
+			        		<i>￥35.00</i>
+			        		<a href="javascript:" class="shop-cart">
+			        			<img src="../images/shop-cart.png"/>
+			        		</a>
+			        	</span>
+			        </div>
+			        <div class="slide">
+			        	<a href="javascript:">
+			        		<img src="../images/cart2.jpg">
+			        	</a>
+			        	<a href="javascript:">
+			        		<p>孙俪推荐 皇帝内经</p>
+			        	</a>
+			        	<span>
+			        		<i>￥35.00</i>
+			        		<a href="javascript:" class="shop-cart">
+			        			<img src="../images/shop-cart.png"/>
+			        		</a>
+			        	</span>
+			        </div>
+			        <div class="slide">
+			        	<a href="javascript:">
+			        		<img src="../images/cart3.jpg">
+			        	</a>
+			        	<a href="javascript:">
+			        		<p>孙俪推荐 皇帝内经</p>
+			        	</a>
+			        	<span>
+			        		<i>￥35.00</i>
+			        		<a href="javascript:" class="shop-cart">
+			        			<img src="../images/shop-cart.png"/>
+			        		</a>
+			        	</span>
+			        </div>
+			        <div class="slide">
+			        	<a href="javascript:">
+			        		<img src="../images/cart4.jpg">
+			        	</a>
+			        	<a href="javascript:">
+			        		<p>孙俪推荐 皇帝内经</p>
+			        	</a>
+			        	<span>
+			        		<i>￥35.00</i>
+			        		<a href="javascript:" class="shop-cart">
+			        			<img src="../images/shop-cart.png"/>
+			        		</a>
+			        	</span>
+			        </div>
+			        <div class="slide">
+			        	<a href="javascript:">
+			        		<img src="../images/cart1.jpg">
+			        	</a>
+			        	<a href="javascript:">
+			        		<p>孙俪推荐 皇帝内经</p>
+			        	</a>
+			        	<span>
+			        		<i>￥35.00</i>
+			        		<a href="javascript:" class="shop-cart">
+			        			<img src="../images/shop-cart.png"/>
+			        		</a>
+			        	</span>
+			        </div>
+			        <div class="slide">
+			        	<a href="javascript:">
+			        		<img src="../images/cart3.jpg">
+			        	</a>
+			        	<a href="javascript:">
+			        		<p>孙俪推荐 皇帝内经</p>
+			        	</a>
+			        	<span>
+			        		<i>￥35.00</i>
+			        		<a href="javascript:" class="shop-cart">
+			        			<img src="../images/shop-cart.png"/>
+			        		</a>
+			        	</span>
+			        </div>
+			    </div>
+			    <script type="text/javascript">
+			        $(document).ready(function(){
+			          $('.slider').bxSlider({
+			            slideWidth: 200,
+			            minSlides: 2,
+			            maxSlides: 4,
+			            slideMargin: 25,
+			             infiniteLoop: false
+			          });
+			        });
+			    </script>
+			</div>
+		</div>
+	</div>
 
-    <div class="picMarquee-left">
-        <h2 class="top">购买此商品的人还买了<a href="#" class="more">更多</a></h2>
+	
+	<div class="shop-recomm" style="margin-top: 30px;">
+		<div class="container">
+			<div class="care-header">
+				商品推荐
+				<a href="javascript:" class="more">更多</a>
+			</div>
+			<div class="shop-center">
+				<div class="slider">
+			        <div class="slide">
+			        	<a href="javascript:">
+			        		<b class="hg"></b>
+			        		<img src="../images/cart1.jpg">
+			        	</a>
+			        	<a href="javascript:">
+			        		<p>孙俪推荐 皇帝内经</p>
+			        	</a>
+			        	<span>
+			        		<i>￥35.00</i>
+			        		<label class="old-price">￥45.00</label>
+			        	</span>
+			        </div>
+			        <div class="slide">
+			        	<a href="javascript:">
+			        		<b class="hg"></b>
+			        		<img src="../images/cart2.jpg">
+			        	</a>
+			        	<a href="javascript:">
+			        		<p>孙俪推荐 皇帝内经</p>
+			        	</a>
+			        	<span>
+			        		<i>￥35.00</i>
+			        		<label class="old-price">￥45.00</label>
+			        	</span>
+			        </div>
+			        <div class="slide">
+			        	<a href="javascript:">
+			        		<b class="hg"></b>
+			        		<img src="../images/cart3.jpg">
+			        	</a>
+			        	<a href="javascript:">
+			        		<p>孙俪推荐 皇帝内经</p>
+			        	</a>
+			        	<span>
+			        		<i>￥35.00</i>
+			        		<label class="old-price">￥45.00</label>
+			        	</span>
+			        </div>
+			        <div class="slide">
+			        	<a href="javascript:">
+			        		<b class="hg manjian"></b>
+			        		<img src="../images/cart4.jpg">
+			        	</a>
+			        	<a href="javascript:">
+			        		<p>孙俪推荐 皇帝内经</p>
+			        	</a>
+			        	<span>
+			        		<i>￥35.00</i>
+			        		<label class="old-price">￥45.00</label>
+			        	</span>
+			        </div>
+			        <div class="slide">
+			        	<a href="javascript:">
+			        		<img src="../images/cart1.jpg">
+			        	</a>
+			        	<a href="javascript:">
+			        		<p>孙俪推荐 皇帝内经</p>
+			        	</a>
+			        	<span>
+			        		<i>￥35.00</i>
+			        		<label class="old-price">￥45.00</label>
+			        	</span>
+			        </div>
+			        <div class="slide">
+			        	<a href="javascript:">
+			        		<img src="../images/cart3.jpg">
+			        	</a>
+			        	<a href="javascript:">
+			        		<p>孙俪推荐 皇帝内经</p>
+			        	</a>
+			        	<span>
+			        		<i>￥35.00</i>
+			        		<label class="old-price">￥45.00</label>
+			        	</span>
+			        </div>
+			    </div>
+			    <script type="text/javascript">
+			        $(document).ready(function(){
+			          $('.slider').bxSlider({
+			            slideWidth: 200,
+			            minSlides: 2,
+			            maxSlides: 4,
+			            slideMargin: 25,
+			             infiniteLoop: false
+			          });
+			        });
+			    </script>
+			</div>
+		</div>
+	</div>
+	
+    <!--<div class="picMarquee-left">
+        <h2 class="top">购买此商品的人还买了</h2>
         <div class="hd">
             <a class="next"></a>
             <a class="prev"></a>
@@ -173,8 +459,98 @@
         <div class="bd">
             <ul class="picList">
                 <li>
+                    <div class="pic">
+                    	<a href="#" target="_blank">
+                    		<img src="../images/cart1.jpg"/>
+                    	</a>
+                    </div>
+                    <div class="title"><a href="#" target="_blank">孙俪推荐 皇帝内经</a></div>
+                    <div class="price">¥&nbsp;32.00</div>
+                    <div class="add">
+                        <input type="button" value="加入购物车">
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                    	<a href="#" target="_blank">
+                    		<img src="../images/cart2.jpg"/>
+                    	</a>
+                    </div>
+                    <div class="title"><a href="#" target="_blank">效果图1</a></div>
+                    <div class="price">¥&nbsp;32.00</div>
+                    <div class="add">
+                        <input type="button" value="加入购物车">
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                    	<a href="#" target="_blank">
+                    		<img src="../images/cart3.jpg"/>
+                    	</a>
+                    </div>
+                    <div class="price">¥&nbsp;32.00</div>
+                    <div class="add">
+                        <input type="button" value="加入购物车">
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                    	<a href="#" target="_blank">
+                    		<img src="../images/cart4.jpg"/>
+                    	</a>
+                    </div>
+                    <div class="price">¥&nbsp;32.00</div>
+                    <div class="add">
+                        <input type="button" value="加入购物车">
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                    	<a href="#" target="_blank">
+                    		<img src="../images/cart1.jpg"/>
+                    	</a>
+                    </div>
+                    <div class="title"><a href="#" target="_blank">效果图1</a></div>
+                    <div class="price">¥&nbsp;32.00</div>
+                    <div class="add">
+                        <input type="button" value="加入购物车">
+                    </div>
+                </li>
+                <li>
                     <div class="pic"><a href="#" target="_blank"><img
                             src="http://www.superslide2.com/demo/images/pic6.jpg"/></a></div>
+                    <div class="title"><a href="#" target="_blank">效果图1</a></div>
+                    <div class="price">¥&nbsp;32.00</div>
+                    <div class="add">
+                        <input type="button" value="加入购物车">
+                    </div>
+                </li>
+                <li>
+                    <div class="pic"><a href="#" target="_blank"><img
+                            src="http://www.superslide2.com/demo/images/pic6.jpg"/></a></div>
+                    <div class="title"><a href="#" target="_blank">效果图1</a></div>
+                    <div class="price">¥&nbsp;32.00</div>
+                    <div class="add">
+                        <input type="button" value="加入购物车">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="picMarquee-left">
+        <h2 class="top">商品推荐</h2>
+        <div class="hd">
+            <a class="next"></a>
+            <a class="prev"></a>
+        </div>
+        <div class="bd">
+            <ul class="picList">
+                <li>
+                    <div class="pic">
+                    	<a href="#" target="_blank">
+                    		<img src="../images/cart1.jpg"/>
+                    	</a>
+                    </div>
                     <div class="title"><a href="#" target="_blank">效果图1</a></div>
                     <div class="price">¥&nbsp;32.00</div>
                     <div class="add">
@@ -237,81 +613,7 @@
                 </li>
             </ul>
         </div>
-    </div>
-    <div class="picMarquee-left">
-        <h2 class="top">购买此商品的人还买了<a href="#" class="more">更多</a></h2>
-        <div class="hd">
-            <a class="next"></a>
-            <a class="prev"></a>
-        </div>
-        <div class="bd">
-            <ul class="picList">
-                <li>
-                    <div class="pic"><a href="#" target="_blank"><img
-                            src="http://www.superslide2.com/demo/images/pic6.jpg"/></a></div>
-                    <div class="title"><a href="#" target="_blank">效果图1</a></div>
-                    <div class="price">¥&nbsp;32.00</div>
-                    <div class="add">
-                        <input type="button" value="加入购物车">
-                    </div>
-                </li>
-                <li>
-                    <div class="pic"><a href="#" target="_blank"><img
-                            src="http://www.superslide2.com/demo/images/pic6.jpg"/></a></div>
-                    <div class="title"><a href="#" target="_blank">效果图1</a></div>
-                    <div class="price">¥&nbsp;32.00</div>
-                    <div class="add">
-                        <input type="button" value="加入购物车">
-                    </div>
-                </li>
-                <li>
-                    <div class="pic"><a href="#" target="_blank"><img
-                            src="http://www.superslide2.com/demo/images/pic6.jpg"/></a></div>
-                    <div class="title"><a href="#" target="_blank">效果图1</a></div>
-                    <div class="price">¥&nbsp;32.00</div>
-                    <div class="add">
-                        <input type="button" value="加入购物车">
-                    </div>
-                </li>
-                <li>
-                    <div class="pic"><a href="#" target="_blank"><img
-                            src="http://www.superslide2.com/demo/images/pic6.jpg"/></a></div>
-                    <div class="title"><a href="#" target="_blank">效果图1</a></div>
-                    <div class="price">¥&nbsp;32.00</div>
-                    <div class="add">
-                        <input type="button" value="加入购物车">
-                    </div>
-                </li>
-                <li>
-                    <div class="pic"><a href="#" target="_blank"><img
-                            src="http://www.superslide2.com/demo/images/pic6.jpg"/></a></div>
-                    <div class="title"><a href="#" target="_blank">效果图1</a></div>
-                    <div class="price">¥&nbsp;32.00</div>
-                    <div class="add">
-                        <input type="button" value="加入购物车">
-                    </div>
-                </li>
-                <li>
-                    <div class="pic"><a href="#" target="_blank"><img
-                            src="http://www.superslide2.com/demo/images/pic6.jpg"/></a></div>
-                    <div class="title"><a href="#" target="_blank">效果图1</a></div>
-                    <div class="price">¥&nbsp;32.00</div>
-                    <div class="add">
-                        <input type="button" value="加入购物车">
-                    </div>
-                </li>
-                <li>
-                    <div class="pic"><a href="#" target="_blank"><img
-                            src="http://www.superslide2.com/demo/images/pic6.jpg"/></a></div>
-                    <div class="title"><a href="#" target="_blank">效果图1</a></div>
-                    <div class="price">¥&nbsp;32.00</div>
-                    <div class="add">
-                        <input type="button" value="加入购物车">
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
+    </div>-->
 </div>
 <!--通栏广告-->
 <div class="full-ad">
@@ -501,7 +803,7 @@
         if (num > 1) {
             _num.val(--num);
         } else {
-            _num.val(0);
+            _num.val(1);
         }
     });
 </script>

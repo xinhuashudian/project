@@ -458,9 +458,23 @@
     width: 1000px;
     margin: 0 auto;
     .guide {
-        font-size: 18px;
-        color: #333;
         padding: 16px 0;
+        overflow: hidden;
+        span{
+            font-size: 18px;
+            color: #333;
+        }
+        form{
+            float: right;
+            overflow: hidden;
+            label{
+                float: left;
+            }
+            .form-group{
+                float: left;
+                margin-left: 10px;
+            }
+        }
     }
     table {
         border: 1px solid #ededed;
@@ -506,6 +520,9 @@
         }
         .to-shop {
             color: #ac0805;
+        }
+        .look{
+            margin-left: 60px;
         }
         .tl {
             text-align: left;
@@ -598,9 +615,13 @@
         overflow: hidden;
         position: relative;
         .top {
-            font-size: 14px;
-            line-height: 28px;
-            border-bottom: 2px solid #666;
+            font-size: 18px;
+            height: 50px;
+            background: #665999;
+            color: #fff;
+            line-height: 50px;
+            padding-left: 30px;
+            font-weight: normal;
             .more {
                 float: right;
                 font-size: 12px;
@@ -621,22 +642,20 @@
         .next {
             position: absolute;
             right: 10px;
-            margin-top: -20px;
-            top: 50%;
-            width: 15px;
-            height: 40px;
+            top: 70px;
+            width: 20px;
+            height: 200px;
             cursor: pointer;
-            background: url("../images/next.png") no-repeat center;
+            background: url("../images/next.jpg") no-repeat center;
         }
         .prev {
             position: absolute;
             left: 10px;
-            margin-top: -20px;
-            top: 50%;
-            width: 15px;
-            height: 40px;
+            top: 70px;
+            width: 20px;
+            height: 200px;
             cursor: pointer;
-            background: url("../images/prev.png") no-repeat center;
+            background: url("../images/prv.jpg") no-repeat center;
         }
     }
 
@@ -659,12 +678,9 @@
         text-align: center;
     }
     .picMarquee-left .bd ul li .pic img {
-        width: 130px;
-        height: 130px;
+        width: 160px;
+        height: 160px;
         border: 1px solid #ccc;
-    }
-    .picMarquee-left .bd ul li .pic a:hover img {
-        border-color: #999;
     }
     .picMarquee-left .bd ul li .title {
         line-height: 24px;

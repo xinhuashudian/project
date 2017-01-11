@@ -1314,6 +1314,59 @@ a {
   font-size: 18px;
   margin-left: 20px;
 }
+.cart .care-header {
+  height: 50px;
+  line-height: 50px;
+  background: #c3c0bb;
+  color: #fff;
+  font-size: 20px;
+  padding-left: 36px;
+  box-shadow: 0px 0px 10px #b5afaf;
+  background: #665999;
+}
+.cart .care-header .more {
+  color: #FFFFFF;
+  float: right;
+  margin-right: 20px;
+  font-size: 16px;
+}
+.cart .shop-recomm .shop-center .slider .slide b {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 90px;
+  height: 98px;
+  background: url("../images/huangou.png");
+  background-size: 100% 100%;
+}
+.cart .shop-recomm .shop-center .slider .slide .manjian {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 68px;
+  height: 45px;
+  background: url("../images/manjian.jpg");
+  background-size: 100% 100%;
+}
+.cart .shop-recomm .shop-center .slider .slide i {
+  font-style: normal;
+  float: left;
+  color: #ff4242;
+  font-size: 18px;
+  margin-left: 0;
+}
+.cart .shop-cart {
+  float: right;
+}
+.cart .shop-cart img {
+  border: none !important;
+}
+.cart .shop-recomm .shop-center .slider .slide span label {
+  margin-left: 30px;
+  margin-top: 4px;
+}
 .press {
   margin-top: 35px;
 }
@@ -6581,9 +6634,23 @@ img {
   margin-top: -3px;
 }
 .cart .guide {
+  padding: 16px 0;
+  overflow: hidden;
+}
+.cart .guide span {
   font-size: 18px;
   color: #333;
-  padding: 16px 0;
+}
+.cart .guide form {
+  float: right;
+  overflow: hidden;
+}
+.cart .guide form label {
+  float: left;
+}
+.cart .guide form .form-group {
+  float: left;
+  margin-left: 10px;
 }
 .cart table {
   border: 1px solid #ededed;
@@ -6626,6 +6693,9 @@ img {
 }
 .cart .item .to-shop {
   color: #ac0805;
+}
+.cart .item .look {
+  margin-left: 60px;
 }
 .cart .item .tl {
   text-align: left;
@@ -6721,9 +6791,13 @@ img {
   position: relative;
 }
 .cart .picMarquee-left .top {
-  font-size: 14px;
-  line-height: 28px;
-  border-bottom: 2px solid #666;
+  font-size: 18px;
+  height: 50px;
+  background: #665999;
+  color: #fff;
+  line-height: 50px;
+  padding-left: 30px;
+  font-weight: normal;
 }
 .cart .picMarquee-left .top .more {
   float: right;
@@ -6742,22 +6816,20 @@ img {
 .cart .picMarquee-left .hd .next {
   position: absolute;
   right: 10px;
-  margin-top: -20px;
-  top: 50%;
-  width: 15px;
-  height: 40px;
+  top: 70px;
+  width: 20px;
+  height: 200px;
   cursor: pointer;
-  background: url("../images/next.png") no-repeat center;
+  background: url("../images/next.jpg") no-repeat center;
 }
 .cart .picMarquee-left .hd .prev {
   position: absolute;
   left: 10px;
-  margin-top: -20px;
-  top: 50%;
-  width: 15px;
-  height: 40px;
+  top: 70px;
+  width: 20px;
+  height: 200px;
   cursor: pointer;
-  background: url("../images/prev.png") no-repeat center;
+  background: url("../images/prv.jpg") no-repeat center;
 }
 .cart .picMarquee-left .bd {
   padding: 20px 49px;
@@ -6778,12 +6850,9 @@ img {
   text-align: center;
 }
 .cart .picMarquee-left .bd ul li .pic img {
-  width: 130px;
-  height: 130px;
+  width: 160px;
+  height: 160px;
   border: 1px solid #ccc;
-}
-.cart .picMarquee-left .bd ul li .pic a:hover img {
-  border-color: #999;
 }
 .cart .picMarquee-left .bd ul li .title {
   line-height: 24px;
