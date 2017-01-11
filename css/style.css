@@ -6178,6 +6178,118 @@ img {
   padding: 34px 0px;
   padding-left: 5px;
 }
+.look-addprice {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 41px;
+  background-color: #fff;
+}
+.look-addprice ul li {
+  width: 100%;
+}
+.look-addprice ul li p.add-title {
+  width: 100%;
+  height: 48px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 48px;
+  background-color: #f3474e;
+  text-align: center;
+}
+.look-addprice ul li .add-list {
+  width: 896px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.look-addprice ul li .add-list ul li {
+  width: 200px;
+  padding: 20px 0px;
+  margin-right: 32px;
+  float: left;
+}
+.look-addprice ul li .add-list ul li .list-img {
+  width: 200px;
+  height: 200px;
+}
+.look-addprice ul li .add-list ul li .list-img img {
+  width: 198px;
+  height: 198px;
+  border: 1px solid #d8d8d8;
+}
+.look-addprice ul li .add-list ul li .list-info {
+  margin-left: 5px;
+}
+.look-addprice ul li .add-list ul li .list-info p {
+  width: 100%;
+  color: #333;
+  font-size: 14px;
+  line-height: 32px;
+}
+.look-addprice ul li .add-list ul li .list-info p.price {
+  color: #f3474e;
+  font-size: 12px;
+  line-height: 22px;
+}
+.look-addprice ul li .add-list ul li .list-info p.price span {
+  font-size: 14px;
+  margin-left: 3px;
+}
+.look-giveaway {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 41px;
+  background-color: #fff;
+}
+.look-giveaway ul li {
+  width: 100%;
+}
+.look-giveaway ul li p.add-title {
+  width: 100%;
+  height: 48px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 48px;
+  background-color: #f3474e;
+  text-align: center;
+}
+.look-giveaway ul li .add-list {
+  width: 896px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.look-giveaway ul li .add-list ul li {
+  width: 200px;
+  padding: 20px 0px;
+  margin-right: 32px;
+  float: left;
+}
+.look-giveaway ul li .add-list ul li .list-img {
+  width: 200px;
+  height: 200px;
+}
+.look-giveaway ul li .add-list ul li .list-img img {
+  width: 198px;
+  height: 198px;
+  border: 1px solid #d8d8d8;
+}
+.look-giveaway ul li .add-list ul li .list-info {
+  margin-left: 5px;
+}
+.look-giveaway ul li .add-list ul li .list-info p {
+  width: 100%;
+  color: #333;
+  font-size: 14px;
+  line-height: 32px;
+}
+.look-giveaway ul li .add-list ul li .list-info p.price {
+  color: #f3474e;
+  font-size: 12px;
+  line-height: 22px;
+}
+.look-giveaway ul li .add-list ul li .list-info p.price span {
+  font-size: 14px;
+  margin-left: 3px;
+}
 .publishing {
   width: 1000px;
   margin: 0 auto;
