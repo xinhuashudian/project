@@ -9,6 +9,7 @@ body{background: #f5f5f5;font-family: 'microsoft yahei';}
 	margin-top:13px;
 	background: rgba(0,0,0,0.4);
 }
+.m-focus-d .thumbs-bg{z-index:10;}
 //reset
 .main-index-wrap{
 html{overflow-y: scroll;}
@@ -162,21 +163,21 @@ a {text-decoration:none;color:#333;cursor: pointer;cursor: hand;}
 		    z-index: 5;
 		    ol {
 			    text-align: center;
-			}
-			.thumbs-list li {
-			    display: inline-block;
-			    width: 30px;
-			    margin: 0 10px;
-			    vertical-align: top;
-			    line-height: 6px;
-			    height: 6px;
-			    background: #a6a7a8;
-			    text-align: center;
-			    font-family: 'microsoft yahei';
-			    cursor: pointer;
-			}
-			.thumbs-list li.active {
-			    background: #f4b0b5;
+			    li {
+				    display: inline-block;
+				    width: 30px;
+				    margin: 0 10px;
+				    vertical-align: top;
+				    line-height: 6px;
+				    height: 6px;
+				    background: #a6a7a8;
+				    text-align: center;
+				    font-family: 'microsoft yahei';
+				    cursor: pointer;
+				}
+				li.active {
+				    background: #f4b0b5;
+				}
 			}
 		}
 	}

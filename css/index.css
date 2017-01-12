@@ -8,6 +8,9 @@ body {
   margin-top: 13px;
   background: rgba(0, 0, 0, 0.4);
 }
+.m-focus-d .thumbs-bg {
+  z-index: 10;
+}
 .main-index-wrap html {
   overflow-y: scroll;
 }
@@ -241,7 +244,7 @@ body {
 .main-index-wrap .m-focus-d .thumbs-list ol {
   text-align: center;
 }
-.main-index-wrap .m-focus-d .thumbs-list .thumbs-list li {
+.main-index-wrap .m-focus-d .thumbs-list ol li {
   display: inline-block;
   width: 30px;
   margin: 0 10px;
@@ -253,7 +256,7 @@ body {
   font-family: 'microsoft yahei';
   cursor: pointer;
 }
-.main-index-wrap .m-focus-d .thumbs-list .thumbs-list li.active {
+.main-index-wrap .m-focus-d .thumbs-list ol li.active {
   background: #f4b0b5;
 }
 .main-index-wrap .main-box {
