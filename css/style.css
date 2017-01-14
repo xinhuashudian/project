@@ -1,3 +1,4 @@
+@charset "utf-8";
 h1,
 h2,
 h3,
@@ -2350,7 +2351,6 @@ a {
   width: 263px;
   height: 160px;
 }
-@charset "utf-8";
 /*正式样式表*/
 .content {
   width: 1000px;
@@ -3113,20 +3113,20 @@ a {
   height: 16px;
   display: inherit;
 }
-.content .goods-content .goods-nav .pageselect {
+.pageselect {
   width: 100%;
   height: 38px;
   border: 1px solid #dedede;
   background-color: #fff;
   margin: 10px 0px;
 }
-.content .goods-content .goods-nav .pageselect .pagination {
+.pageselect .pagination {
   height: 20px;
   float: right;
   padding: 10px 0px;
   margin-top: 3px;
 }
-.content .goods-content .goods-nav .pageselect .pagination .pagebtn {
+.pageselect .pagination .pagebtn {
   display: block;
   width: 10px;
   height: 10px;
@@ -3136,21 +3136,21 @@ a {
   float: left;
   margin-top: 3px;
 }
-.content .goods-content .goods-nav .pageselect .pagination span {
+.pageselect .pagination span {
   float: left;
   margin: 0px 5px;
   cursor: pointer;
 }
-.content .goods-content .goods-nav .pageselect .pagination lable {
+.pageselect .pagination lable {
   float: left;
   margin-left: 10px;
 }
-.content .goods-content .goods-nav .pageselect .pagination .paggnum-inp {
+.pageselect .pagination .paggnum-inp {
   float: left;
   margin-left: 10px;
   line-height: 16px;
 }
-.content .goods-content .goods-nav .pageselect .pagination .paggnum-inp input {
+.pageselect .pagination .paggnum-inp input {
   width: 29px;
   height: 20px;
   line-height: 20px;
@@ -3161,7 +3161,7 @@ a {
   border: 1px solid #dedede;
   margin-top: -3px;
 }
-.content .goods-content .goods-nav .pageselect .pagination .paggnum-inp button {
+.pageselect .pagination .paggnum-inp button {
   width: 50px;
   height: 22px;
   display: inline-block;
@@ -3574,6 +3574,12 @@ a {
   line-height: 50px;
   font-size: 18px;
 }
+.mylibrary-content-right .book-list-wrap {
+  display: none;
+}
+.mylibrary-content-right .cur {
+  display: block;
+}
 .mylibrary-content-right .mylibrary-bottom {
   width: 744px;
   margin-top: 20px;
@@ -3581,6 +3587,7 @@ a {
 }
 .mylibrary-content-right .mylibrary-bottom p {
   width: 100%;
+  height: 30px;
 }
 .mylibrary-content-right .mylibrary-bottom p a {
   color: #fff;
@@ -3594,12 +3601,13 @@ a {
   text-decoration: none;
   background-color: #c3c0bb;
   margin-right: 1px;
+  cursor: pointer;
 }
 .mylibrary-content-right .mylibrary-bottom p a.selected {
   background-color: #333;
 }
 .mylibrary-content-right .mylibrary-bottom .search-info {
-  float: left;
+  height: 30px;
   width: 744px;
   margin-top: 24px;
 }
@@ -3663,7 +3671,7 @@ a {
   color: #538cff;
 }
 .mylibrary-content-right .mylibrary-bottom .select {
-  float: left;
+  height: 30px;
   margin-top: 17px;
 }
 .mylibrary-content-right .mylibrary-bottom .select span {
@@ -3696,7 +3704,6 @@ a {
 }
 .mylibrary-content-right .mylibrary-bottom .book-list {
   width: 742px;
-  float: left;
   margin-top: 22px;
   border: 1px solid #ededed;
 }
@@ -6393,7 +6400,7 @@ img {
   width: 1000px;
   margin: 34px auto;
   padding: 65px 0 65px 415px;
-  background: url(../images/02.jpg) no-repeat 300px center #ffffff;
+  background: url(../images/02.jpg) no-repeat 300px center #fff;
 }
 .submit-tips * {
   box-sizing: content-box;
@@ -7597,8 +7604,8 @@ body {
   min-width: 1000px;
   font-family: "PingFangSC-Regular", "Microsoft YaHei", STHeiti, Helvetica, Arial, sans-serif;
   font-size: 14px;
-  color: #333333;
-  background: #ffffff;
+  color: #333;
+  background: #FFF;
   overflow-y: auto;
 }
 body * {
@@ -7606,7 +7613,7 @@ body * {
 }
 a {
   text-decoration: none;
-  color: #333333;
+  color: #333;
 }
 a img {
   border: none;
@@ -7633,7 +7640,7 @@ input[type="reset"] {
 .top-nav-wrap {
   width: 100%;
   height: 30px;
-  background: #f2f2f2;
+  background: #F2F2F2;
 }
 .top-nav-wrap .top-nav-content {
   width: 1000px;
@@ -7877,7 +7884,7 @@ input[type="reset"] {
 .main-nav-wrap {
   width: 100%;
   height: 35px;
-  background: #f2474d;
+  background: #F2474D;
 }
 .main-nav-wrap .main-nav {
   width: 1000px;
@@ -7894,7 +7901,7 @@ input[type="reset"] {
   height: 100%;
   color: #FFF;
   line-height: 35px;
-  background: #e01721;
+  background: #E01721;
   cursor: pointer;
 }
 .main-nav-wrap .main-nav .dropdown .dropdown-title i {
@@ -7916,7 +7923,7 @@ input[type="reset"] {
   left: 0px;
   top: 35px;
   z-index: 99;
-  background: #e01721;
+  background: #E01721;
 }
 .main-nav-wrap .main-nav .dropdown .dropdown-nav .block {
   padding: 15px 0px 20px;
@@ -7956,10 +7963,10 @@ input[type="reset"] {
   float: left;
   height: 35px;
   line-height: 35px;
-  background: #f2474d;
+  background: #F2474D;
 }
 .main-nav-wrap .main-nav .nav li:hover {
-  background: #e01721;
+  background: #E01721;
 }
 .main-nav-wrap .main-nav .nav li a {
   display: block;
@@ -7967,22 +7974,22 @@ input[type="reset"] {
   color: #FFF;
 }
 .book-index-nav-wrap {
-  background: #6c0ba4;
+  background: #6C0BA4;
 }
 .book-index-nav-wrap .main-nav .dropdown .dropdown-title {
-  background: #32014e;
+  background: #32014E;
 }
 .book-index-nav-wrap .main-nav .dropdown .dropdown-nav {
-  background: #32014e;
+  background: #32014E;
 }
 .book-index-nav-wrap .main-nav .dropdown .dropdown-nav .block {
   border-bottom: solid 1px #655171;
 }
 .book-index-nav-wrap .main-nav .nav li {
-  background: #6c0ba4;
+  background: #6C0BA4;
 }
 .book-index-nav-wrap .main-nav .nav li:hover {
-  background: #32014e;
+  background: #32014E;
 }
 .ad-gallery {
   width: 100%;
@@ -8070,7 +8077,7 @@ input[type="reset"] {
   width: 100%;
   height: 25px;
   line-height: 25px;
-  border-bottom: solid 2px #6c0ba4;
+  border-bottom: solid 2px #6C0BA4;
 }
 .recommend-wrap .recommend .title .text {
   float: left;
@@ -8151,7 +8158,7 @@ input[type="reset"] {
 }
 .columns-block .col-left .block-title {
   height: 26px;
-  border-bottom: solid 2px #6c0ba4;
+  border-bottom: solid 2px #6C0BA4;
 }
 .columns-block .col-left .heavy-recommended {
   background: #FFF;
@@ -8398,7 +8405,7 @@ input[type="reset"] {
 }
 .columns-block .col-right .block-title {
   height: 26px;
-  border-bottom: solid 2px #6c0ba4;
+  border-bottom: solid 2px #6C0BA4;
 }
 .columns-block .col-right .leaderboard {
   background: #FFF;
@@ -8499,7 +8506,7 @@ input[type="reset"] {
 }
 .full-column-block .block-title {
   height: 26px;
-  border-bottom: solid 2px #6c0ba4;
+  border-bottom: solid 2px #6C0BA4;
 }
 .full-column-block .block-title .refresh {
   float: right;
@@ -12521,7 +12528,7 @@ li {
 .z-right-wrap-shadow .console-body .fenye a {
   font-size: 14px;
   color: #2953a6;
-  border: 1px solid #ffffff;
+  border: 1px solid #FFFFFF;
   padding: 7px 13px;
   margin-right: 15px;
   float: left;
@@ -13226,7 +13233,7 @@ li {
   position: relative;
   left: 30px;
   top: 15px;
-  color: #ffffff;
+  color: white;
 }
 .page4-content-font-div1 {
   font-family: "微软雅黑";
@@ -15144,7 +15151,7 @@ li {
   border: 1px solid #b8b8b8;
   color: #000;
 }
-.register-basic{
+.register-basic {
   width: 100%;
   float: none;
 }

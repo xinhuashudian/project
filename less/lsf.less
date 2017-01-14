@@ -777,71 +777,72 @@
 	    			
 				}
 			}
-			.pageselect{
-				width:100%;
-				height:38px;
-				border:1px solid #dedede;
-				background-color:#fff;
-				margin:10px 0px;
-				.pagination {
-				    height: 20px;
-				    float: right;
-				    padding: 10px 0px;
-				    margin-top: 3px;
-				    .pagebtn{
-				    	display:block;
-				    	width:10px;
-				    	height:10px;
-				    	border:1px solid #dedede;
-				    	text-align:center;
-				    	line-height:8px;
-				    	float:left;
-				    	margin-top:3px;
-				    }
-				    span{
-				    	float:left;
-				    	margin:0px 5px;
-				    	cursor:pointer;
-				    }
-				    lable{
-				    	float:left;
-				    	margin-left:10px;
-				    }
-				    .paggnum-inp{
-				    	float:left;
-				    	margin-left:10px;
-				    	line-height: 16px;
-				    	input{
-				    		width:29px;
-				    		height:20px;
-						    line-height: 20px;
-						    margin: 0px 4px;
-						    text-align: center;
-						    vertical-align: middle;
-						    ime-mode: disabled;
-						    border: 1px solid #dedede;
-						    margin-top: -3px;
-				    	}
-				    	button{
-							width:50px;
-							height: 22px;
-						    display: inline-block;
-						    border:none;
-						    vertical-align: middle;
-						    cursor: pointer;
-						    _overflow-x: visible;
-						    background-color: #dedede;
-					        cursor: pointer;
-					        margin-right:10px;
-					        margin-top: -3px;
-						}
-				    }
-				}
-			}
 		}
 		
 	}
 }
+.pageselect{
+	width:100%;
+	height:38px;
+	border:1px solid #dedede;
+	background-color:#fff;
+	margin:10px 0px;
+	.pagination {
+	    height: 20px;
+	    float: right;
+	    padding: 10px 0px;
+	    margin-top: 3px;
+	    .pagebtn{
+	    	display:block;
+	    	width:10px;
+	    	height:10px;
+	    	border:1px solid #dedede;
+	    	text-align:center;
+	    	line-height:8px;
+	    	float:left;
+	    	margin-top:3px;
+	    }
+	    span{
+	    	float:left;
+	    	margin:0px 5px;
+	    	cursor:pointer;
+	    }
+	    lable{
+	    	float:left;
+	    	margin-left:10px;
+	    }
+	    .paggnum-inp{
+	    	float:left;
+	    	margin-left:10px;
+	    	line-height: 16px;
+	    	input{
+	    		width:29px;
+	    		height:20px;
+			    line-height: 20px;
+			    margin: 0px 4px;
+			    text-align: center;
+			    vertical-align: middle;
+			    ime-mode: disabled;
+			    border: 1px solid #dedede;
+			    margin-top: -3px;
+	    	}
+	    	button{
+				width:50px;
+				height: 22px;
+			    display: inline-block;
+			    border:none;
+			    vertical-align: middle;
+			    cursor: pointer;
+			    _overflow-x: visible;
+			    background-color: #dedede;
+		        cursor: pointer;
+		        margin-right:10px;
+		        margin-top: -3px;
+			}
+	    }
+	}
+}
+
 .content{
 		.goods-recommend{
 			width:100%;
@@ -1255,12 +1256,19 @@
         line-height: 50px;
         font-size: 18px;
     }
+    .book-list-wrap{
+    	display:none;
+    }
+    .cur{
+    	display:block;
+    }
     .mylibrary-bottom{
         width:744px;
         margin-top:20px;
         margin-left:20px;
         p{
             width:100%;
+            height:30px;
             a{
                 color:#fff;
                 font-size:14px;
@@ -1273,13 +1281,14 @@
                 text-decoration: none;
                 background-color:#c3c0bb;
                 margin-right:1px;
+                cursor: pointer;
             }
             a.selected{
                 background-color:#333;
             }
         }
         .search-info{
-            float:left;
+            height:30px;
             width:744px;
             margin-top:24px;
             .info-fl{
@@ -1343,7 +1352,7 @@
             }
         }
         .select{
-            float:left;
+            height:30px;
             margin-top:17px;
             span{
                 float:left;
@@ -1377,7 +1386,6 @@
         }
         .book-list{
             width:742px;
-            float:left;
             margin-top:22px;
             border:1px solid #ededed;
             ul li{
